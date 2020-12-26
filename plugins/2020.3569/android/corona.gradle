@@ -1,0 +1,3 @@
+dependencies {
+    implementation("com.appodeal.ads.sdk.networks:bidmachine:2.8.1.3")
+}
