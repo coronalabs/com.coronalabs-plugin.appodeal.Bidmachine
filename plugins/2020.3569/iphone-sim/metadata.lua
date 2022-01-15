@@ -3,8 +3,8 @@ local metadata =
 	plugin =
 	{
 		format = 'staticLibrary',
-		staticLibs = { 'APDBidMachineAdapter', 'BDMAdColonyAdapter', 'BDMAmazonAdapter', 'BDMAppRollAdapter', 'BDMCriteoAdapter', 'BDMFacebookAdapter', 'BDMIABAdapter', 'BDMMyTargetAdapter', 'BDMSmaatoAdapter', 'BDMTapjoyAdapter', 'BDMVungleAdapter', },
-		frameworks = { 'BidMachine', 'CriteoPublisherSdk', 'AppRollSDK', },
+		staticLibs = { 'APDBidMachineAdapter', 'BDMAdColonyAdapter', 'BDMAmazonAdapter', 'BDMAppRollAdapter', 'BDMCriteoAdapter', 'BDMFacebookAdapter', 'BDMIABAdapter', 'BDMMyTargetAdapter', 'BDMVungleAdapter', "BidMachine" },
+		frameworks = { 'CriteoPublisherSdk', 'AppRollSDK', },
 		frameworksOptional = {},
 	},
 }
