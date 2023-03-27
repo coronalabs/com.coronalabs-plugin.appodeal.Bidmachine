@@ -1,0 +1,11 @@
+framework module BidMachineDisplayCore {
+  umbrella header "BidMachineDisplayCore.h"
+
+  export *
+  module * { export * }
+}
+
+module BidMachineDisplayCore.Swift {
+    header "BidMachineDisplayCore-Swift.h"
+    requires objc
+}

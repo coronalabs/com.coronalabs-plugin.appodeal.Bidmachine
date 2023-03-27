@@ -1,0 +1,6 @@
+framework module BidMachineAnalyticsWrapper {
+  umbrella header "BidMachineAnalyticsWrapper.h"
+
+  export *
+  module * { export * }
+}

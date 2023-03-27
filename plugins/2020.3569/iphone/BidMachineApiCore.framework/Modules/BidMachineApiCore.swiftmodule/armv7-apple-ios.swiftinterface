@@ -1,0 +1,707 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-module-flags: -target armv7-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BidMachineApiCore
+@_exported import BidMachineApiCore
+import CoreLocation
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+public typealias RestrictionMessageBuilderBlock = (BidMachineApiCore.RestrictionMessageBuilder) -> Swift.Void
+@_hasMissingDesignatedInitializers public class RestrictionMessageBuilder {
+  @objc deinit
+}
+extension BidMachineApiCore.RestrictionMessageBuilder {
+  @discardableResult
+  public func withBlockedCategories(_ bcat: [Swift.String]) -> Self
+  @discardableResult
+  public func withBlockedAdvertisers(_ badv: [Swift.String]) -> Self
+  @discardableResult
+  public func withBlockedApps(_ bapp: [Swift.String]) -> Self
+}
+extension Swift.String {
+  public func JSON() throws -> [Swift.String : Any]
+}
+public enum PlacementType : Swift.Equatable {
+  case media(_: Swift.Bool, _: Swift.Bool)
+  case banner(_: Swift.UInt32)
+  case native(_: Swift.Bool, _: Swift.Bool, _: Swift.Bool)
+  case rewarded(_: Swift.Bool, _: Swift.Bool)
+  case interstitial(_: Swift.Bool, _: Swift.Bool)
+  public static func == (lhs: BidMachineApiCore.PlacementType, rhs: BidMachineApiCore.PlacementType) -> Swift.Bool
+}
+extension BidMachineApiCore.PlacementType {
+  public var name: Swift.String {
+    get
+  }
+  public var isVideo: Swift.Bool {
+    get
+  }
+  public var isStatic: Swift.Bool {
+    get
+  }
+  public var isNative: Swift.Bool {
+    get
+  }
+}
+public typealias RequestContextMessageBuilderBlock = (BidMachineApiCore.RequestContextMessageBuilder) -> Swift.Void
+@_hasMissingDesignatedInitializers public class RequestContextMessageBuilder {
+  @objc deinit
+}
+extension BidMachineApiCore.RequestContextMessageBuilder {
+  @discardableResult
+  public func withRestriction(_ builderBlock: (BidMachineApiCore.RestrictionMessageBuilder) -> Swift.Void) -> Self
+  @discardableResult
+  public func withApp(_ builderBlock: (BidMachineApiCore.AppMessageBuilder) -> Swift.Void) -> Self
+  @discardableResult
+  public func withDevice(_ builderBlock: (BidMachineApiCore.DeviceMessageBuilder) -> Swift.Void) -> Self
+  @discardableResult
+  public func withUser(_ builderBlock: (BidMachineApiCore.UserMessageBuilder) -> Swift.Void) -> Self
+  @discardableResult
+  public func withRegs(_ builderBlock: (BidMachineApiCore.RegsMessageBuilder) -> Swift.Void) -> Self
+}
+public typealias AnalyticsMessageBuilderBlock = (BidMachineApiCore.AnalyticsMessageBuilder) -> Swift.Void
+@_hasMissingDesignatedInitializers public class AnalyticsMessageBuilder {
+  @objc deinit
+}
+extension BidMachineApiCore.AnalyticsMessageBuilder {
+  @discardableResult
+  public func appendMetric(_ builderBlock: (BidMachineApiCore.MetricMessageBuilder) -> Swift.Void) -> Self
+}
+@propertyWrapper public struct Atomic<Value> {
+  public init(wrappedValue value: Value)
+  public var wrappedValue: Value {
+    get
+    set
+  }
+}
+public typealias RegsMessageBuilderBlock = (BidMachineApiCore.RegsMessageBuilder) -> Swift.Void
+@_hasMissingDesignatedInitializers public class RegsMessageBuilder {
+  @objc deinit
+}
+extension BidMachineApiCore.RegsMessageBuilder {
+  @discardableResult
+  public func withCOPPA(_ coppa: Swift.Bool) -> Self
+  @discardableResult
+  public func withGDPR(_ gdpr: Swift.Bool) -> Self
+  @discardableResult
+  public func withUSPrivacy(_ usPrivacy: Swift.String) -> Self
+}
+public typealias RequestMessageBuilderBlock = (BidMachineApiCore.RequestMessageBuilder) -> Swift.Void
+@_hasMissingDesignatedInitializers public class RequestMessageBuilder {
+  @objc deinit
+}
+extension BidMachineApiCore.RequestMessageBuilder {
+  @discardableResult
+  public func withTest(_ test: Swift.Bool) -> Self
+  @discardableResult
+  public func withTMax(_ tmax: Swift.UInt32) -> Self
+  @discardableResult
+  public func withType(_ type: BidMachineApiCore.ApiAuctionType) -> Self
+  @discardableResult
+  public func withCurrencyType(_ currency: BidMachineApiCore.ApiCurrencyType) -> Self
+}
+extension BidMachineApiCore.RequestMessageBuilder {
+  @discardableResult
+  public func withContext(_ builderBlock: (BidMachineApiCore.RequestContextMessageBuilder) -> Swift.Void) -> Self
+}
+extension BidMachineApiCore.RequestMessageBuilder {
+  @discardableResult
+  public func withExt(_ builderBlock: (BidMachineApiCore.RequestExtensionMessageBuilder) -> Swift.Void) -> Self
+}
+extension BidMachineApiCore.RequestMessageBuilder {
+  @discardableResult
+  public func withItem(_ builderBlock: (BidMachineApiCore.RequestItemMessageBuilder) -> Swift.Void) -> Self
+}
+public typealias UserMessageBuilderBlock = (BidMachineApiCore.UserMessageBuilder) -> Swift.Void
+@_hasMissingDesignatedInitializers public class UserMessageBuilder {
+  @objc deinit
+}
+extension BidMachineApiCore.UserMessageBuilder {
+  @discardableResult
+  public func withGenderType(_ type: BidMachineApiCore.ApiGenderType) -> Self
+  @discardableResult
+  public func withYearOfBirth(_ yob: Swift.UInt32) -> Self
+  @discardableResult
+  public func withKeywords(_ keywords: Swift.String) -> Self
+  @discardableResult
+  public func withId(_ id: Swift.String) -> Self
+  @discardableResult
+  public func withConsent(_ consent: Swift.Bool, _ string: Swift.String?) -> Self
+}
+extension BidMachineApiCore.UserMessageBuilder {
+  @discardableResult
+  public func withGeo(_ builderBlock: (BidMachineApiCore.GeoMessageBuilder) -> Swift.Void) -> Self
+}
+extension BidMachineApiCore.UserMessageBuilder {
+  public typealias ExternalIdsType = (name: Swift.String, value: Swift.String)
+  @discardableResult
+  public func withExternalIds(_ ids: [BidMachineApiCore.UserMessageBuilder.ExternalIdsType]) -> Self
+}
+public typealias RequestItemMessageBuilderBlock = (BidMachineApiCore.RequestItemMessageBuilder) -> Swift.Void
+@_hasMissingDesignatedInitializers public class RequestItemMessageBuilder {
+  @objc deinit
+}
+extension BidMachineApiCore.RequestItemMessageBuilder {
+  public typealias ApiDealType = (id: Swift.String, price: Swift.Double, type: BidMachineApiCore.ApiCurrencyType)
+  @discardableResult
+  public func withdId(_ id: Swift.String) -> Self
+  @discardableResult
+  public func withQuantity(_ qty: Swift.UInt32) -> Self
+  @discardableResult
+  public func withDeals(_ deals: [BidMachineApiCore.RequestItemMessageBuilder.ApiDealType]) -> Self
+}
+extension BidMachineApiCore.RequestItemMessageBuilder {
+  @discardableResult
+  public func withPlacement(_ builderBlock: (BidMachineApiCore.PlacementMessageBuilder) -> Swift.Void) -> Self
+}
+public typealias RequestExtensionMessageBuilderBlock = (BidMachineApiCore.RequestExtensionMessageBuilder) -> Swift.Void
+@_hasMissingDesignatedInitializers public class RequestExtensionMessageBuilder {
+  @objc deinit
+}
+extension BidMachineApiCore.RequestExtensionMessageBuilder {
+  @discardableResult
+  public func withSourceId(_ sourceId: Swift.String) -> Self
+  @discardableResult
+  public func withSessionId(_ sessionId: Swift.String) -> Self
+  @discardableResult
+  public func withIFV(_ ifv: Swift.String) -> Self
+  @discardableResult
+  public func withBMIFV(_ ifv: Swift.String) -> Self
+}
+public typealias AppMessageBuilderBlock = (BidMachineApiCore.AppMessageBuilder) -> Swift.Void
+@_hasMissingDesignatedInitializers public class AppMessageBuilder {
+  @objc deinit
+}
+extension BidMachineApiCore.AppMessageBuilder {
+  @discardableResult
+  public func withStoreId(_ storeid: Swift.String) -> Self
+  @discardableResult
+  public func withStoreUrl(_ storeurl: Swift.String) -> Self
+  @discardableResult
+  public func withPaid(_ paid: Swift.Bool) -> Self
+  @discardableResult
+  public func withBundle(_ bundle: Swift.String) -> Self
+  @discardableResult
+  public func withVersion(_ version: Swift.String) -> Self
+  @discardableResult
+  public func withName(_ name: Swift.String) -> Self
+}
+extension BidMachineApiCore.AppMessageBuilder {
+  @discardableResult
+  public func withPublisher(_ builderBlock: (BidMachineApiCore.PublisherMessageBuilder) -> Swift.Void) -> Self
+}
+extension Swift.Array {
+  public func decode<T>(_ value: T.Type) throws -> T where Element == BidMachineApiCore.AnyCodable, T : Swift.Decodable
+  public func decode<T>(_ value: T.Type) throws -> T where Element == Any, T : Swift.Decodable
+}
+public typealias AuctionMessageBuilderBlock = (BidMachineApiCore.AuctionMessageBuilder) -> Swift.Void
+@_hasMissingDesignatedInitializers public class AuctionMessageBuilder {
+  @objc deinit
+}
+extension BidMachineApiCore.AuctionMessageBuilder {
+  @discardableResult
+  public func withProtocolVersion(_ ver: Swift.String) -> BidMachineApiCore.AuctionMessageBuilder
+  @discardableResult
+  public func withDomainVersion(_ domainver: Swift.String) -> BidMachineApiCore.AuctionMessageBuilder
+  @discardableResult
+  public func withDomainSpec(_ domainspec: Swift.String) -> BidMachineApiCore.AuctionMessageBuilder
+  @discardableResult
+  public func withRequest(_ builderBlock: (BidMachineApiCore.RequestMessageBuilder) -> Swift.Void) -> BidMachineApiCore.AuctionMessageBuilder
+}
+public typealias MetricDataMessageBuilderBlock = (BidMachineApiCore.MetricDataMessageBuilder) -> Swift.Void
+@_hasMissingDesignatedInitializers public class MetricDataMessageBuilder {
+  @objc deinit
+}
+extension BidMachineApiCore.MetricDataMessageBuilder {
+  @discardableResult
+  public func withTimestampt(_ timestampt: Swift.Double) -> Self
+  @discardableResult
+  public func withName(_ name: Swift.String) -> Self
+  @discardableResult
+  public func withError(_ error: Swift.Error?) -> Self
+  @discardableResult
+  public func withDimensions(_ dimensions: [Swift.String : Swift.String]) -> Self
+  @discardableResult
+  public func withMeasures(_ measures: [Swift.String : Swift.Double]) -> Self
+}
+public struct BidMachineSemaphore {
+  public static func mainSync<T>(_ execution: @escaping () -> T?) -> T?
+}
+public protocol ApiMessageProtocol {
+  func jsonUTF8Data() -> Foundation.Data?
+  func jsonString() -> Swift.String?
+  func serializedData() -> Foundation.Data?
+  func serializedString() -> Swift.String?
+}
+public protocol ApiMessageRestictionProtocol {
+  @discardableResult
+  func restrict(_ gdpr: Swift.Bool, _ coppa: Swift.Bool) -> BidMachineApiCore.ApiMessageProtocol
+}
+public typealias DeviceMessageBuilderBlock = (BidMachineApiCore.DeviceMessageBuilder) -> Swift.Void
+@_hasMissingDesignatedInitializers public class DeviceMessageBuilder {
+  @objc deinit
+}
+extension BidMachineApiCore.DeviceMessageBuilder {
+  @discardableResult
+  public func withUserAgent(_ ua: Swift.String) -> Self
+  @discardableResult
+  public func withLmt(_ lmt: Swift.Bool) -> Self
+  @discardableResult
+  public func withType(_ type: BidMachineApiCore.ApiDeviceType) -> Self
+  @discardableResult
+  public func withConnectionType(_ connectionType: BidMachineApiCore.ApiConnectionType) -> Self
+  @discardableResult
+  public func withMobileCountryCode(_ mccmnc: Swift.String) -> Self
+  @discardableResult
+  public func withCarrier(_ carrier: Swift.String) -> Self
+  @discardableResult
+  public func withWidth(_ width: Swift.UInt32) -> Self
+  @discardableResult
+  public func withHeight(_ height: Swift.UInt32) -> Self
+  @discardableResult
+  public func withPPI(_ ppi: Swift.UInt32) -> Self
+  @discardableResult
+  public func withPxratio(_ pxratio: Swift.Float) -> Self
+  @discardableResult
+  public func withOsType(_ os: BidMachineApiCore.ApiOSType) -> Self
+  @discardableResult
+  public func withOsVersion(_ osv: Swift.String) -> Self
+  @discardableResult
+  public func withHardwareVersion(_ hwv: Swift.String) -> Self
+  @discardableResult
+  public func withMaker(_ maker: Swift.String) -> Self
+  @discardableResult
+  public func withModel(_ model: Swift.String) -> Self
+  @discardableResult
+  public func withLanguage(_ language: Swift.String) -> Self
+  @discardableResult
+  public func withIFA(_ ifa: Swift.String) -> Self
+}
+extension BidMachineApiCore.DeviceMessageBuilder {
+  @discardableResult
+  public func withGeo(_ builderBlock: (BidMachineApiCore.GeoMessageBuilder) -> Swift.Void) -> Self
+}
+public typealias MetricMessageBuilderBlock = (BidMachineApiCore.MetricMessageBuilder) -> Swift.Void
+@_hasMissingDesignatedInitializers public class MetricMessageBuilder {
+  @objc deinit
+}
+extension BidMachineApiCore.MetricMessageBuilder {
+  @discardableResult
+  public func withContext(_ context: Swift.String) -> Self
+  @discardableResult
+  public func appendData(_ builderBlock: (BidMachineApiCore.MetricDataMessageBuilder) -> Swift.Void) -> Self
+}
+public typealias GeoMessageBuilderBlock = (BidMachineApiCore.GeoMessageBuilder) -> Swift.Void
+@_hasMissingDesignatedInitializers public class GeoMessageBuilder {
+  @objc deinit
+}
+extension BidMachineApiCore.GeoMessageBuilder {
+  @discardableResult
+  public func withUtc(_ utcoffset: Swift.Int32) -> Self
+  @discardableResult
+  public func withCountry(_ country: Swift.String) -> Self
+  @discardableResult
+  public func withCity(_ city: Swift.String) -> Self
+  @discardableResult
+  public func withZip(_ zip: Swift.String) -> Self
+  @discardableResult
+  public func withLocation(_ user: CoreLocation.CLLocation?, _ device: CoreLocation.CLLocation?) -> Self
+}
+public typealias PlacementConfigurationBuilderBlock = (BidMachineApiCore.PlacementConfigurationBuilderProtocol) -> Swift.Void
+public typealias BiddingUnitParams = [Swift.String : Swift.String]
+public protocol PlacementConfigurationUnitProtocol {
+  var placement: BidMachineApiCore.Placement { get }
+  var bidderName: Swift.String { get }
+  var bidderVersion: Swift.String { get }
+  var clientParams: BidMachineApiCore.BiddingUnitParams { get }
+}
+public protocol PlacementConfigurationBuilderProtocol {
+  @discardableResult
+  func withWidth(_ width: Swift.UInt32) -> BidMachineApiCore.PlacementConfigurationBuilderProtocol
+  @discardableResult
+  func withHeight(_ height: Swift.UInt32) -> BidMachineApiCore.PlacementConfigurationBuilderProtocol
+  @discardableResult
+  func withMaxDuration(_ maxdur: Swift.UInt32) -> BidMachineApiCore.PlacementConfigurationBuilderProtocol
+  @discardableResult
+  func withMinDuration(_ mindur: Swift.UInt32) -> BidMachineApiCore.PlacementConfigurationBuilderProtocol
+  @discardableResult
+  func withMaxBitrate(_ maxbitr: Swift.UInt32) -> BidMachineApiCore.PlacementConfigurationBuilderProtocol
+  @discardableResult
+  func withMinBitrate(_ minbitr: Swift.UInt32) -> BidMachineApiCore.PlacementConfigurationBuilderProtocol
+  @discardableResult
+  func withUnits(_ units: [BidMachineApiCore.PlacementConfigurationUnitProtocol]) -> BidMachineApiCore.PlacementConfigurationBuilderProtocol
+}
+public enum ApiOSType {
+  case unknown
+  case ios
+  public static func == (a: BidMachineApiCore.ApiOSType, b: BidMachineApiCore.ApiOSType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ApiDeviceType {
+  case unknown
+  case phone
+  case tablete
+  public static func == (a: BidMachineApiCore.ApiDeviceType, b: BidMachineApiCore.ApiDeviceType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ApiConnectionType {
+  case unknown
+  case wifi
+  case cellularNetworkUnknown
+  public static func == (a: BidMachineApiCore.ApiConnectionType, b: BidMachineApiCore.ApiConnectionType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ApiLocationType {
+  case unknown
+  case user
+  case gps
+  public static func == (a: BidMachineApiCore.ApiLocationType, b: BidMachineApiCore.ApiLocationType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ApiAuctionType {
+  case unknown
+  case first
+  case second
+  public static func == (a: BidMachineApiCore.ApiAuctionType, b: BidMachineApiCore.ApiAuctionType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ApiCurrencyType : Swift.String {
+  case unknown
+  case USD
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum ApiGenderType : Swift.String {
+  case unknown
+  case male
+  case female
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol ContextualDataProtocol : Swift.Decodable, Swift.Encodable {
+  var impdepth: Swift.UInt32 { get }
+  var clickrate: Swift.Float { get }
+  var completionrate: Swift.Float { get }
+  var lastclick: Swift.Bool { get }
+  var lastbundle: Swift.String { get }
+  var lastadomain: Swift.String { get }
+}
+extension Swift.Encodable {
+  public func serialiseJson() throws -> Swift.Dictionary<Swift.String, Any>
+  public func serializeJsonString() throws -> Swift.String
+}
+extension Swift.Dictionary {
+  public func mapKeys<Transformed>(_ transform: (Key) throws -> Transformed) rethrows -> [Transformed : Value] where Transformed : Swift.Hashable
+  public func mapKeys<Transformed>(_ transform: (Key) throws -> Transformed, uniquingKeysWith combine: (Value, Value) throws -> Value) rethrows -> [Transformed : Value] where Transformed : Swift.Hashable
+  public func compactMapKeys<Transformed>(_ transform: (Key) throws -> Transformed?) rethrows -> [Transformed : Value] where Transformed : Swift.Hashable
+}
+extension Swift.Dictionary where Key == Swift.String {
+  public func decode<T>(_ value: T.Type) throws -> T where Value == BidMachineApiCore.AnyCodable, T : Swift.Decodable
+  public func decode<T>(_ value: T.Type) throws -> T where Value == Any, T : Swift.Decodable
+  public func stringify() throws -> Swift.String
+}
+public struct AnyCodable : Swift.Codable {
+  public init<T>(_ value: T?)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension BidMachineApiCore.AnyCodable {
+  public func value<T>(_ type: T.Type) -> T?
+}
+public typealias ExtrasDataType = [Swift.String : Any]
+public protocol ExtrasDataMessageProtocol : AnyObject {
+  @discardableResult
+  func appendExtension(_ extras: BidMachineApiCore.ExtrasDataType) -> Self
+}
+extension BidMachineApiCore.SessionMessageBuilder : BidMachineApiCore.ExtrasDataMessageProtocol {
+  @discardableResult
+  public func appendExtension(_ extras: BidMachineApiCore.ExtrasDataType) -> Self
+}
+extension BidMachineApiCore.PublisherMessageBuilder : BidMachineApiCore.ExtrasDataMessageProtocol {
+  @discardableResult
+  public func appendExtension(_ extras: BidMachineApiCore.ExtrasDataType) -> Self
+}
+extension BidMachineApiCore.RequestItemMessageBuilder : BidMachineApiCore.ExtrasDataMessageProtocol {
+  @discardableResult
+  public func appendExtension(_ extras: BidMachineApiCore.ExtrasDataType) -> Self
+}
+extension BidMachineApiCore.AppMessageBuilder : BidMachineApiCore.ExtrasDataMessageProtocol {
+  @discardableResult
+  public func appendExtension(_ extras: BidMachineApiCore.ExtrasDataType) -> Self
+}
+extension BidMachineApiCore.DeviceMessageBuilder : BidMachineApiCore.ExtrasDataMessageProtocol {
+  @discardableResult
+  public func appendExtension(_ extras: BidMachineApiCore.ExtrasDataType) -> Self
+}
+extension BidMachineApiCore.GeoMessageBuilder : BidMachineApiCore.ExtrasDataMessageProtocol {
+  @discardableResult
+  public func appendExtension(_ extras: BidMachineApiCore.ExtrasDataType) -> Self
+}
+extension BidMachineApiCore.RequestContextMessageBuilder : BidMachineApiCore.ExtrasDataMessageProtocol {
+  @discardableResult
+  public func appendExtension(_ extras: BidMachineApiCore.ExtrasDataType) -> Self
+}
+extension BidMachineApiCore.RegsMessageBuilder : BidMachineApiCore.ExtrasDataMessageProtocol {
+  @discardableResult
+  public func appendExtension(_ extras: BidMachineApiCore.ExtrasDataType) -> Self
+}
+extension BidMachineApiCore.UserMessageBuilder : BidMachineApiCore.ExtrasDataMessageProtocol {
+  @discardableResult
+  public func appendExtension(_ extras: BidMachineApiCore.ExtrasDataType) -> Self
+}
+extension BidMachineApiCore.RequestMessageBuilder : BidMachineApiCore.ExtrasDataMessageProtocol {
+  @discardableResult
+  public func appendExtension(_ extras: BidMachineApiCore.ExtrasDataType) -> Self
+}
+extension BidMachineApiCore.RestrictionMessageBuilder : BidMachineApiCore.ExtrasDataMessageProtocol {
+  @discardableResult
+  public func appendExtension(_ extras: BidMachineApiCore.ExtrasDataType) -> Self
+}
+extension BidMachineApiCore.PlacementMessageBuilder : BidMachineApiCore.ExtrasDataMessageProtocol {
+  @discardableResult
+  public func appendExtension(_ extras: BidMachineApiCore.ExtrasDataType) -> Self
+}
+public typealias PublisherMessageBuilderBlock = (BidMachineApiCore.PublisherMessageBuilder) -> Swift.Void
+@_hasMissingDesignatedInitializers public class PublisherMessageBuilder {
+  @objc deinit
+}
+extension BidMachineApiCore.PublisherMessageBuilder {
+  @discardableResult
+  public func withId(_ id: Swift.String) -> Self
+  @discardableResult
+  public func withName(_ name: Swift.String) -> Self
+  @discardableResult
+  public func withDomain(_ domain: Swift.String) -> Self
+  @discardableResult
+  public func withCategories(_ cat: [Swift.String]) -> Self
+}
+public typealias PlacementMessageBuilderBlock = (BidMachineApiCore.PlacementMessageBuilder) -> Swift.Void
+@_hasMissingDesignatedInitializers public class PlacementMessageBuilder {
+  @objc deinit
+}
+extension BidMachineApiCore.PlacementMessageBuilder {
+  @discardableResult
+  public func withTagid(_ id: Swift.String) -> Self
+  @discardableResult
+  public func withSecure(_ secure: Swift.Bool) -> Self
+  @discardableResult
+  public func withSdk(_ name: Swift.String) -> Self
+  @discardableResult
+  public func withSdkVersion(_ version: Swift.String) -> Self
+  @discardableResult
+  public func withPlacement(_ placement: BidMachineApiCore.Placement, _ builderBlock: (BidMachineApiCore.PlacementConfigurationBuilderProtocol) -> Swift.Void) -> Self
+}
+public typealias TokenMessageBuilderBlock = (BidMachineApiCore.TokenMessageBuilder) -> Swift.Void
+@_hasMissingDesignatedInitializers public class TokenMessageBuilder {
+  @objc deinit
+}
+extension BidMachineApiCore.TokenMessageBuilder {
+  @discardableResult
+  public func withSdk(_ name: Swift.String) -> Self
+  @discardableResult
+  public func withSdkVersion(_ version: Swift.String) -> Self
+}
+extension BidMachineApiCore.TokenMessageBuilder {
+  @discardableResult
+  public func withSessionId(_ ID: Swift.String) -> Self
+  @discardableResult
+  public func withSessionDuration(_ duration: Swift.UInt64) -> Self
+  @discardableResult
+  public func withSessionPlacementData(_ data: [Swift.String : BidMachineApiCore.ContextualDataProtocol]) -> Self
+}
+extension BidMachineApiCore.TokenMessageBuilder {
+  @discardableResult
+  public func withVersion(_ version: Swift.String) -> Self
+  @discardableResult
+  public func withName(_ name: Swift.String) -> Self
+}
+extension BidMachineApiCore.TokenMessageBuilder {
+  @discardableResult
+  public func withUSPrivacy(_ usPrivacy: Swift.String) -> Self
+  @discardableResult
+  public func withConsent(_ consent: Swift.Bool, _ string: Swift.String?) -> Self
+  @discardableResult
+  public func withGDPR(_ gdpr: Swift.Bool) -> Self
+}
+extension BidMachineApiCore.TokenMessageBuilder {
+  @discardableResult
+  public func withIFV(_ ifv: Swift.String) -> Self
+  @discardableResult
+  public func withBMIFV(_ ifv: Swift.String) -> Self
+  @discardableResult
+  public func withInputLanguage(_ languages: [Swift.String]) -> Self
+  @discardableResult
+  public func withDiskSpace(_ diskspace: Swift.UInt64) -> Self
+  @discardableResult
+  public func withTotalDisk(_ totaldisk: Swift.UInt64) -> Self
+  @discardableResult
+  public func withTotalMem(_ totalmem: Swift.UInt64) -> Self
+  @discardableResult
+  public func withCharging(_ charging: Swift.Bool) -> Self
+  @discardableResult
+  public func withBatteryLevel(_ batterylevel: Swift.Float) -> Self
+  @discardableResult
+  public func withBatterySaver(_ batterysaver: Swift.Bool) -> Self
+  @discardableResult
+  public func withDarkMode(_ darkmode: Swift.Bool) -> Self
+  @discardableResult
+  public func withTime(_ time: Swift.UInt64) -> Self
+  @discardableResult
+  public func withScreenBright(_ screenbright: Swift.Float) -> Self
+  @discardableResult
+  public func withJailBreak(_ jailbreak: Swift.Bool) -> Self
+  @discardableResult
+  public func withLastBootup(_ lastbootup: Swift.UInt64) -> Self
+  @discardableResult
+  public func withAccess(_ access: Swift.String) -> Self
+  @discardableResult
+  public func withHeadsetName(_ headsetname: Swift.String) -> Self
+  @discardableResult
+  public func withAtts(_ atts: Swift.UInt32) -> Self
+  @discardableResult
+  public func withDeviceName(_ devicename: Swift.String) -> Self
+}
+@_hasMissingDesignatedInitializers public class BidMachineApiProvider {
+  public static func tokenMessage(_ builderBlock: (BidMachineApiCore.TokenMessageBuilder) -> Swift.Void) -> BidMachineApiCore.ApiMessageRestictionProtocol
+  public static func sessionMessage(_ builderBlock: (BidMachineApiCore.SessionMessageBuilder) -> Swift.Void) -> BidMachineApiCore.ApiMessageRestictionProtocol
+  public static func auctionMessage(_ builderBlock: (BidMachineApiCore.AuctionMessageBuilder) -> Swift.Void) -> BidMachineApiCore.ApiMessageRestictionProtocol
+  public static func analyticsMessage(_ builderBlock: (BidMachineApiCore.AnalyticsMessageBuilder) -> Swift.Void) -> BidMachineApiCore.ApiMessageRestictionProtocol
+  public static func auctionResponse(_ data: Foundation.Data) throws -> BidMachineApiCore.ExtrasDataType
+  public static func sessionResponse(_ data: Foundation.Data) throws -> BidMachineApiCore.ExtrasDataType
+  public static func payloadResponse(_ data: Foundation.Data) throws -> BidMachineApiCore.ExtrasDataType
+  @objc deinit
+}
+public struct Placement : Swift.Equatable {
+  public let type: BidMachineApiCore.PlacementType
+  public init(_ type: BidMachineApiCore.PlacementType)
+  public static func == (lhs: BidMachineApiCore.Placement, rhs: BidMachineApiCore.Placement) -> Swift.Bool
+}
+extension BidMachineApiCore.Placement {
+  public var isInterstitial: Swift.Bool {
+    get
+  }
+  public var isBanner: Swift.Bool {
+    get
+  }
+  public var isNative: Swift.Bool {
+    get
+  }
+  public var isRewarded: Swift.Bool {
+    get
+  }
+  public var isMedia: Swift.Bool {
+    get
+  }
+  public var size: CoreGraphics.CGSize {
+    get
+  }
+}
+@objc(BidMachinePlacementFormat) public enum PlacementFormat : Swift.Int {
+  case unknown
+  case banner
+  case banner320x50
+  case banner728x90
+  case banner300x250
+  case interstitial
+  case interstitialVideo
+  case interstitialStatic
+  case rewarded
+  case rewardedVideo
+  case rewardedStatic
+  case media
+  case native
+  case nativeIcon
+  case nativeImage
+  case nativeVideo
+  case nativeIconAndVideo
+  case nativeIconAndImage
+  case nativeImageAndVideo
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension BidMachineApiCore.PlacementFormat {
+  public func placementType() -> BidMachineApiCore.PlacementType?
+}
+extension Foundation.NSString {
+  public func placementFormat() -> BidMachineApiCore.PlacementFormat
+}
+public typealias SessionMessageBuilderBlock = (BidMachineApiCore.SessionMessageBuilder) -> Swift.Void
+@_hasMissingDesignatedInitializers public class SessionMessageBuilder {
+  @objc deinit
+}
+extension BidMachineApiCore.SessionMessageBuilder {
+  @discardableResult
+  public func withSdk(_ sdk: Swift.String) -> BidMachineApiCore.SessionMessageBuilder
+  @discardableResult
+  public func withSdkVersion(_ sdkver: Swift.String) -> BidMachineApiCore.SessionMessageBuilder
+  @discardableResult
+  public func withSourceId(_ sourceId: Swift.String) -> BidMachineApiCore.SessionMessageBuilder
+  @discardableResult
+  public func withSessionId(_ sessionId: Swift.String) -> BidMachineApiCore.SessionMessageBuilder
+  @discardableResult
+  public func withIFA(_ ifa: Swift.String) -> BidMachineApiCore.SessionMessageBuilder
+  @discardableResult
+  public func withIFV(_ ifv: Swift.String) -> BidMachineApiCore.SessionMessageBuilder
+  @discardableResult
+  public func withBMIFV(_ ifv: Swift.String) -> BidMachineApiCore.SessionMessageBuilder
+  @discardableResult
+  public func withBundle(_ bundle: Swift.String) -> BidMachineApiCore.SessionMessageBuilder
+  @discardableResult
+  public func withAppVersion(_ appVer: Swift.String) -> BidMachineApiCore.SessionMessageBuilder
+  @discardableResult
+  public func withOsVersion(_ osv: Swift.String) -> BidMachineApiCore.SessionMessageBuilder
+  @discardableResult
+  public func withOsType(_ os: BidMachineApiCore.ApiOSType) -> BidMachineApiCore.SessionMessageBuilder
+  @discardableResult
+  public func withDeviceType(_ deviceType: BidMachineApiCore.ApiDeviceType) -> BidMachineApiCore.SessionMessageBuilder
+  @discardableResult
+  public func withConnectionType(_ connectionType: BidMachineApiCore.ApiConnectionType) -> BidMachineApiCore.SessionMessageBuilder
+}
+extension BidMachineApiCore.SessionMessageBuilder {
+  @discardableResult
+  public func withGeo(_ builderBlock: (BidMachineApiCore.GeoMessageBuilder) -> Swift.Void) -> BidMachineApiCore.SessionMessageBuilder
+}
+extension BidMachineApiCore.ApiOSType : Swift.Equatable {}
+extension BidMachineApiCore.ApiOSType : Swift.Hashable {}
+extension BidMachineApiCore.ApiDeviceType : Swift.Equatable {}
+extension BidMachineApiCore.ApiDeviceType : Swift.Hashable {}
+extension BidMachineApiCore.ApiConnectionType : Swift.Equatable {}
+extension BidMachineApiCore.ApiConnectionType : Swift.Hashable {}
+extension BidMachineApiCore.ApiLocationType : Swift.Equatable {}
+extension BidMachineApiCore.ApiLocationType : Swift.Hashable {}
+extension BidMachineApiCore.ApiAuctionType : Swift.Equatable {}
+extension BidMachineApiCore.ApiAuctionType : Swift.Hashable {}
+extension BidMachineApiCore.ApiCurrencyType : Swift.Equatable {}
+extension BidMachineApiCore.ApiCurrencyType : Swift.Hashable {}
+extension BidMachineApiCore.ApiCurrencyType : Swift.RawRepresentable {}
+extension BidMachineApiCore.ApiGenderType : Swift.Equatable {}
+extension BidMachineApiCore.ApiGenderType : Swift.Hashable {}
+extension BidMachineApiCore.ApiGenderType : Swift.RawRepresentable {}
+extension BidMachineApiCore.PlacementFormat : Swift.Equatable {}
+extension BidMachineApiCore.PlacementFormat : Swift.Hashable {}
+extension BidMachineApiCore.PlacementFormat : Swift.RawRepresentable {}

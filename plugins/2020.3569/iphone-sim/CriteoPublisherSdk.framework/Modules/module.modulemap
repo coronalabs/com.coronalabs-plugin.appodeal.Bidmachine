@@ -6,6 +6,6 @@ framework module CriteoPublisherSdk {
 }
 
 module CriteoPublisherSdk.Swift {
-    header "CriteoPublisherSdk-Swift.h"
-    requires objc
+  header "CriteoPublisherSdk-Swift.h"
+  requires objc
 }

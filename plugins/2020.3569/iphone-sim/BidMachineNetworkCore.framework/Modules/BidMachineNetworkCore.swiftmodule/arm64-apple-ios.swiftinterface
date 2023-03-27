@@ -1,0 +1,124 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BidMachineNetworkCore
+import BidMachineApiCore
+@_exported import BidMachineNetworkCore
+import Foundation
+import Swift
+import _Concurrency
+public class ServerSessionResponse<T> : BidMachineNetworkCore.ServerResponseProtocol where T : Swift.Decodable {
+  final public let model: T
+  final public let jsonPresentation: [Swift.String : Any]
+  required public init(_ data: Foundation.Data?) throws
+  @objc deinit
+}
+public enum ServerRequestMethodType : Swift.String {
+  case POST
+  case GET
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class ServerBaseRequestBuilder {
+  @discardableResult
+  public func withUrl(_ url: Foundation.URL?) -> Self
+  @discardableResult
+  public func withTimeout(_ timeout: Swift.Double) -> Self
+  @discardableResult
+  public func withUserAgent(_ ua: Swift.String) -> Self
+  @discardableResult
+  public func withAditionalUrls(_ urls: [Foundation.URL]) -> Self
+  @discardableResult
+  public func withType(_ type: BidMachineNetworkCore.ServerRequestMethodType) -> Self
+  @discardableResult
+  public func withBody(_ body: Foundation.Data?) -> Self
+  @objc deinit
+}
+public class ServerBaseRequest<T> where T : BidMachineNetworkCore.ServerBaseRequestBuilder {
+  public var request: Foundation.URLRequest? {
+    get
+  }
+  public var aditionalUrls: [Foundation.URL] {
+    get
+  }
+  public init(_ builderBlock: (T) -> Swift.Void)
+  @objc deinit
+}
+public typealias ServerSessionRequestBuilderBlock = (BidMachineNetworkCore.ServerSessionRequestBuilder) -> Swift.Void
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ServerSessionRequestBuilder : BidMachineNetworkCore.ServerBaseRequestBuilder {
+  @discardableResult
+  public func withRestriction(_ gdpr: Swift.Bool, _ coppa: Swift.Bool) -> Self
+  @discardableResult
+  public func withDebug(_ debug: Swift.Bool) -> Self
+  @discardableResult
+  public func withSession(_ builderBlock: (BidMachineApiCore.SessionMessageBuilder) -> Swift.Void) -> Self
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class ServerSessionRequest<DecodableType> : BidMachineNetworkCore.ServerBaseRequest<BidMachineNetworkCore.ServerSessionRequestBuilder>, BidMachineNetworkCore.ServerRequestProtocol where DecodableType : Swift.Decodable {
+  public typealias ResponseType = BidMachineNetworkCore.ServerSessionResponse<DecodableType>
+  public func getResponse(_ data: Foundation.Data?) throws -> BidMachineNetworkCore.ServerSessionResponse<DecodableType>
+  override public init(_ builderBlock: (BidMachineNetworkCore.ServerSessionRequestBuilder) -> Swift.Void)
+  @objc deinit
+}
+public typealias ServerAuctionRequestBuilderBlock = (BidMachineNetworkCore.ServerAuctionRequestBuilder) -> Swift.Void
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ServerAuctionRequestBuilder : BidMachineNetworkCore.ServerBaseRequestBuilder {
+  @discardableResult
+  public func withRestriction(_ gdpr: Swift.Bool, _ coppa: Swift.Bool) -> Self
+  @discardableResult
+  public func withDebug(_ debug: Swift.Bool) -> Self
+  @discardableResult
+  public func withAuction(_ builderBlock: (BidMachineApiCore.AuctionMessageBuilder) -> Swift.Void) -> Self
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class ServerAuctionRequest<DecodableType> : BidMachineNetworkCore.ServerBaseRequest<BidMachineNetworkCore.ServerAuctionRequestBuilder>, BidMachineNetworkCore.ServerRequestProtocol where DecodableType : Swift.Decodable {
+  public typealias ResponseType = BidMachineNetworkCore.ServerAuctionResponse<DecodableType>
+  public func getResponse(_ data: Foundation.Data?) throws -> BidMachineNetworkCore.ServerAuctionResponse<DecodableType>
+  override public init(_ builderBlock: (BidMachineNetworkCore.ServerAuctionRequestBuilder) -> Swift.Void)
+  @objc deinit
+}
+public protocol ServerRequestProtocol {
+  associatedtype ResponseType : BidMachineNetworkCore.ServerResponseProtocol
+  associatedtype DecodableType : Swift.Decodable
+  var request: Foundation.URLRequest? { get }
+  var aditionalUrls: [Foundation.URL] { get }
+  func getResponse(_ data: Foundation.Data?) throws -> Self.ResponseType
+}
+public protocol ServerResponseProtocol {
+  associatedtype T : Swift.Decodable
+  var model: Self.T { get }
+  var jsonPresentation: [Swift.String : Any] { get }
+}
+public protocol ServerRequestControllerProtocol : AnyObject {
+  associatedtype DelegateType : BidMachineNetworkCore.ServerRequestControllerDelegate
+  init(_ delegate: Self.DelegateType)
+  func loadRequest(_ request: Self.DelegateType.RequestType)
+}
+public protocol ServerRequestControllerDelegate : AnyObject {
+  associatedtype RequestType : BidMachineNetworkCore.ServerRequestProtocol
+  func didLoadResponse(_ response: Self.RequestType.ResponseType)
+  func didFailLoadResponse(_ error: Swift.Error)
+}
+public class ServerRequestController<U> : BidMachineNetworkCore.ServerRequestControllerProtocol where U : BidMachineNetworkCore.ServerRequestControllerDelegate {
+  required public init(_ delegate: U)
+  public func loadRequest(_ request: U.RequestType)
+  public typealias DelegateType = U
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ServerCommunicator {
+  public static let shared: BidMachineNetworkCore.ServerCommunicator
+  @objc deinit
+}
+extension BidMachineNetworkCore.ServerCommunicator {
+  public func makeRequest(_ request: Foundation.URLRequest, _ completion: @escaping (Foundation.Data?, Swift.Error?) -> Swift.Void)
+}
+public class ServerAuctionResponse<T> : BidMachineNetworkCore.ServerResponseProtocol where T : Swift.Decodable {
+  final public let model: T
+  final public let jsonPresentation: [Swift.String : Any]
+  required public init(_ data: Foundation.Data?) throws
+  @objc deinit
+}
+extension BidMachineNetworkCore.ServerRequestMethodType : Swift.Equatable {}
+extension BidMachineNetworkCore.ServerRequestMethodType : Swift.Hashable {}
+extension BidMachineNetworkCore.ServerRequestMethodType : Swift.RawRepresentable {}

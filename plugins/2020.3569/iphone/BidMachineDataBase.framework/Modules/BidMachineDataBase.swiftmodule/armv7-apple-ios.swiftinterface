@@ -1,0 +1,99 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-module-flags: -target armv7-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BidMachineDataBase
+@_exported import BidMachineDataBase
+import Foundation
+import SQLite3
+import Swift
+import _Concurrency
+public protocol SQLiteType {
+  static var type: Swift.String { get }
+  var stringValue: Swift.String { get }
+}
+extension Swift.String : BidMachineDataBase.SQLiteType {
+  public static var type: Swift.String {
+    get
+  }
+  public var stringValue: Swift.String {
+    get
+  }
+}
+extension Swift.Int32 : BidMachineDataBase.SQLiteType {
+  public static var type: Swift.String {
+    get
+  }
+  public var stringValue: Swift.String {
+    get
+  }
+}
+extension Swift.Double : BidMachineDataBase.SQLiteType {
+  public static var type: Swift.String {
+    get
+  }
+  public var stringValue: Swift.String {
+    get
+  }
+}
+extension Swift.Bool : BidMachineDataBase.SQLiteType {
+  public static var type: Swift.String {
+    get
+  }
+  public var stringValue: Swift.String {
+    get
+  }
+}
+public protocol SQLiteEntityKey : Swift.CodingKey {
+}
+public protocol SQLiteEntity : Swift.Decodable, Swift.Encodable {
+  associatedtype T : BidMachineDataBase.SQLiteEntityKey
+}
+public enum SQLiteError : Swift.Error {
+  case OpenDatabase(message: Swift.String)
+  case Prepare(message: Swift.String)
+  case Step(message: Swift.String)
+  case Bind(message: Swift.String)
+}
+public struct SQLiteColumn<T> where T : BidMachineDataBase.SQLiteEntityKey {
+  public struct Primary {
+    public init(primary: Swift.Bool = false, auto: Swift.Bool = false)
+  }
+  public init(primary: BidMachineDataBase.SQLiteColumn<T>.Primary = Primary(), name: T, type: BidMachineDataBase.SQLiteType.Type)
+}
+public protocol SQLiteTable {
+  associatedtype T : BidMachineDataBase.SQLiteEntity
+  static var name: Swift.String { get }
+  static var colums: [BidMachineDataBase.SQLiteColumn<Self.T.T>] { get }
+}
+public protocol SQLiteDatabaseDelegate : AnyObject {
+  func didReceiveMessage(_ message: Swift.String)
+  func didReceiveError(_ error: BidMachineDataBase.SQLiteError?)
+}
+@_hasMissingDesignatedInitializers final public class SQLiteDatabase<T> where T : BidMachineDataBase.SQLiteTable {
+  @objc deinit
+  public static func open(_ delegate: BidMachineDataBase.SQLiteDatabaseDelegate? = nil) throws -> BidMachineDataBase.SQLiteDatabase<T>
+}
+extension BidMachineDataBase.SQLiteDatabase {
+  final public func createTable() throws
+}
+extension BidMachineDataBase.SQLiteDatabase {
+  final public func insert(_ entity: T.T) throws
+}
+extension BidMachineDataBase.SQLiteDatabase {
+  final public func count() throws -> Swift.Int32
+  final public func count(_ value: BidMachineDataBase.SQLiteType, _ name: T.T.T) throws -> Swift.Int32
+  final public func count(_ sql: Swift.String) throws -> Swift.Int32
+}
+extension BidMachineDataBase.SQLiteDatabase {
+  final public func all() throws -> [T.T]
+  final public func all(_ value: BidMachineDataBase.SQLiteType, _ name: T.T.T) throws -> [T.T]
+  final public func all(_ sql: Swift.String) throws -> [T.T]
+}
+extension BidMachineDataBase.SQLiteDatabase {
+  final public func remove() throws
+  final public func remove(_ value: BidMachineDataBase.SQLiteType, _ name: T.T.T) throws
+  final public func remove(_ sql: Swift.String) throws
+}
+extension BidMachineDataBase.SQLiteDatabase {
+  final public func update(_ value: BidMachineDataBase.SQLiteType, _ name: T.T.T, _ filterValue: BidMachineDataBase.SQLiteType, _ filterName: T.T.T) throws
+  final public func update(_ sql: Swift.String) throws
+}

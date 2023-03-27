@@ -1,0 +1,11 @@
+framework module BidMachineDataBase {
+  umbrella header "BidMachineDataBase.h"
+
+  export *
+  module * { export * }
+}
+
+module BidMachineDataBase.Swift {
+    header "BidMachineDataBase-Swift.h"
+    requires objc
+}

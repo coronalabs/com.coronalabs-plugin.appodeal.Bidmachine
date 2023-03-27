@@ -2,23 +2,17 @@
 //  BidMachine.h
 //  BidMachine
 //
-//  Created by Stas Kochkin on 07/11/2017.
-//  Copyright © 2017 Appodeal. All rights reserved.
+//  Created by Ilia Lozhkin on 20.06.2022.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-#import <BidMachine/BDMDefines.h>
-#import <BidMachine/BDMBannerView.h>
-#import <BidMachine/BDMInterstitial.h>
-#import <BidMachine/BDMRichMediaView.h>
-#import <BidMachine/BDMRewarded.h>
-#import <BidMachine/BDMAdEventProducerProtocol.h>
-#import <BidMachine/BDMSdk.h>
-#import <BidMachine/BDMTargeting.h>
-#import <BidMachine/BDMSdkConfiguration.h>
-#import <BidMachine/BDMAuctionInfo.h>
-#import <BidMachine/BDMNativeAd.h>
-#import <BidMachine/BDMUserRestrictions.h>
-#import <BidMachine/BDMRequestStorage.h>
-#import <BidMachine/BDMContextualProtocol.h>
+//! Project version number for BidMachine.
+FOUNDATION_EXPORT double BidMachineVersionNumber;
+
+//! Project version string for BidMachine.
+FOUNDATION_EXPORT const unsigned char BidMachineVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <BidMachine/PublicHeader.h>
+
+

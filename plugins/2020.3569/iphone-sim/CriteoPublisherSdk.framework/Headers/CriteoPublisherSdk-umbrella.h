@@ -30,6 +30,7 @@
 #import "CRNativeAdUnit.h"
 #import "CRNativeAdView.h"
 #import "CRNativeLoader.h"
+#import "CRRewardedAdUnit.h"
 #import "CRSKAdNetworkInfo.h"
 #import "CRUserData.h"
 

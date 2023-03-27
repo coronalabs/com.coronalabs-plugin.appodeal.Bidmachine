@@ -1,0 +1,229 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CriteoPublisherSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CRSKAdNetworkInfo",
+        "printedName": "CRSKAdNetworkInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "CriteoId",
+            "printedName": "CriteoId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@CriteoPublisherSdk@@objc(cs)CRSKAdNetworkInfo(cpy)CriteoId",
+            "mangledName": "$sSo17CRSKAdNetworkInfoC18CriteoPublisherSdkE0D2IdSSvpZ",
+            "moduleName": "CriteoPublisherSdk",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@CriteoPublisherSdk@@objc(cs)CRSKAdNetworkInfo(cm)CriteoId",
+                "mangledName": "$sSo17CRSKAdNetworkInfoC18CriteoPublisherSdkE0D2IdSSvgZ",
+                "moduleName": "CriteoPublisherSdk",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC",
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hasCriteoId",
+            "printedName": "hasCriteoId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@CriteoPublisherSdk@@objc(cs)CRSKAdNetworkInfo(cm)hasCriteoId",
+            "mangledName": "$sSo17CRSKAdNetworkInfoC18CriteoPublisherSdkE03hasD2IdSbyFZ",
+            "moduleName": "CriteoPublisherSdk",
+            "static": true,
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "skAdNetworkIds",
+            "printedName": "skAdNetworkIds()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@CriteoPublisherSdk@@objc(cs)CRSKAdNetworkInfo(cm)skAdNetworkIds",
+            "mangledName": "$sSo17CRSKAdNetworkInfoC18CriteoPublisherSdkE04skAdB3IdsSaySSGyFZ",
+            "moduleName": "CriteoPublisherSdk",
+            "static": true,
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)CRSKAdNetworkInfo",
+        "moduleName": "CriteoPublisherSdk",
+        "isOpen": true,
+        "objc_name": "CRSKAdNetworkInfo",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/staskochkin\/Projects\/Work\/Appodeal\/AppodealSDK-iOS\/Pods\/CriteoPublisherSdk\/CriteoPublisherSdk\/Sources\/SKAdNetwork\/SKAdNetworkInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1013,
+      "length": 18,
+      "value": "\"SKAdNetworkItems\""
+    },
+    {
+      "filePath": "\/Users\/staskochkin\/Projects\/Work\/Appodeal\/AppodealSDK-iOS\/Pods\/CriteoPublisherSdk\/CriteoPublisherSdk\/Sources\/SKAdNetwork\/SKAdNetworkInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1060,
+      "length": 23,
+      "value": "\"SKAdNetworkIdentifier\""
+    },
+    {
+      "filePath": "\/Users\/staskochkin\/Projects\/Work\/Appodeal\/AppodealSDK-iOS\/Pods\/CriteoPublisherSdk\/CriteoPublisherSdk\/Sources\/SKAdNetwork\/SKAdNetworkInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1398,
+      "length": 24,
+      "value": "\"hs6bdukanm.skadnetwork\""
+    }
+  ]
+}

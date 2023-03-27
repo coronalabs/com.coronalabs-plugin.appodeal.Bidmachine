@@ -1,6 +1,0 @@
-framework module BDMIABAdapter {
-  umbrella header "BDMIABAdapter-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,0 +1,233 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target armv7-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BidMachineBiddingCore
+import BidMachineApiCore
+@_exported import BidMachineBiddingCore
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+public typealias BiddingParams = [Swift.String : Any]
+public typealias BiddingParamsBuilderBlock = (BidMachineBiddingCore.BiddingParamsBuilderProtocol) -> Swift.Void
+public protocol BiddingParamsBuilderProtocol {
+  @discardableResult
+  func withParams(_ params: BidMachineBiddingCore.BiddingParams?) -> Self
+  @discardableResult
+  func withExtras(_ extras: BidMachineBiddingCore.BiddingParams?) -> Self
+}
+public protocol BiddingAdapterVideoStateRouter {
+  func stopPlayVideo()
+  func startPlayVideo()
+  func muteVideo()
+  func unmuteVideo()
+}
+public protocol BiddingAdapterEventStateRouter {
+  func trackContainerAdded()
+  func trackClick()
+  func trackImpression()
+}
+extension BidMachineBiddingCore.BiddingAdapterEventStateRouter {
+  public func trackContainerAdded()
+  public func trackClick()
+  public func trackImpression()
+}
+public protocol NativeAssetProtocol {
+  associatedtype T : BidMachineBiddingCore.NativeAssetTypeProtocol
+  var value: Self.T.ValueType? { get }
+  var container: Self.T.ContainerType? { get }
+  func updateContainer(_ container: Self.T.ContainerType?)
+}
+public class NativeAsset<T> : BidMachineBiddingCore.NativeAssetProtocol where T : BidMachineBiddingCore.NativeAssetTypeProtocol {
+  public var value: T.ValueType? {
+    get
+  }
+  weak public var container: T.ContainerType? {
+    get
+  }
+  public func updateContainer(_ container: T.ContainerType?)
+  public init(_ value: T.ValueType?)
+  @objc deinit
+}
+public protocol BiddingBidProtocol {
+  var id: Swift.String { get }
+  var version: Swift.String { get }
+  var params: BidMachineApiCore.BiddingUnitParams { get }
+  var unit: BidMachineBiddingCore.BiddingUnit { get }
+  var adapterProvider: BidMachineBiddingCore.BiddingAdapterProviderProtocol { get }
+}
+public protocol BiddingAdapterDelegate : AnyObject, BidMachineBiddingCore.BiddingAdapterEventStateRouter {
+  func didLoad(_ adapter: BidMachineBiddingCore.BiddingAdapterProtocol)
+  func failToLoad(_ adapter: BidMachineBiddingCore.BiddingAdapterProtocol, _ error: Swift.Error)
+  func failToPresent(_ adapter: BidMachineBiddingCore.BiddingAdapterProtocol, _ error: Swift.Error)
+  func didPresent(_ adapter: BidMachineBiddingCore.BiddingAdapterProtocol)
+  func didDismiss(_ adapter: BidMachineBiddingCore.BiddingAdapterProtocol)
+  func willPresentScreen(_ adapter: BidMachineBiddingCore.BiddingAdapterProtocol)
+  func didDismissScreen(_ adapter: BidMachineBiddingCore.BiddingAdapterProtocol)
+  func didRecieveUserAction(_ adapter: BidMachineBiddingCore.BiddingAdapterProtocol)
+  func didRecieveReward(_ adapter: BidMachineBiddingCore.BiddingAdapterProtocol)
+  func didExpiredAdapter(_ adapter: BidMachineBiddingCore.BiddingAdapterProtocol)
+}
+public protocol BiddingAdapterDataSource : AnyObject {
+  var controller: UIKit.UIViewController? { get }
+  var container: UIKit.UIView? { get }
+}
+public protocol BiddingAdapterProtocol : BidMachineBiddingCore.BiddingAdapterSourceRouterProtocol {
+  var dataSource: BidMachineBiddingCore.BiddingAdapterDataSource? { get set }
+  var delegate: BidMachineBiddingCore.BiddingAdapterDelegate? { get set }
+  func prepareContent() throws
+  func present() throws
+  func invalidate()
+}
+extension BidMachineBiddingCore.BiddingAdapterProtocol {
+  public func notifyDelegate(_ block: (BidMachineBiddingCore.BiddingAdapterProtocol, BidMachineBiddingCore.BiddingAdapterDelegate) -> Swift.Void)
+  public func invalidate()
+}
+public struct BiddingNetworkInfo {
+  public var name: Swift.String
+  public var params: BidMachineBiddingCore.BiddingParams
+  public var extras: BidMachineBiddingCore.BiddingParams
+  public static func info(_ name: Swift.String, _ builderBlock: BidMachineBiddingCore.BiddingParamsBuilderBlock? = nil) -> BidMachineBiddingCore.BiddingNetworkInfo
+}
+public struct BiddingNetwork {
+  public let info: BidMachineBiddingCore.BiddingNetworkInfo
+}
+public protocol BiddingManagerDelegate : AnyObject {
+  func didStartInitializeNetwork(_ network: BidMachineBiddingCore.BiddingNetwork)
+  func didCompleteInitializeNetwork(_ network: BidMachineBiddingCore.BiddingNetwork, _ duration: Swift.Double, _ error: Swift.Error?)
+}
+public class BiddingManager {
+  public init()
+  @objc deinit
+}
+extension BidMachineBiddingCore.BiddingManager {
+  public var delegate: BidMachineBiddingCore.BiddingManagerDelegate? {
+    get
+    set
+  }
+  public func registerNetworksClasses(_ classes: [Swift.String])
+  public func registerNetworks(_ infos: [BidMachineBiddingCore.BiddingNetworkInfo]?)
+  public func initializeNetworks()
+  public var definedNetworkClasses: [BidMachineBiddingCore.BiddingNetworkProtocol.Type] {
+    get
+  }
+}
+extension BidMachineBiddingCore.BiddingManager {
+  public var biddingController: BidMachineBiddingCore.BiddingControllerProtocol {
+    get
+  }
+}
+public protocol BiddingControllerProtocol {
+  var price: Swift.Double { get set }
+  var delegate: BidMachineBiddingCore.BiddingControllerDelegate? { get set }
+  func prepareBids(_ placement: BidMachineApiCore.Placement, _ infos: [BidMachineBiddingCore.BiddingUnitInfo]?)
+  func invalidate()
+}
+public protocol BiddingControllerDelegate : AnyObject {
+  func didPrepareBids(_ bids: [BidMachineBiddingCore.BiddingBidProtocol])
+  func didPrepareBid(_ bid: BidMachineBiddingCore.BiddingBidProtocol, _ error: Swift.Error?)
+  func didInvalidateBids(_ bids: [BidMachineBiddingCore.BiddingBidProtocol])
+}
+public protocol BiddingAdapterNativeSourceRouterProtocol : AnyObject {
+  func getAsset<T>(_ type: T.Type) -> BidMachineBiddingCore.NativeAsset<T>? where T : BidMachineBiddingCore.NativeAssetTypeProtocol
+}
+public protocol BiddingAdapterDefaultSourceRouterProtocol : AnyObject {
+  func updateController(_ controller: UIKit.UIViewController?)
+  func updateContainer(_ container: UIKit.UIView?)
+}
+public protocol BiddingAdapterSourceRouterProtocol : AnyObject {
+  var nativeRouter: BidMachineBiddingCore.BiddingAdapterNativeSourceRouterProtocol? { get }
+  var videoStateRouter: BidMachineBiddingCore.BiddingAdapterVideoStateRouter? { get }
+  var eventStateRouter: BidMachineBiddingCore.BiddingAdapterEventStateRouter? { get }
+}
+extension BidMachineBiddingCore.BiddingAdapterSourceRouterProtocol {
+  public var nativeRouter: BidMachineBiddingCore.BiddingAdapterNativeSourceRouterProtocol? {
+    get
+  }
+  public var videoStateRouter: BidMachineBiddingCore.BiddingAdapterVideoStateRouter? {
+    get
+  }
+  public var eventStateRouter: BidMachineBiddingCore.BiddingAdapterEventStateRouter? {
+    get
+  }
+}
+public protocol NativeAssetTypeProtocol {
+  associatedtype ContainerType : UIKit.UIView
+  associatedtype ValueType
+}
+@_hasMissingDesignatedInitializers public class TitleAssetType : BidMachineBiddingCore.NativeAssetTypeProtocol {
+  public typealias ContainerType = UIKit.UILabel
+  public typealias ValueType = Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CallToActionAssetType : BidMachineBiddingCore.NativeAssetTypeProtocol {
+  public typealias ContainerType = UIKit.UILabel
+  public typealias ValueType = Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class DescriptionAssetType : BidMachineBiddingCore.NativeAssetTypeProtocol {
+  public typealias ContainerType = UIKit.UILabel
+  public typealias ValueType = Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class IconAssetType : BidMachineBiddingCore.NativeAssetTypeProtocol {
+  public typealias ContainerType = UIKit.UIImageView
+  public typealias ValueType = Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ImageAssetType : BidMachineBiddingCore.NativeAssetTypeProtocol {
+  public typealias ContainerType = UIKit.UIView
+  public typealias ValueType = Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class AdChoiceAssetType : BidMachineBiddingCore.NativeAssetTypeProtocol {
+  public typealias ContainerType = UIKit.UIView
+  public typealias ValueType = Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class VideoAssetType : BidMachineBiddingCore.NativeAssetTypeProtocol {
+  public typealias ContainerType = UIKit.UIView
+  public typealias ValueType = Swift.Bool
+  @objc deinit
+}
+public typealias BiddingAdapterProviderProtocolType = BidMachineBiddingCore.BiddingAdapterProviderInfoProtocol & BidMachineBiddingCore.BiddingAdapterProviderProtocol
+public protocol BiddingAdapterProviderInfoDelegate : AnyObject {
+  func didFailToCollectBiddingInfo(_ error: Swift.Error)
+  func didCollectBiddingInfo(_ info: BidMachineApiCore.BiddingUnitParams)
+}
+public protocol BiddingAdapterProviderInfoProtocol {
+  var delegate: BidMachineBiddingCore.BiddingAdapterProviderInfoDelegate? { get set }
+  func collectBiddingInfo()
+}
+public protocol BiddingAdapterProviderProtocol {
+  func notifyMediationWin()
+  func notifyMediationLoss()
+  func displayAdapter(_ params: BidMachineBiddingCore.BiddingParams) throws -> BidMachineBiddingCore.BiddingAdapterProtocol
+}
+extension BidMachineBiddingCore.BiddingAdapterProviderProtocol {
+  public func notifyMediationWin()
+  public func notifyMediationLoss()
+}
+public struct BiddingUnitInfo {
+  public let name: Swift.String
+  public let placement: BidMachineApiCore.Placement
+  public let params: BidMachineBiddingCore.BiddingParams
+  public let extras: BidMachineBiddingCore.BiddingParams
+  public static func info(_ name: Swift.String, _ placement: BidMachineApiCore.Placement, _ builderBlock: BidMachineBiddingCore.BiddingParamsBuilderBlock? = nil) -> BidMachineBiddingCore.BiddingUnitInfo
+}
+public struct BiddingUnit {
+  public let info: BidMachineBiddingCore.BiddingUnitInfo
+  public let price: Swift.Double
+}
+public protocol BiddingNetworkDelegate : AnyObject {
+  func didInitialize()
+  func didFailToInitialize(_ error: Swift.Error)
+}
+public protocol BiddingNetworkProtocol : AnyObject {
+  static var adapterName: Swift.String { get }
+  static var adapterVersion: Swift.String { get }
+  static var networkVersion: Swift.String { get }
+  var delegate: BidMachineBiddingCore.BiddingNetworkDelegate? { get set }
+  init()
+  func adapterProvider(_ unit: BidMachineBiddingCore.BiddingUnit) -> BidMachineBiddingCore.BiddingAdapterProviderProtocolType?
+  func initializeNetwork(_ network: BidMachineBiddingCore.BiddingNetwork)
+}

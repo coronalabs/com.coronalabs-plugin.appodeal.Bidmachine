@@ -4,3 +4,8 @@ framework module BidMachine {
   export *
   module * { export * }
 }
+
+module BidMachine.Swift {
+    header "BidMachine-Swift.h"
+    requires objc
+}

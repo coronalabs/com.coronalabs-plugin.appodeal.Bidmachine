@@ -1,0 +1,11 @@
+framework module BidMachineCriteoAdapter {
+  umbrella header "BidMachineCriteoAdapter.h"
+
+  export *
+  module * { export * }
+}
+
+module BidMachineCriteoAdapter.Swift {
+    header "BidMachineCriteoAdapter-Swift.h"
+    requires objc
+}

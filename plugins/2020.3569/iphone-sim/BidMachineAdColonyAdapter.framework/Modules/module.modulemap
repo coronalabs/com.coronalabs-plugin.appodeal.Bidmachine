@@ -1,0 +1,11 @@
+framework module BidMachineAdColonyAdapter {
+  umbrella header "BidMachineAdColonyAdapter.h"
+
+  export *
+  module * { export * }
+}
+
+module BidMachineAdColonyAdapter.Swift {
+    header "BidMachineAdColonyAdapter-Swift.h"
+    requires objc
+}

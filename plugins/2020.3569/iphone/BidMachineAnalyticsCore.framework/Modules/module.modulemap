@@ -1,0 +1,11 @@
+framework module BidMachineAnalyticsCore {
+  umbrella header "BidMachineAnalyticsCore.h"
+
+  export *
+  module * { export * }
+}
+
+module BidMachineAnalyticsCore.Swift {
+    header "BidMachineAnalyticsCore-Swift.h"
+    requires objc
+}
