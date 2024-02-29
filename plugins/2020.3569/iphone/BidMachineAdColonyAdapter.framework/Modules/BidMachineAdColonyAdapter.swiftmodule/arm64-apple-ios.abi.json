@@ -1,0 +1,166 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachineAdColonyAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AdColony",
+        "printedName": "AdColony",
+        "declKind": "Import",
+        "moduleName": "BidMachineAdColonyAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidMachineAdColonyAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineApiCore",
+        "printedName": "BidMachineApiCore",
+        "declKind": "Import",
+        "moduleName": "BidMachineAdColonyAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineAdColonyAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachineAdColonyAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AdColony",
+        "printedName": "AdColony",
+        "declKind": "Import",
+        "moduleName": "BidMachineAdColonyAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidMachineAdColonyAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineApiCore",
+        "printedName": "BidMachineApiCore",
+        "declKind": "Import",
+        "moduleName": "BidMachineAdColonyAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineAdColonyAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachineAdColonyAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AdColony",
+        "printedName": "AdColony",
+        "declKind": "Import",
+        "moduleName": "BidMachineAdColonyAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidMachineAdColonyAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineApiCore",
+        "printedName": "BidMachineApiCore",
+        "declKind": "Import",
+        "moduleName": "BidMachineAdColonyAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineAdColonyAdapter"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineAdColonyAdapter\/AdColonyNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 208,
+      "length": 8,
+      "value": "\"app_id\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineAdColonyAdapter\/AdColonyNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 250,
+      "length": 9,
+      "value": "\"zone_id\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineAdColonyAdapter\/AdColonyNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 289,
+      "length": 5,
+      "value": "\"adm\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineAdColonyAdapter\/AdColonyNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 322,
+      "length": 6,
+      "value": "\"data\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineAdColonyAdapter\/AdColonyNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 377,
+      "length": 10,
+      "value": "\"adcolony\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineAdColonyAdapter\/AdColonyNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 542,
+      "length": 4,
+      "value": "\".0\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineAdColonyAdapter\/AdColonyAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 104,
+      "length": 15,
+      "value": "\"BidMachineAdColonyAdapter.AdColonyAdapter\""
+    }
+  ]
+}

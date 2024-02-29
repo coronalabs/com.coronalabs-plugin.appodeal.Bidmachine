@@ -6,6 +6,6 @@ framework module BidMachineMyTargetAdapter {
 }
 
 module BidMachineMyTargetAdapter.Swift {
-    header "BidMachineMyTargetAdapter-Swift.h"
-    requires objc
+  header "BidMachineMyTargetAdapter-Swift.h"
+  requires objc
 }

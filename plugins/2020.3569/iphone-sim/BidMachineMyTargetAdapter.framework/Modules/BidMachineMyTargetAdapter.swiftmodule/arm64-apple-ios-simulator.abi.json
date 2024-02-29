@@ -1,0 +1,313 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK",
+        "printedName": "MyTargetSDK",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineApiCore",
+        "printedName": "BidMachineApiCore",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK",
+        "printedName": "MyTargetSDK",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineApiCore",
+        "printedName": "BidMachineApiCore",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineApiCore",
+        "printedName": "BidMachineApiCore",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "StackUIKit",
+        "printedName": "StackUIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK",
+        "printedName": "MyTargetSDK",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineApiCore",
+        "printedName": "BidMachineApiCore",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK",
+        "printedName": "MyTargetSDK",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineApiCore",
+        "printedName": "BidMachineApiCore",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK",
+        "printedName": "MyTargetSDK",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineApiCore",
+        "printedName": "BidMachineApiCore",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "MyTargetSDK",
+        "printedName": "MyTargetSDK",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineApiCore",
+        "printedName": "BidMachineApiCore",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineMyTargetAdapter"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 206,
+      "length": 14,
+      "value": "\"bidder_token\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 250,
+      "length": 8,
+      "value": "\"bid_id\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 292,
+      "length": 9,
+      "value": "\"slot_id\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 350,
+      "length": 11,
+      "value": "\"my_target\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 520,
+      "length": 4,
+      "value": "\".2\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNativeAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 109,
+      "length": 21,
+      "value": "\"BidMachineMyTargetAdapter.MyTargetNativeAdapter\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetBannerAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 127,
+      "length": 21,
+      "value": "\"BidMachineMyTargetAdapter.MyTargetBannerAdapter\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetFullscreenAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 109,
+      "length": 25,
+      "value": "\"BidMachineMyTargetAdapter.MyTargetFullscreenAdapter\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNativeAdRenderer.swift",
+      "kind": "StringLiteral",
+      "offset": 109,
+      "length": 24,
+      "value": "\"BidMachineMyTargetAdapter.MyTargetNativeAdRenderer\""
+    }
+  ]
+}

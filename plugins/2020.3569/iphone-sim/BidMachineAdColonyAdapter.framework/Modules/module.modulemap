@@ -6,6 +6,6 @@ framework module BidMachineAdColonyAdapter {
 }
 
 module BidMachineAdColonyAdapter.Swift {
-    header "BidMachineAdColonyAdapter-Swift.h"
-    requires objc
+  header "BidMachineAdColonyAdapter-Swift.h"
+  requires objc
 }

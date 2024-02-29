@@ -220,6 +220,13 @@
     },
     {
       "filePath": "\/Users\/staskochkin\/Projects\/Work\/Appodeal\/AppodealSDK-iOS\/Pods\/CriteoPublisherSdk\/CriteoPublisherSdk\/Sources\/SKAdNetwork\/SKAdNetworkInfo.swift",
+      "kind": "Array",
+      "offset": 1287,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/staskochkin\/Projects\/Work\/Appodeal\/AppodealSDK-iOS\/Pods\/CriteoPublisherSdk\/CriteoPublisherSdk\/Sources\/SKAdNetwork\/SKAdNetworkInfo.swift",
       "kind": "StringLiteral",
       "offset": 1398,
       "length": 24,

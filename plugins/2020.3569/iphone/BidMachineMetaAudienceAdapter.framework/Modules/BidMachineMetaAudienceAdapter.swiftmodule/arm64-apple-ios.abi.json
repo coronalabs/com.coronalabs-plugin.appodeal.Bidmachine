@@ -1,0 +1,369 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "FBAudienceNetwork",
+        "printedName": "FBAudienceNetwork",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineApiCore",
+        "printedName": "BidMachineApiCore",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "FBAudienceNetwork",
+        "printedName": "FBAudienceNetwork",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineApiCore",
+        "printedName": "BidMachineApiCore",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "StackFoundation",
+        "printedName": "StackFoundation",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "FBAudienceNetwork",
+        "printedName": "FBAudienceNetwork",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineApiCore",
+        "printedName": "BidMachineApiCore",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "FBAudienceNetwork",
+        "printedName": "FBAudienceNetwork",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineApiCore",
+        "printedName": "BidMachineApiCore",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "FBAudienceNetwork",
+        "printedName": "FBAudienceNetwork",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineApiCore",
+        "printedName": "BidMachineApiCore",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "StackUIKit",
+        "printedName": "StackUIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "FBAudienceNetwork",
+        "printedName": "FBAudienceNetwork",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineApiCore",
+        "printedName": "BidMachineApiCore",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineApiCore",
+        "printedName": "BidMachineApiCore",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "FBAudienceNetwork",
+        "printedName": "FBAudienceNetwork",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineMetaAudienceAdapter"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/assassin\/Desktop\/1\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMetaAudienceAdapter\/MetaInterstitialAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 113,
+      "length": 23,
+      "value": "\"BidMachineMetaAudienceAdapter.MetaInterstitialAdapter\""
+    },
+    {
+      "filePath": "\/Users\/assassin\/Desktop\/1\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMetaAudienceAdapter\/MetaNativeAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 113,
+      "length": 17,
+      "value": "\"BidMachineMetaAudienceAdapter.MetaNativeAdapter\""
+    },
+    {
+      "filePath": "\/Users\/assassin\/Desktop\/1\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMetaAudienceAdapter\/MetaNativeAdRenderer.swift",
+      "kind": "StringLiteral",
+      "offset": 136,
+      "length": 20,
+      "value": "\"BidMachineMetaAudienceAdapter.MetaNativeAdRenderer\""
+    },
+    {
+      "filePath": "\/Users\/assassin\/Desktop\/1\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMetaAudienceAdapter\/MetaRewardedAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 113,
+      "length": 19,
+      "value": "\"BidMachineMetaAudienceAdapter.MetaRewardedAdapter\""
+    },
+    {
+      "filePath": "\/Users\/assassin\/Desktop\/1\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMetaAudienceAdapter\/MetaNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 207,
+      "length": 7,
+      "value": "\"token\""
+    },
+    {
+      "filePath": "\/Users\/assassin\/Desktop\/1\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMetaAudienceAdapter\/MetaNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 244,
+      "length": 13,
+      "value": "\"bid_payload\""
+    },
+    {
+      "filePath": "\/Users\/assassin\/Desktop\/1\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMetaAudienceAdapter\/MetaNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 291,
+      "length": 8,
+      "value": "\"app_id\""
+    },
+    {
+      "filePath": "\/Users\/assassin\/Desktop\/1\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMetaAudienceAdapter\/MetaNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 333,
+      "length": 10,
+      "value": "\"meta_key\""
+    },
+    {
+      "filePath": "\/Users\/assassin\/Desktop\/1\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMetaAudienceAdapter\/MetaNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 378,
+      "length": 15,
+      "value": "\"placement_ids\""
+    },
+    {
+      "filePath": "\/Users\/assassin\/Desktop\/1\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMetaAudienceAdapter\/MetaNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 442,
+      "length": 15,
+      "value": "\"meta_audience\""
+    },
+    {
+      "filePath": "\/Users\/assassin\/Desktop\/1\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMetaAudienceAdapter\/MetaNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 605,
+      "length": 4,
+      "value": "\".1\""
+    },
+    {
+      "filePath": "\/Users\/assassin\/Desktop\/1\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMetaAudienceAdapter\/MetaBannerAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 132,
+      "length": 17,
+      "value": "\"BidMachineMetaAudienceAdapter.MetaBannerAdapter\""
+    }
+  ]
+}

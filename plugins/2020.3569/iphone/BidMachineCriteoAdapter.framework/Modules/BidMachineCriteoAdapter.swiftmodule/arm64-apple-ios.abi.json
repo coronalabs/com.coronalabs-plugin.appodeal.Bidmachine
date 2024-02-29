@@ -1,0 +1,257 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidMachineCriteoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineApiCore",
+        "printedName": "BidMachineApiCore",
+        "declKind": "Import",
+        "moduleName": "BidMachineCriteoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "CriteoPublisherSdk",
+        "printedName": "CriteoPublisherSdk",
+        "declKind": "Import",
+        "moduleName": "BidMachineCriteoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineCriteoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachineCriteoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidMachineCriteoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineApiCore",
+        "printedName": "BidMachineApiCore",
+        "declKind": "Import",
+        "moduleName": "BidMachineCriteoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "CriteoPublisherSdk",
+        "printedName": "CriteoPublisherSdk",
+        "declKind": "Import",
+        "moduleName": "BidMachineCriteoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineCriteoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidMachineCriteoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineApiCore",
+        "printedName": "BidMachineApiCore",
+        "declKind": "Import",
+        "moduleName": "BidMachineCriteoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "CriteoPublisherSdk",
+        "printedName": "CriteoPublisherSdk",
+        "declKind": "Import",
+        "moduleName": "BidMachineCriteoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineCriteoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidMachineCriteoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineApiCore",
+        "printedName": "BidMachineApiCore",
+        "declKind": "Import",
+        "moduleName": "BidMachineCriteoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "CriteoPublisherSdk",
+        "printedName": "CriteoPublisherSdk",
+        "declKind": "Import",
+        "moduleName": "BidMachineCriteoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineCriteoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachineCriteoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidMachineCriteoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineApiCore",
+        "printedName": "BidMachineApiCore",
+        "declKind": "Import",
+        "moduleName": "BidMachineCriteoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "CriteoPublisherSdk",
+        "printedName": "CriteoPublisherSdk",
+        "declKind": "Import",
+        "moduleName": "BidMachineCriteoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineCriteoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidMachineCriteoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "StackUIKit",
+        "printedName": "StackUIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachineCriteoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineApiCore",
+        "printedName": "BidMachineApiCore",
+        "declKind": "Import",
+        "moduleName": "BidMachineCriteoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "CriteoPublisherSdk",
+        "printedName": "CriteoPublisherSdk",
+        "declKind": "Import",
+        "moduleName": "BidMachineCriteoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineCriteoAdapter"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineCriteoAdapter\/CriteoInterstitialAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 101,
+      "length": 25,
+      "value": "\"BidMachineCriteoAdapter.CriteoInterstitialAdapter\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineCriteoAdapter\/CriteoNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 210,
+      "length": 7,
+      "value": "\"price\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineCriteoAdapter\/CriteoNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 251,
+      "length": 12,
+      "value": "\"ad_unit_id\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineCriteoAdapter\/CriteoNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 297,
+      "length": 13,
+      "value": "\"orientation\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineCriteoAdapter\/CriteoNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 344,
+      "length": 14,
+      "value": "\"publisher_id\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineCriteoAdapter\/CriteoNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 407,
+      "length": 8,
+      "value": "\"criteo\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineCriteoAdapter\/CriteoNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 574,
+      "length": 4,
+      "value": "\".0\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineCriteoAdapter\/CriteoBannerAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 120,
+      "length": 19,
+      "value": "\"BidMachineCriteoAdapter.CriteoBannerAdapter\""
+    }
+  ]
+}

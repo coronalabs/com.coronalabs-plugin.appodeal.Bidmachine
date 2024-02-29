@@ -6,6 +6,6 @@ framework module BidMachineCriteoAdapter {
 }
 
 module BidMachineCriteoAdapter.Swift {
-    header "BidMachineCriteoAdapter-Swift.h"
-    requires objc
+  header "BidMachineCriteoAdapter-Swift.h"
+  requires objc
 }

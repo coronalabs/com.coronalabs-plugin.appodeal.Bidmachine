@@ -1,0 +1,229 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachineVungleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "VungleAdsSDK",
+        "printedName": "VungleAdsSDK",
+        "declKind": "Import",
+        "moduleName": "BidMachineVungleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineApiCore",
+        "printedName": "BidMachineApiCore",
+        "declKind": "Import",
+        "moduleName": "BidMachineVungleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineVungleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineApiCore",
+        "printedName": "BidMachineApiCore",
+        "declKind": "Import",
+        "moduleName": "BidMachineVungleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineVungleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachineVungleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "VungleAdsSDK",
+        "printedName": "VungleAdsSDK",
+        "declKind": "Import",
+        "moduleName": "BidMachineVungleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineApiCore",
+        "printedName": "BidMachineApiCore",
+        "declKind": "Import",
+        "moduleName": "BidMachineVungleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineVungleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachineVungleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "VungleAdsSDK",
+        "printedName": "VungleAdsSDK",
+        "declKind": "Import",
+        "moduleName": "BidMachineVungleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineApiCore",
+        "printedName": "BidMachineApiCore",
+        "declKind": "Import",
+        "moduleName": "BidMachineVungleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineVungleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachineVungleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "VungleAdsSDK",
+        "printedName": "VungleAdsSDK",
+        "declKind": "Import",
+        "moduleName": "BidMachineVungleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineApiCore",
+        "printedName": "BidMachineApiCore",
+        "declKind": "Import",
+        "moduleName": "BidMachineVungleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineVungleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachineVungleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "VungleAdsSDK",
+        "printedName": "VungleAdsSDK",
+        "declKind": "Import",
+        "moduleName": "BidMachineVungleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineApiCore",
+        "printedName": "BidMachineApiCore",
+        "declKind": "Import",
+        "moduleName": "BidMachineVungleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachineBidding",
+        "printedName": "BidMachineBidding",
+        "declKind": "Import",
+        "moduleName": "BidMachineVungleAdapter"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineVungleAdapter\/VungleRewardedAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 91,
+      "length": 21,
+      "value": "\"BidMachineVungleAdapter.VungleRewardedAdapter\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineVungleAdapter\/VungleInterstitialAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 91,
+      "length": 25,
+      "value": "\"BidMachineVungleAdapter.VungleInterstitialAdapter\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineVungleAdapter\/VungleBannerAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 91,
+      "length": 19,
+      "value": "\"BidMachineVungleAdapter.VungleBannerAdapter\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineVungleAdapter\/VungleNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 195,
+      "length": 7,
+      "value": "\"token\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineVungleAdapter\/VungleNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 232,
+      "length": 9,
+      "value": "\"payload\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineVungleAdapter\/VungleNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 275,
+      "length": 8,
+      "value": "\"app_id\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineVungleAdapter\/VungleNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 317,
+      "length": 14,
+      "value": "\"placement_id\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineVungleAdapter\/VungleNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 380,
+      "length": 8,
+      "value": "\"vungle\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineVungleAdapter\/VungleNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 529,
+      "length": 4,
+      "value": "\".1\""
+    }
+  ]
+}

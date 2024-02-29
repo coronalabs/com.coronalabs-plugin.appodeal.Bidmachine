@@ -1,0 +1,11 @@
+framework module BidMachineTapjoyAdapter {
+  umbrella header "BidMachineTapjoyAdapter.h"
+
+  export *
+  module * { export * }
+}
+
+module BidMachineTapjoyAdapter.Swift {
+  header "BidMachineTapjoyAdapter-Swift.h"
+  requires objc
+}

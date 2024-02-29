@@ -6,6 +6,6 @@ framework module BidMachineApiCore {
 }
 
 module BidMachineApiCore.Swift {
-    header "BidMachineApiCore-Swift.h"
-    requires objc
+  header "BidMachineApiCore-Swift.h"
+  requires objc
 }

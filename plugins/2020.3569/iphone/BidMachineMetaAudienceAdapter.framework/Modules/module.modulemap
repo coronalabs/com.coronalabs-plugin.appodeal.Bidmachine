@@ -6,6 +6,6 @@ framework module BidMachineMetaAudienceAdapter {
 }
 
 module BidMachineMetaAudienceAdapter.Swift {
-    header "BidMachineMetaAudienceAdapter-Swift.h"
-    requires objc
+  header "BidMachineMetaAudienceAdapter-Swift.h"
+  requires objc
 }
