@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BidMachineApiCore
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 @_exported import BidMachineApiCore
@@ -72,13 +72,6 @@ extension BidMachineApiCore.BidMachineTime : Swift.Comparable {
 }
 extension Swift.String {
   public func JSON() throws -> [Swift.String : Any]
-}
-@propertyWrapper public struct Atomic<Value> {
-  public init(wrappedValue: Value)
-  public var wrappedValue: Value {
-    get
-    set
-  }
 }
 public enum Gender : Swift.String {
   case unknown
@@ -167,7 +160,7 @@ extension BidMachineApiCore.BidMachineError : Foundation.CustomNSError {
   public var errorCode: Swift.Int {
     get
   }
-  public var wrappedError: Swift.Error? {
+  public var wrappedError: (any Swift.Error)? {
     get
   }
   public var module: Swift.String {
@@ -189,8 +182,7 @@ extension UIKit.UIViewController {
 }
 @objc @_inheritsConvenienceInitializers open class BidMachineAsyncOperation : Foundation.Operation {
   public enum Thread {
-    case main
-    case background
+    case main, background
     public static func == (a: BidMachineApiCore.BidMachineAsyncOperation.Thread, b: BidMachineApiCore.BidMachineAsyncOperation.Thread) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
@@ -205,7 +197,10 @@ extension UIKit.UIViewController {
       get
     }
   }
-  public var thread: BidMachineApiCore.BidMachineAsyncOperation.Thread
+  public var thread: BidMachineApiCore.BidMachineAsyncOperation.Thread {
+    get
+    set
+  }
   public var state: BidMachineApiCore.BidMachineAsyncOperation.State {
     get
     set
@@ -228,14 +223,14 @@ extension UIKit.UIViewController {
   @objc deinit
 }
 public protocol EnvironmentData {
-  var sdk: BidMachineApiCore.SdkEnvironment { get }
-  var session: BidMachineApiCore.SessionEnvironment { get }
-  var publisher: BidMachineApiCore.PublisherEnvironment { get }
-  var targeting: BidMachineApiCore.TargetingEnvironment { get }
-  var regulation: BidMachineApiCore.RegulationEnvironment { get }
-  var device: BidMachineApiCore.DeviceEnvironment { get }
-  var auction: BidMachineApiCore.AuctionEnvironment { get }
-  var bidding: BidMachineApiCore.BiddingEnvironment { get }
+  var sdk: any BidMachineApiCore.SdkEnvironment { get }
+  var session: any BidMachineApiCore.SessionEnvironment { get }
+  var publisher: any BidMachineApiCore.PublisherEnvironment { get }
+  var targeting: any BidMachineApiCore.TargetingEnvironment { get }
+  var regulation: any BidMachineApiCore.RegulationEnvironment { get }
+  var device: any BidMachineApiCore.DeviceEnvironment { get }
+  var auction: any BidMachineApiCore.AuctionEnvironment { get }
+  var bidding: any BidMachineApiCore.BiddingEnvironment { get }
 }
 public protocol SdkEnvironment {
   var version: Swift.String { get }
@@ -256,9 +251,14 @@ public protocol AuctionEnvironment {
   var type: BidMachineApiCore.AuctionType { get }
   var tmax: BidMachineApiCore.BidMachineTimeInterval { get }
 }
+public protocol BiddingOMID {
+  var partnerName: Swift.String { get }
+  var partnerVersion: Swift.String { get }
+}
 public protocol BiddingEnvironment {
   var isTestMode: Swift.Bool { get }
   var isLoggingMode: Swift.Bool { get }
+  var omid: any BidMachineApiCore.BiddingOMID { get }
 }
 public protocol PublisherEnvironment {
   var id: Swift.String { get }
@@ -297,9 +297,9 @@ public protocol RequlationZoneEnvironment {
 }
 public protocol RegulationEnvironment {
   var COPPA: Swift.Bool { get }
-  var GPPZone: BidMachineApiCore.RegulationGPPEnvironment { get }
-  var CCPAZone: BidMachineApiCore.RequlationZoneEnvironment { get }
-  var GDPRZone: BidMachineApiCore.RequlationZoneEnvironment { get }
+  var GPPZone: any BidMachineApiCore.RegulationGPPEnvironment { get }
+  var CCPAZone: any BidMachineApiCore.RequlationZoneEnvironment { get }
+  var GDPRZone: any BidMachineApiCore.RequlationZoneEnvironment { get }
 }
 extension BidMachineApiCore.RegulationEnvironment {
   public var coppaRestricted: Swift.Bool {
@@ -336,7 +336,6 @@ public protocol DeviceEnvironment {
   var make: Swift.String { get }
   var model: Swift.String { get }
   var language: Swift.String { get }
-  var inputLanguage: [Swift.String] { get }
   var deviceLocation: CoreLocation.CLLocation? { get }
   var utc: Swift.Int32 { get }
   var diskSpace: Swift.UInt64 { get }
@@ -352,7 +351,6 @@ public protocol DeviceEnvironment {
   var screenBright: Swift.Float { get }
   var jailBreak: Swift.Bool { get }
   var lastBootup: Foundation.TimeInterval { get }
-  var emoji: Swift.String { get }
   var accessability: Swift.String { get }
   var registeredSKNetworks: [Swift.String] { get }
 }
@@ -420,8 +418,8 @@ extension Swift.Encodable {
 }
 public struct AnyCodable : Swift.Codable {
   public init<T>(_ value: T?)
-  public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 extension BidMachineApiCore.AnyCodable {
   public func value<T>(_ type: T.Type) -> T?
@@ -452,22 +450,22 @@ extension BidMachineApiCore.Placement {
   }
 }
 public protocol BidMachineErrorTypeBuilder {
-  var connection: BidMachineApiCore.BidMachineErrorValueBuilder { get }
-  var badContent: BidMachineApiCore.BidMachineErrorValueBuilder { get }
-  var timeout: BidMachineApiCore.BidMachineErrorValueBuilder { get }
-  var noContent: BidMachineApiCore.BidMachineErrorValueBuilder { get }
-  var exception: BidMachineApiCore.BidMachineErrorValueBuilder { get }
-  var wasDestroyed: BidMachineApiCore.BidMachineErrorValueBuilder { get }
-  var wasExpired: BidMachineApiCore.BidMachineErrorValueBuilder { get }
-  var server: BidMachineApiCore.BidMachineErrorValueBuilder { get }
-  var badRequest: BidMachineApiCore.BidMachineErrorValueBuilder { get }
-  var headerBidding: BidMachineApiCore.BidMachineErrorValueBuilder { get }
-  var interior: BidMachineApiCore.BidMachineErrorValueBuilder { get }
+  var connection: any BidMachineApiCore.BidMachineErrorValueBuilder { get }
+  var badContent: any BidMachineApiCore.BidMachineErrorValueBuilder { get }
+  var timeout: any BidMachineApiCore.BidMachineErrorValueBuilder { get }
+  var noContent: any BidMachineApiCore.BidMachineErrorValueBuilder { get }
+  var exception: any BidMachineApiCore.BidMachineErrorValueBuilder { get }
+  var wasDestroyed: any BidMachineApiCore.BidMachineErrorValueBuilder { get }
+  var wasExpired: any BidMachineApiCore.BidMachineErrorValueBuilder { get }
+  var server: any BidMachineApiCore.BidMachineErrorValueBuilder { get }
+  var badRequest: any BidMachineApiCore.BidMachineErrorValueBuilder { get }
+  var headerBidding: any BidMachineApiCore.BidMachineErrorValueBuilder { get }
+  var interior: any BidMachineApiCore.BidMachineErrorValueBuilder { get }
 }
 public protocol BidMachineErrorValueBuilder {
   func withDescription(_ description: Swift.String) -> BidMachineApiCore.BidMachineError
-  func withError(_ description: Swift.String, _ error: Swift.Error?) -> BidMachineApiCore.BidMachineError
-  func withExeption(_ description: Swift.String, _ error: Swift.Error) -> BidMachineApiCore.BidMachineError
+  func withError(_ description: Swift.String, _ error: (any Swift.Error)?) -> BidMachineApiCore.BidMachineError
+  func withExeption(_ description: Swift.String, _ error: any Swift.Error) -> BidMachineApiCore.BidMachineError
 }
 @objc(BidMachinePlacementFormat) public enum PlacementFormat : Swift.Int {
   case unknown
@@ -481,6 +479,7 @@ public protocol BidMachineErrorValueBuilder {
   case rewarded
   case rewardedVideo
   case rewardedStatic
+  @available(*, deprecated, message: "The type will be removed in future versions")
   case media
   case native
   case nativeIcon
@@ -510,20 +509,31 @@ public class ApiMockProvider<M> where M : BidMachineApiCore.ApiMockProviderMetho
   required public init?(_ protoc: ObjectiveC.`Protocol`)
   public func createInstance<T>() -> T?
   @discardableResult
-  public func classImpelementation<T>(_ mock: M) -> T?
+  public func classImpelementation<T>(_ mock: M, shouldValidate: Swift.Bool = false) -> T? where T : ObjectiveC.NSObjectProtocol
   @discardableResult
-  public func classImpelementation(_ mock: M) -> Any?
+  public func classImpelementation(_ mock: M, shouldValidate: Swift.Bool = false) -> (any ObjectiveC.NSObjectProtocol)?
   @discardableResult
   public func instanceImplementation<T>(_ mock: M) -> T?
   @objc deinit
 }
-public enum PlacementType : Swift.Equatable {
+public enum ApiMockProviderValidationResult {
+  case valid
+  case inValid(message: Swift.String)
+}
+extension BidMachineApiCore.ApiMockProvider {
+  public func validateInstance<T>(_ instance: T) -> BidMachineApiCore.ApiMockProviderValidationResult where T : ObjectiveC.NSObjectProtocol
+}
+public enum PlacementType : Swift.Hashable {
   case media(_: Swift.Bool, _: Swift.Bool)
   case banner(_: Swift.UInt32)
   case native(_: Swift.Bool, _: Swift.Bool, _: Swift.Bool)
   case rewarded(_: Swift.Bool, _: Swift.Bool)
   case interstitial(_: Swift.Bool, _: Swift.Bool)
   public static func == (lhs: BidMachineApiCore.PlacementType, rhs: BidMachineApiCore.PlacementType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 extension BidMachineApiCore.PlacementType {
   public var name: Swift.String {
@@ -540,29 +550,29 @@ extension BidMachineApiCore.PlacementType {
   }
 }
 public struct ErrorProvider {
-  public static func unknown(_ name: Swift.String) -> BidMachineApiCore.BidMachineErrorTypeBuilder
-  public static var sdk: BidMachineApiCore.BidMachineErrorTypeBuilder {
+  public static func unknown(_ name: Swift.String) -> any BidMachineApiCore.BidMachineErrorTypeBuilder
+  public static var sdk: any BidMachineApiCore.BidMachineErrorTypeBuilder {
     get
   }
-  public static var api: BidMachineApiCore.BidMachineErrorTypeBuilder {
+  public static var api: any BidMachineApiCore.BidMachineErrorTypeBuilder {
     get
   }
-  public static var adapter: BidMachineApiCore.BidMachineErrorTypeBuilder {
+  public static var adapter: any BidMachineApiCore.BidMachineErrorTypeBuilder {
     get
   }
-  public static var network: BidMachineApiCore.BidMachineErrorTypeBuilder {
+  public static var network: any BidMachineApiCore.BidMachineErrorTypeBuilder {
     get
   }
-  public static var bidding: BidMachineApiCore.BidMachineErrorTypeBuilder {
+  public static var bidding: any BidMachineApiCore.BidMachineErrorTypeBuilder {
     get
   }
-  public static var display: BidMachineApiCore.BidMachineErrorTypeBuilder {
+  public static var display: any BidMachineApiCore.BidMachineErrorTypeBuilder {
     get
   }
-  public static var analytics: BidMachineApiCore.BidMachineErrorTypeBuilder {
+  public static var analytics: any BidMachineApiCore.BidMachineErrorTypeBuilder {
     get
   }
-  public static var event: BidMachineApiCore.BidMachineErrorTypeBuilder {
+  public static var event: any BidMachineApiCore.BidMachineErrorTypeBuilder {
     get
   }
 }

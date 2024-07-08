@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BidMachine
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 @_exported import BidMachine
@@ -15,27 +15,6 @@ import Swift
 import UIKit
 import _Concurrency
 import _StringProcessing
-public typealias BidMachineInfoBuilderBlock = (BidMachine.BidMachineInfoBuilderProtocol) -> Swift.Void
-@objc public protocol BidMachineInfoBuilderProtocol {
-  @objc @discardableResult
-  func withTestMode(_ test: Swift.Bool) -> Self
-  @objc @discardableResult
-  func withLoggingMode(_ logging: Swift.Bool) -> Self
-  @objc @discardableResult
-  func withBidLoggingMode(_ logging: Swift.Bool) -> Self
-  @objc @discardableResult
-  func withEventLoggingMode(_ logging: Swift.Bool) -> Self
-  @objc @discardableResult
-  func withSSP(_ ssp: Swift.String) -> Self
-}
-@objc public protocol BidMachineInfoProtocol {
-  @objc var isInitialized: Swift.Bool { get }
-  @objc var publisherInfo: BidMachine.BidMachinePublisherInfoProtocol { get }
-  @objc var targetingInfo: BidMachine.BidMachineTargetingInfoProtocol { get }
-  @objc var regulationInfo: BidMachine.BidMachineRegulationInfoProtocol { get }
-  @objc var biddingInfo: BidMachine.BidMachineBiddingInfoProtocol { get }
-  @objc func populate(_ builderBlock: (BidMachine.BidMachineInfoBuilderProtocol) -> Swift.Void)
-}
 @objc final public class BidMachineNetworkConfiguraton : ObjectiveC.NSObject {
   @objc final public let name: Swift.String
   @objc final public let params: [Swift.String : Any]?
@@ -54,26 +33,8 @@ public typealias BidMachineInfoBuilderBlock = (BidMachine.BidMachineInfoBuilderP
   @objc var customExtras: [Swift.String : Any] { get }
 }
 @objc extension BidMachine.BidMachineSdk {
-  @objc(notifyMediationWin:) final public func notifyMediationWin(_ ad: BidMachine.BidMachineAdProtocol)
-  @objc(notifyMediationLoss:ecpm:ad:) final public func notifyMediationLoss(_ winner: Swift.String, _ ecpm: Swift.Double, _ ad: BidMachine.BidMachineAdProtocol)
-}
-public typealias BidMachinePublisherInfoBuilderBlock = (BidMachine.BidMachinePublisherInfoBuilderProtocol) -> Swift.Void
-@objc public protocol BidMachinePublisherInfoBuilderProtocol {
-  @objc @discardableResult
-  func withId(_ id: Swift.String) -> Self
-  @objc @discardableResult
-  func withName(_ name: Swift.String) -> Self
-  @objc @discardableResult
-  func withDomain(_ domain: Swift.String) -> Self
-  @objc @discardableResult
-  func withCategories(_ cat: [Swift.String]) -> Self
-}
-@objc public protocol BidMachinePublisherInfoProtocol {
-  @objc var ID: Swift.String? { get }
-  @objc var name: Swift.String? { get }
-  @objc var domain: Swift.String? { get }
-  @objc var categories: [Swift.String] { get }
-  @objc func populate(_ builderBlock: (BidMachine.BidMachinePublisherInfoBuilderProtocol) -> Swift.Void)
+  @objc(notifyMediationWin:) final public func notifyMediationWin(_ ad: any BidMachine.BidMachineAdProtocol)
+  @objc(notifyMediationLoss:ecpm:ad:) final public func notifyMediationLoss(_ winner: Swift.String, _ ecpm: Swift.Double, _ ad: any BidMachine.BidMachineAdProtocol)
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class BidMachineSdk : ObjectiveC.NSObject {
   @objc public static let shared: BidMachine.BidMachineSdk
@@ -90,35 +51,47 @@ public typealias BidMachinePublisherInfoBuilderBlock = (BidMachine.BidMachinePub
   }
   @objc final public func token(with format: BidMachineApiCore.PlacementFormat, completion: @escaping (Swift.String?) -> Swift.Void)
 }
+extension BidMachine.BidMachineSdk {
+  final public func installFeature(_ name: Swift.String, _ value: Any?)
+}
 extension BidMachine.BidMachineSdk : BidMachine.BidMachineInfoProtocol {
   @objc final public var isInitialized: Swift.Bool {
     @objc get
   }
-  @objc final public var publisherInfo: BidMachine.BidMachinePublisherInfoProtocol {
+  @objc final public var publisherInfo: any BidMachine.BidMachinePublisherInfoProtocol {
     @objc get
   }
-  @objc final public var targetingInfo: BidMachine.BidMachineTargetingInfoProtocol {
+  @objc final public var targetingInfo: any BidMachine.BidMachineTargetingInfoProtocol {
     @objc get
   }
-  @objc final public var regulationInfo: BidMachine.BidMachineRegulationInfoProtocol {
+  @objc final public var regulationInfo: any BidMachine.BidMachineRegulationInfoProtocol {
     @objc get
   }
-  @objc final public var biddingInfo: BidMachine.BidMachineBiddingInfoProtocol {
+  @objc final public var biddingInfo: any BidMachine.BidMachineBiddingInfoProtocol {
     @objc get
   }
-  @objc final public func populate(_ builderBlock: (BidMachine.BidMachineInfoBuilderProtocol) -> Swift.Void)
+  @objc final public func populate(_ builderBlock: (any BidMachine.BidMachineInfoBuilderProtocol) -> Swift.Void)
 }
-public typealias BidMachineBiddingInfoBuilderBlock = (BidMachine.BidMachineBiddingInfoBuilderProtocol) -> Swift.Void
-@objc public protocol BidMachineBiddingInfoBuilderProtocol {
+public typealias BidMachineInfoBuilderBlock = (any BidMachine.BidMachineInfoBuilderProtocol) -> Swift.Void
+@objc public protocol BidMachineInfoBuilderProtocol {
   @objc @discardableResult
   func withTestMode(_ test: Swift.Bool) -> Self
   @objc @discardableResult
   func withLoggingMode(_ logging: Swift.Bool) -> Self
+  @objc @discardableResult
+  func withBidLoggingMode(_ logging: Swift.Bool) -> Self
+  @objc @discardableResult
+  func withEventLoggingMode(_ logging: Swift.Bool) -> Self
+  @objc @discardableResult
+  func withSSP(_ ssp: Swift.String) -> Self
 }
-@objc public protocol BidMachineBiddingInfoProtocol {
-  @objc var isTestMode: Swift.Bool { get }
-  @objc var isLoggingMode: Swift.Bool { get }
-  @objc func populate(_ builderBlock: (BidMachine.BidMachineBiddingInfoBuilderProtocol) -> Swift.Void)
+@objc public protocol BidMachineInfoProtocol {
+  @objc var isInitialized: Swift.Bool { get }
+  @objc var publisherInfo: any BidMachine.BidMachinePublisherInfoProtocol { get }
+  @objc var targetingInfo: any BidMachine.BidMachineTargetingInfoProtocol { get }
+  @objc var regulationInfo: any BidMachine.BidMachineRegulationInfoProtocol { get }
+  @objc var biddingInfo: any BidMachine.BidMachineBiddingInfoProtocol { get }
+  @objc func populate(_ builderBlock: (any BidMachine.BidMachineInfoBuilderProtocol) -> Swift.Void)
 }
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) final public class BidMachineBanner : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) @objc override final public func didMoveToSuperview()
@@ -128,13 +101,13 @@ public typealias BidMachineBiddingInfoBuilderBlock = (BidMachine.BidMachineBiddi
   @_Concurrency.MainActor(unsafe) @objc final public var canShow: Swift.Bool {
     @objc get
   }
-  @_Concurrency.MainActor(unsafe) @objc final public var requestInfo: BidMachine.BidMachineRequestInfoProtocol {
+  @_Concurrency.MainActor(unsafe) @objc final public var requestInfo: any BidMachine.BidMachineRequestInfoProtocol {
     @objc get
   }
-  @_Concurrency.MainActor(unsafe) @objc final public var auctionInfo: BidMachine.BidMachineAuctionResponseProtocol {
+  @_Concurrency.MainActor(unsafe) @objc final public var auctionInfo: any BidMachine.BidMachineAuctionResponseProtocol {
     @objc get
   }
-  @_Concurrency.MainActor(unsafe) @objc final public var delegate: BidMachine.BidMachineAdDelegate? {
+  @_Concurrency.MainActor(unsafe) @objc final public var delegate: (any BidMachine.BidMachineAdDelegate)? {
     @objc get
     @objc set
   }
@@ -144,6 +117,18 @@ public typealias BidMachineBiddingInfoBuilderBlock = (BidMachine.BidMachineBiddi
   }
   @_Concurrency.MainActor(unsafe) @objc final public func loadAd()
 }
+public typealias BidMachineBiddingInfoBuilderBlock = (any BidMachine.BidMachineBiddingInfoBuilderProtocol) -> Swift.Void
+@objc public protocol BidMachineBiddingInfoBuilderProtocol {
+  @objc @discardableResult
+  func withTestMode(_ test: Swift.Bool) -> Self
+  @objc @discardableResult
+  func withLoggingMode(_ logging: Swift.Bool) -> Self
+}
+@objc public protocol BidMachineBiddingInfoProtocol {
+  @objc var isTestMode: Swift.Bool { get }
+  @objc var isLoggingMode: Swift.Bool { get }
+  @objc func populate(_ builderBlock: (any BidMachine.BidMachineBiddingInfoBuilderProtocol) -> Swift.Void)
+}
 @_hasMissingDesignatedInitializers @objc final public class BidMachineRewarded : ObjectiveC.NSObject {
   @objc deinit
 }
@@ -151,13 +136,13 @@ public typealias BidMachineBiddingInfoBuilderBlock = (BidMachine.BidMachineBiddi
   @objc final public var canShow: Swift.Bool {
     @objc get
   }
-  @objc final public var requestInfo: BidMachine.BidMachineRequestInfoProtocol {
+  @objc final public var requestInfo: any BidMachine.BidMachineRequestInfoProtocol {
     @objc get
   }
-  @objc final public var auctionInfo: BidMachine.BidMachineAuctionResponseProtocol {
+  @objc final public var auctionInfo: any BidMachine.BidMachineAuctionResponseProtocol {
     @objc get
   }
-  @objc final public var delegate: BidMachine.BidMachineAdDelegate? {
+  @objc final public var delegate: (any BidMachine.BidMachineAdDelegate)? {
     @objc get
     @objc set
   }
@@ -168,7 +153,8 @@ public typealias BidMachineBiddingInfoBuilderBlock = (BidMachine.BidMachineBiddi
   @objc final public func loadAd()
   @objc final public func presentAd()
 }
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) final public class BidMachineMedia : UIKit.UIView {
+@_hasMissingDesignatedInitializers @available(*, deprecated, message: "The class will be removed in future versions")
+@objc @_Concurrency.MainActor(unsafe) final public class BidMachineMedia : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) @objc override final public func didMoveToSuperview()
   @objc deinit
 }
@@ -176,13 +162,13 @@ public typealias BidMachineBiddingInfoBuilderBlock = (BidMachine.BidMachineBiddi
   @_Concurrency.MainActor(unsafe) @objc final public var canShow: Swift.Bool {
     @objc get
   }
-  @_Concurrency.MainActor(unsafe) @objc final public var requestInfo: BidMachine.BidMachineRequestInfoProtocol {
+  @_Concurrency.MainActor(unsafe) @objc final public var requestInfo: any BidMachine.BidMachineRequestInfoProtocol {
     @objc get
   }
-  @_Concurrency.MainActor(unsafe) @objc final public var auctionInfo: BidMachine.BidMachineAuctionResponseProtocol {
+  @_Concurrency.MainActor(unsafe) @objc final public var auctionInfo: any BidMachine.BidMachineAuctionResponseProtocol {
     @objc get
   }
-  @_Concurrency.MainActor(unsafe) @objc final public var delegate: BidMachine.BidMachineAdDelegate? {
+  @_Concurrency.MainActor(unsafe) @objc final public var delegate: (any BidMachine.BidMachineAdDelegate)? {
     @objc get
     @objc set
   }
@@ -196,37 +182,6 @@ public typealias BidMachineBiddingInfoBuilderBlock = (BidMachine.BidMachineBiddi
   @objc @_Concurrency.MainActor(unsafe) final public func mute()
   @objc @_Concurrency.MainActor(unsafe) final public func unmute()
 }
-public typealias BidMachineRegulationInfoBuilderBlock = (BidMachine.BidMachineRegulationInfoBuilderProtocol) -> Swift.Void
-@objc public protocol BidMachineRegulationInfoBuilderProtocol {
-  @objc @discardableResult
-  func withCOPPA(_ coppa: Swift.Bool) -> Self
-  @objc @discardableResult
-  func withGDPRZone(_ gdpr: Swift.Bool) -> Self
-  @objc @discardableResult
-  func withGDPRConsent(_ consent: Swift.Bool) -> Self
-  @objc @discardableResult
-  func withGDPRConsentString(_ consent: Swift.String) -> Self
-  @objc @discardableResult
-  func withUSPrivacyString(_ privacy: Swift.String) -> Self
-  @objc @discardableResult
-  func withGPP(_ gpp: Swift.String, _ sid: [Swift.UInt32]) -> Self
-}
-@objc public protocol BidMachineRegulationZoneProtocol {
-  @objc var isZone: Swift.Bool { get }
-  @objc var isConsent: Swift.Bool { get }
-  @objc var zoneValue: Swift.String? { get }
-}
-@objc public protocol BidMachineRegulationGPPProtocol {
-  @objc var gpp: Swift.String? { get }
-  @objc var sid: [Swift.UInt32]? { get }
-}
-@objc public protocol BidMachineRegulationInfoProtocol {
-  @objc var COPPA: Swift.Bool { get }
-  @objc var GPPZone: BidMachine.BidMachineRegulationGPPProtocol { get }
-  @objc var CCPAZone: BidMachine.BidMachineRegulationZoneProtocol { get }
-  @objc var GDPRZone: BidMachine.BidMachineRegulationZoneProtocol { get }
-  @objc func populate(_ builderBlock: (BidMachine.BidMachineRegulationInfoBuilderProtocol) -> Swift.Void)
-}
 @objc final public class BidMachineUnitConfiguration : ObjectiveC.NSObject {
   @objc final public let name: Swift.String
   @objc final public let format: BidMachineApiCore.PlacementFormat
@@ -235,7 +190,7 @@ public typealias BidMachineRegulationInfoBuilderBlock = (BidMachine.BidMachineRe
   @objc(initWithName:format:params:extras:) public init(_ name: Swift.String, _ format: BidMachineApiCore.PlacementFormat, _ params: [Swift.String : Any]? = nil, _ extras: [Swift.String : Any]? = nil)
   @objc deinit
 }
-public typealias BidMachineRequestBuilderBlock = (BidMachine.BidMachineRequestBuilderProtocol) -> Swift.Void
+public typealias BidMachineRequestBuilderBlock = (any BidMachine.BidMachineRequestBuilderProtocol) -> Swift.Void
 @objc public protocol BidMachineRequestBuilderProtocol {
   @objc @discardableResult
   func withPlacementId(_ ID: Swift.String) -> Self
@@ -250,7 +205,7 @@ public typealias BidMachineRequestBuilderBlock = (BidMachine.BidMachineRequestBu
   @objc @discardableResult
   func withUnitConfigurations(_ configurations: [BidMachine.BidMachineUnitConfiguration]) -> Self
   @objc @discardableResult
-  func withContextualData(_ sessionDuration: Swift.UInt64, _ data: BidMachine.BidMachineContextualDataProtocol) -> Self
+  func withContextualData(_ sessionDuration: Swift.UInt64, _ data: any BidMachine.BidMachineContextualDataProtocol) -> Self
 }
 @objc public protocol BidMachineRequestInfoProtocol {
   @objc var placement: BidMachine.BidMachineRequestPlacement { get }
@@ -258,13 +213,13 @@ public typealias BidMachineRequestBuilderBlock = (BidMachine.BidMachineRequestBu
   @objc var payload: Swift.String? { get }
   @objc var timeout: Swift.Double { get }
   @objc var customParams: [Swift.String : Any] { get }
-  @objc var priceFloors: [BidMachine.BidMachinePriceFloorProtocol] { get }
+  @objc var priceFloors: [any BidMachine.BidMachinePriceFloorProtocol] { get }
   @objc var unitsConfigurations: [BidMachine.BidMachineUnitConfiguration] { get }
   @objc var sessionDuration: Swift.UInt64 { get }
-  @objc var contextualData: BidMachine.BidMachineContextualDataProtocol? { get }
+  @objc var contextualData: (any BidMachine.BidMachineContextualDataProtocol)? { get }
 }
 @objc public protocol BidMachineRequestPopulatorProtocol {
-  @objc func populate(_ builderBlock: (BidMachine.BidMachineRequestBuilderProtocol) -> Swift.Void)
+  @objc func populate(_ builderBlock: (any BidMachine.BidMachineRequestBuilderProtocol) -> Swift.Void)
 }
 @objc public protocol BidMachineRequestConfigurationProtocol : BidMachine.BidMachineRequestInfoProtocol, BidMachine.BidMachineRequestPopulatorProtocol {
 }
@@ -277,26 +232,28 @@ public typealias AdRouterCompletionBlock = () -> Swift.Void
   @objc final public func registerNetworks(_ configurations: [BidMachine.BidMachineNetworkConfiguraton])
 }
 @objc public protocol BidMachineAdProtocol {
-  @objc var auctionInfo: BidMachine.BidMachineAuctionResponseProtocol { get }
-  @objc var requestInfo: BidMachine.BidMachineRequestInfoProtocol { get }
+  @objc var auctionInfo: any BidMachine.BidMachineAuctionResponseProtocol { get }
+  @objc var requestInfo: any BidMachine.BidMachineRequestInfoProtocol { get }
   @objc var controller: UIKit.UIViewController? { get set }
-  @objc var delegate: BidMachine.BidMachineAdDelegate? { get set }
+  @objc var delegate: (any BidMachine.BidMachineAdDelegate)? { get set }
   @objc var canShow: Swift.Bool { get }
   @objc func loadAd()
 }
 @objc public protocol BidMachineAdDelegate {
-  @objc func didLoadAd(_ ad: BidMachine.BidMachineAdProtocol)
-  @objc func didFailLoadAd(_ ad: BidMachine.BidMachineAdProtocol, _ error: Swift.Error)
-  @objc optional func didPresentAd(_ ad: BidMachine.BidMachineAdProtocol)
-  @objc optional func didFailPresentAd(_ ad: BidMachine.BidMachineAdProtocol, _ error: Swift.Error)
-  @objc optional func didDismissAd(_ ad: BidMachine.BidMachineAdProtocol)
-  @objc optional func willPresentScreen(_ ad: BidMachine.BidMachineAdProtocol)
-  @objc optional func didDismissScreen(_ ad: BidMachine.BidMachineAdProtocol)
-  @objc optional func didUserInteraction(_ ad: BidMachine.BidMachineAdProtocol)
-  @objc optional func didExpired(_ ad: BidMachine.BidMachineAdProtocol)
-  @objc optional func didTrackImpression(_ ad: BidMachine.BidMachineAdProtocol)
-  @objc optional func didTrackInteraction(_ ad: BidMachine.BidMachineAdProtocol)
-  @objc optional func didReceiveReward(_ ad: BidMachine.BidMachineAdProtocol)
+  @objc func didLoadAd(_ ad: any BidMachine.BidMachineAdProtocol)
+  @objc func didFailLoadAd(_ ad: any BidMachine.BidMachineAdProtocol, _ error: any Swift.Error)
+  @objc optional func didPresentAd(_ ad: any BidMachine.BidMachineAdProtocol)
+  @objc optional func didFailPresentAd(_ ad: any BidMachine.BidMachineAdProtocol, _ error: any Swift.Error)
+  @objc optional func didDismissAd(_ ad: any BidMachine.BidMachineAdProtocol)
+  @objc optional func willPresentScreen(_ ad: any BidMachine.BidMachineAdProtocol)
+  @objc optional func didDismissScreen(_ ad: any BidMachine.BidMachineAdProtocol)
+  @objc optional func didPresentPartialScreen(_ ad: any BidMachine.BidMachineAdProtocol)
+  @objc optional func didDismissPartialScreen(_ ad: any BidMachine.BidMachineAdProtocol)
+  @objc optional func didUserInteraction(_ ad: any BidMachine.BidMachineAdProtocol)
+  @objc optional func didExpired(_ ad: any BidMachine.BidMachineAdProtocol)
+  @objc optional func didTrackImpression(_ ad: any BidMachine.BidMachineAdProtocol)
+  @objc optional func didTrackInteraction(_ ad: any BidMachine.BidMachineAdProtocol)
+  @objc optional func didReceiveReward(_ ad: any BidMachine.BidMachineAdProtocol)
 }
 @objc public protocol BidMachineNativeAdRendering {
   @objc var titleLabel: UIKit.UILabel? { get }
@@ -307,23 +264,129 @@ public typealias AdRouterCompletionBlock = () -> Swift.Void
   @objc var adChoiceView: UIKit.UIView? { get }
 }
 @objc extension BidMachine.BidMachineSdk {
-  @nonobjc final public func ad<U>(_ type: U.Type, _ configuration: BidMachine.BidMachineRequestConfigurationProtocol? = nil, _ completion: @escaping (U?, Swift.Error?) -> Swift.Void) where U : BidMachine.BidMachineAdProtocol
-  @objc final public func ad(_ configuration: BidMachine.BidMachineRequestConfigurationProtocol?, _ completion: @escaping (BidMachine.BidMachineAdProtocol?, Swift.Error?) -> Swift.Void)
-  @objc final public func interstitial(_ configuration: BidMachine.BidMachineRequestConfigurationProtocol? = nil, _ completion: @escaping (BidMachine.BidMachineInterstitial?, Swift.Error?) -> Swift.Void)
-  @objc final public func rewarded(_ configuration: BidMachine.BidMachineRequestConfigurationProtocol? = nil, _ completion: @escaping (BidMachine.BidMachineRewarded?, Swift.Error?) -> Swift.Void)
-  @objc final public func banner(_ configuration: BidMachine.BidMachineRequestConfigurationProtocol? = nil, _ completion: @escaping (BidMachine.BidMachineBanner?, Swift.Error?) -> Swift.Void)
-  @objc final public func media(_ configuration: BidMachine.BidMachineRequestConfigurationProtocol? = nil, _ completion: @escaping (BidMachine.BidMachineMedia?, Swift.Error?) -> Swift.Void)
-  @objc final public func native(_ configuration: BidMachine.BidMachineRequestConfigurationProtocol? = nil, _ completion: @escaping (BidMachine.BidMachineNative?, Swift.Error?) -> Swift.Void)
+  @nonobjc final public func ad<U>(_ type: U.Type, _ configuration: (any BidMachine.BidMachineRequestConfigurationProtocol)? = nil, _ completion: @escaping (U?, (any Swift.Error)?) -> Swift.Void) where U : BidMachine.BidMachineAdProtocol
+  @objc final public func ad(_ configuration: (any BidMachine.BidMachineRequestConfigurationProtocol)?, _ completion: @escaping ((any BidMachine.BidMachineAdProtocol)?, (any Swift.Error)?) -> Swift.Void)
+  @objc final public func interstitial(_ configuration: (any BidMachine.BidMachineRequestConfigurationProtocol)? = nil, _ completion: @escaping (BidMachine.BidMachineInterstitial?, (any Swift.Error)?) -> Swift.Void)
+  @objc final public func rewarded(_ configuration: (any BidMachine.BidMachineRequestConfigurationProtocol)? = nil, _ completion: @escaping (BidMachine.BidMachineRewarded?, (any Swift.Error)?) -> Swift.Void)
+  @objc final public func banner(_ configuration: (any BidMachine.BidMachineRequestConfigurationProtocol)? = nil, _ completion: @escaping (BidMachine.BidMachineBanner?, (any Swift.Error)?) -> Swift.Void)
+  @objc @available(*, deprecated, message: "The method will be removed in future versions")
+  final public func media(_ configuration: (any BidMachine.BidMachineRequestConfigurationProtocol)? = nil, _ completion: @escaping (BidMachine.BidMachineMedia?, (any Swift.Error)?) -> Swift.Void)
+  @objc final public func native(_ configuration: (any BidMachine.BidMachineRequestConfigurationProtocol)? = nil, _ completion: @escaping (BidMachine.BidMachineNative?, (any Swift.Error)?) -> Swift.Void)
 }
 @objc extension BidMachine.BidMachineSdk {
-  @objc final public func requestConfiguration(_ format: BidMachineApiCore.PlacementFormat) throws -> BidMachine.BidMachineRequestConfigurationProtocol
+  @objc final public func requestConfiguration(_ format: BidMachineApiCore.PlacementFormat) throws -> any BidMachine.BidMachineRequestConfigurationProtocol
 }
 @objc extension Foundation.NSString {
   @objc dynamic public var bidmachine_placement_format: BidMachineApiCore.PlacementFormat {
     @objc get
   }
 }
-public typealias BidMachineTargetingInfoBuilderBlock = (BidMachine.BidMachineTargetingInfoBuilderProtocol) -> Swift.Void
+@_hasMissingDesignatedInitializers @objc public class BidMachineRequestPlacement : ObjectiveC.NSObject {
+  @objc public var name: Swift.String {
+    @objc get
+  }
+  final public let placement: BidMachineApiCore.Placement
+  @objc deinit
+}
+@objc public protocol BidMachineContextualDataProtocol {
+  @objc var impressions: Swift.UInt32 { get }
+  @objc var clickRate: Swift.Float { get }
+  @objc var completionRate: Swift.Float { get }
+  @objc var lastClickForImpression: Swift.Bool { get }
+  @objc var lastBundle: Swift.String? { get }
+  @objc var lastAdomain: Swift.String? { get }
+}
+@_hasMissingDesignatedInitializers @objc final public class BidMachineInterstitial : ObjectiveC.NSObject {
+  @objc deinit
+}
+@objc extension BidMachine.BidMachineInterstitial : BidMachine.BidMachineAdProtocol {
+  @objc final public var canShow: Swift.Bool {
+    @objc get
+  }
+  @objc final public var requestInfo: any BidMachine.BidMachineRequestInfoProtocol {
+    @objc get
+  }
+  @objc final public var auctionInfo: any BidMachine.BidMachineAuctionResponseProtocol {
+    @objc get
+  }
+  @objc final public var delegate: (any BidMachine.BidMachineAdDelegate)? {
+    @objc get
+    @objc set
+  }
+  @objc final public var controller: UIKit.UIViewController? {
+    @objc get
+    @objc set
+  }
+  @objc final public func loadAd()
+  @objc final public func presentAd()
+}
+@_hasMissingDesignatedInitializers @objc final public class BidMachineNative : ObjectiveC.NSObject {
+  @objc deinit
+}
+@objc extension BidMachine.BidMachineNative : BidMachine.BidMachineAdProtocol {
+  @objc final public var canShow: Swift.Bool {
+    @objc get
+  }
+  @objc final public var requestInfo: any BidMachine.BidMachineRequestInfoProtocol {
+    @objc get
+  }
+  @objc final public var auctionInfo: any BidMachine.BidMachineAuctionResponseProtocol {
+    @objc get
+  }
+  @objc final public var delegate: (any BidMachine.BidMachineAdDelegate)? {
+    @objc get
+    @objc set
+  }
+  @objc final public var controller: UIKit.UIViewController? {
+    @objc get
+    @objc set
+  }
+  @objc final public func loadAd()
+  @objc final public func presentAd(_ container: UIKit.UIView, _ renderingAd: any BidMachine.BidMachineNativeAdRendering) throws
+  @objc final public func unregisterView()
+}
+@objc extension BidMachine.BidMachineNative {
+  @objc final public var title: Swift.String? {
+    @objc get
+  }
+  @objc final public var body: Swift.String? {
+    @objc get
+  }
+  @objc final public var cta: Swift.String? {
+    @objc get
+  }
+  @objc final public var icon: Swift.String? {
+    @objc get
+  }
+  @objc final public var main: Swift.String? {
+    @objc get
+  }
+  @objc final public var isVideo: Swift.Bool {
+    @objc get
+  }
+  @objc final public func trackContainerAdded()
+  @objc final public func trackImpression()
+  @objc final public func trackClick()
+}
+public typealias BidMachinePublisherInfoBuilderBlock = (any BidMachine.BidMachinePublisherInfoBuilderProtocol) -> Swift.Void
+@objc public protocol BidMachinePublisherInfoBuilderProtocol {
+  @objc @discardableResult
+  func withId(_ id: Swift.String) -> Self
+  @objc @discardableResult
+  func withName(_ name: Swift.String) -> Self
+  @objc @discardableResult
+  func withDomain(_ domain: Swift.String) -> Self
+  @objc @discardableResult
+  func withCategories(_ cat: [Swift.String]) -> Self
+}
+@objc public protocol BidMachinePublisherInfoProtocol {
+  @objc var ID: Swift.String? { get }
+  @objc var name: Swift.String? { get }
+  @objc var domain: Swift.String? { get }
+  @objc var categories: [Swift.String] { get }
+  @objc func populate(_ builderBlock: (any BidMachine.BidMachinePublisherInfoBuilderProtocol) -> Swift.Void)
+}
+public typealias BidMachineTargetingInfoBuilderBlock = (any BidMachine.BidMachineTargetingInfoBuilderProtocol) -> Swift.Void
 @objc(BidMachineUserGender) public enum UserGender : Swift.Int {
   case unknown = 0
   case male = 1
@@ -401,94 +464,38 @@ public typealias BidMachineTargetingInfoBuilderBlock = (BidMachine.BidMachineTar
   @objc var paid: Swift.Bool { get }
   @objc var frameworkName: BidMachine.FrameworkName { get }
   @objc var externalIds: [Swift.String : Swift.String] { get }
-  @objc func populate(_ builderBlock: (BidMachine.BidMachineTargetingInfoBuilderProtocol) -> Swift.Void)
+  @objc func populate(_ builderBlock: (any BidMachine.BidMachineTargetingInfoBuilderProtocol) -> Swift.Void)
 }
-@_hasMissingDesignatedInitializers @objc public class BidMachineRequestPlacement : ObjectiveC.NSObject {
-  @objc public var name: Swift.String {
-    @objc get
-  }
-  final public let placement: BidMachineApiCore.Placement
-  @objc deinit
+public typealias BidMachineRegulationInfoBuilderBlock = (any BidMachine.BidMachineRegulationInfoBuilderProtocol) -> Swift.Void
+@objc public protocol BidMachineRegulationInfoBuilderProtocol {
+  @objc @discardableResult
+  func withCOPPA(_ coppa: Swift.Bool) -> Self
+  @objc @discardableResult
+  func withGDPRZone(_ gdpr: Swift.Bool) -> Self
+  @objc @discardableResult
+  func withGDPRConsent(_ consent: Swift.Bool) -> Self
+  @objc @discardableResult
+  func withGDPRConsentString(_ consent: Swift.String) -> Self
+  @objc @discardableResult
+  func withUSPrivacyString(_ privacy: Swift.String) -> Self
+  @objc @discardableResult
+  func withGPP(_ gpp: Swift.String, _ sid: [Swift.UInt32]) -> Self
 }
-@objc public protocol BidMachineContextualDataProtocol {
-  @objc var impressions: Swift.UInt32 { get }
-  @objc var clickRate: Swift.Float { get }
-  @objc var completionRate: Swift.Float { get }
-  @objc var lastClickForImpression: Swift.Bool { get }
-  @objc var lastBundle: Swift.String? { get }
-  @objc var lastAdomain: Swift.String? { get }
+@objc public protocol BidMachineRegulationZoneProtocol {
+  @objc var isZone: Swift.Bool { get }
+  @objc var isConsent: Swift.Bool { get }
+  @objc var zoneValue: Swift.String? { get }
 }
-@_hasMissingDesignatedInitializers @objc final public class BidMachineInterstitial : ObjectiveC.NSObject {
-  @objc deinit
+@objc public protocol BidMachineRegulationGPPProtocol {
+  @objc var gpp: Swift.String? { get }
+  @objc var sid: [Swift.UInt32]? { get }
 }
-@objc extension BidMachine.BidMachineInterstitial : BidMachine.BidMachineAdProtocol {
-  @objc final public var canShow: Swift.Bool {
-    @objc get
-  }
-  @objc final public var requestInfo: BidMachine.BidMachineRequestInfoProtocol {
-    @objc get
-  }
-  @objc final public var auctionInfo: BidMachine.BidMachineAuctionResponseProtocol {
-    @objc get
-  }
-  @objc final public var delegate: BidMachine.BidMachineAdDelegate? {
-    @objc get
-    @objc set
-  }
-  @objc final public var controller: UIKit.UIViewController? {
-    @objc get
-    @objc set
-  }
-  @objc final public func loadAd()
-  @objc final public func presentAd()
-}
-@_hasMissingDesignatedInitializers @objc final public class BidMachineNative : ObjectiveC.NSObject {
-  @objc deinit
-}
-@objc extension BidMachine.BidMachineNative : BidMachine.BidMachineAdProtocol {
-  @objc final public var canShow: Swift.Bool {
-    @objc get
-  }
-  @objc final public var requestInfo: BidMachine.BidMachineRequestInfoProtocol {
-    @objc get
-  }
-  @objc final public var auctionInfo: BidMachine.BidMachineAuctionResponseProtocol {
-    @objc get
-  }
-  @objc final public var delegate: BidMachine.BidMachineAdDelegate? {
-    @objc get
-    @objc set
-  }
-  @objc final public var controller: UIKit.UIViewController? {
-    @objc get
-    @objc set
-  }
-  @objc final public func loadAd()
-  @objc final public func presentAd(_ container: UIKit.UIView, _ renderingAd: BidMachine.BidMachineNativeAdRendering) throws
-  @objc final public func unregisterView()
-}
-@objc extension BidMachine.BidMachineNative {
-  @objc final public var title: Swift.String? {
-    @objc get
-  }
-  @objc final public var body: Swift.String? {
-    @objc get
-  }
-  @objc final public var cta: Swift.String? {
-    @objc get
-  }
-  @objc final public var icon: Swift.String? {
-    @objc get
-  }
-  @objc final public var main: Swift.String? {
-    @objc get
-  }
-  @objc final public var isVideo: Swift.Bool {
-    @objc get
-  }
-  @objc final public func trackContainerAdded()
-  @objc final public func trackImpression()
-  @objc final public func trackClick()
+@objc public protocol BidMachineRegulationInfoProtocol {
+  @objc var COPPA: Swift.Bool { get }
+  @objc var GPPZone: any BidMachine.BidMachineRegulationGPPProtocol { get }
+  @objc var CCPAZone: any BidMachine.BidMachineRegulationZoneProtocol { get }
+  @objc var GDPRZone: any BidMachine.BidMachineRegulationZoneProtocol { get }
+  @objc func populate(_ builderBlock: (any BidMachine.BidMachineRegulationInfoBuilderProtocol) -> Swift.Void)
 }
 extension BidMachine.UserGender : Swift.Equatable {}
 extension BidMachine.UserGender : Swift.Hashable {}

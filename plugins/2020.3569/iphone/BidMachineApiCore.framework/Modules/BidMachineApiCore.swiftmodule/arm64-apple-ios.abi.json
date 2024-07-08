@@ -1105,149 +1105,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "Atomic",
-        "printedName": "Atomic",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(wrappedValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Atomic",
-                "printedName": "BidMachineApiCore.Atomic<τ_0_0>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "usr": "s:17BidMachineApiCore6AtomicV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:17BidMachineApiCore6AtomicV12wrappedValueACyxGx_tcfc",
-            "mangledName": "$s17BidMachineApiCore6AtomicV12wrappedValueACyxGx_tcfc",
-            "moduleName": "BidMachineApiCore",
-            "genericSig": "<τ_0_0>",
-            "sugared_genericSig": "<Value>",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "wrappedValue",
-            "printedName": "wrappedValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:17BidMachineApiCore6AtomicV12wrappedValuexvp",
-            "mangledName": "$s17BidMachineApiCore6AtomicV12wrappedValuexvp",
-            "moduleName": "BidMachineApiCore",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17BidMachineApiCore6AtomicV12wrappedValuexvg",
-                "mangledName": "$s17BidMachineApiCore6AtomicV12wrappedValuexvg",
-                "moduleName": "BidMachineApiCore",
-                "genericSig": "<τ_0_0>",
-                "sugared_genericSig": "<Value>",
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17BidMachineApiCore6AtomicV12wrappedValuexvs",
-                "mangledName": "$s17BidMachineApiCore6AtomicV12wrappedValuexvs",
-                "moduleName": "BidMachineApiCore",
-                "genericSig": "<τ_0_0>",
-                "sugared_genericSig": "<Value>",
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17BidMachineApiCore6AtomicV12wrappedValuexvM",
-                "mangledName": "$s17BidMachineApiCore6AtomicV12wrappedValuexvM",
-                "moduleName": "BidMachineApiCore",
-                "genericSig": "<τ_0_0>",
-                "sugared_genericSig": "<Value>",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:17BidMachineApiCore6AtomicV",
-        "mangledName": "$s17BidMachineApiCore6AtomicV",
-        "moduleName": "BidMachineApiCore",
-        "genericSig": "<τ_0_0>",
-        "sugared_genericSig": "<Value>",
-        "declAttributes": [
-          "AccessControl",
-          "PropertyWrapper"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "BidMachineApiCore"
-      },
-      {
-        "kind": "TypeDecl",
         "name": "Gender",
         "printedName": "Gender",
         "children": [
@@ -3801,11 +3658,8 @@
             "mangledName": "$s17BidMachineApiCore0aB14AsyncOperationC6threadAC6ThreadOvp",
             "moduleName": "BidMachineApiCore",
             "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
               "AccessControl"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -3823,7 +3677,6 @@
                 "usr": "s:17BidMachineApiCore0aB14AsyncOperationC6threadAC6ThreadOvg",
                 "mangledName": "$s17BidMachineApiCore0aB14AsyncOperationC6threadAC6ThreadOvg",
                 "moduleName": "BidMachineApiCore",
-                "implicit": true,
                 "accessorKind": "get"
               },
               {
@@ -3847,7 +3700,6 @@
                 "usr": "s:17BidMachineApiCore0aB14AsyncOperationC6threadAC6ThreadOvs",
                 "mangledName": "$s17BidMachineApiCore0aB14AsyncOperationC6threadAC6ThreadOvs",
                 "moduleName": "BidMachineApiCore",
-                "implicit": true,
                 "accessorKind": "set"
               },
               {
@@ -3887,11 +3739,8 @@
             "mangledName": "$s17BidMachineApiCore0aB14AsyncOperationC5stateAC5StateOvp",
             "moduleName": "BidMachineApiCore",
             "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
               "AccessControl"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -3909,7 +3758,6 @@
                 "usr": "s:17BidMachineApiCore0aB14AsyncOperationC5stateAC5StateOvg",
                 "mangledName": "$s17BidMachineApiCore0aB14AsyncOperationC5stateAC5StateOvg",
                 "moduleName": "BidMachineApiCore",
-                "implicit": true,
                 "accessorKind": "get"
               },
               {
@@ -3933,7 +3781,6 @@
                 "usr": "s:17BidMachineApiCore0aB14AsyncOperationC5stateAC5StateOvs",
                 "mangledName": "$s17BidMachineApiCore0aB14AsyncOperationC5stateAC5StateOvs",
                 "moduleName": "BidMachineApiCore",
-                "implicit": true,
                 "accessorKind": "set"
               },
               {
@@ -5268,6 +5115,104 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "BiddingOMID",
+        "printedName": "BiddingOMID",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "partnerName",
+            "printedName": "partnerName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17BidMachineApiCore11BiddingOMIDP11partnerNameSSvp",
+            "mangledName": "$s17BidMachineApiCore11BiddingOMIDP11partnerNameSSvp",
+            "moduleName": "BidMachineApiCore",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17BidMachineApiCore11BiddingOMIDP11partnerNameSSvg",
+                "mangledName": "$s17BidMachineApiCore11BiddingOMIDP11partnerNameSSvg",
+                "moduleName": "BidMachineApiCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : BidMachineApiCore.BiddingOMID>",
+                "sugared_genericSig": "<Self where Self : BidMachineApiCore.BiddingOMID>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "partnerVersion",
+            "printedName": "partnerVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17BidMachineApiCore11BiddingOMIDP14partnerVersionSSvp",
+            "mangledName": "$s17BidMachineApiCore11BiddingOMIDP14partnerVersionSSvp",
+            "moduleName": "BidMachineApiCore",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17BidMachineApiCore11BiddingOMIDP14partnerVersionSSvg",
+                "mangledName": "$s17BidMachineApiCore11BiddingOMIDP14partnerVersionSSvg",
+                "moduleName": "BidMachineApiCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : BidMachineApiCore.BiddingOMID>",
+                "sugared_genericSig": "<Self where Self : BidMachineApiCore.BiddingOMID>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:17BidMachineApiCore11BiddingOMIDP",
+        "mangledName": "$s17BidMachineApiCore11BiddingOMIDP",
+        "moduleName": "BidMachineApiCore",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "BiddingEnvironment",
         "printedName": "BiddingEnvironment",
         "children": [
@@ -5346,6 +5291,48 @@
                 "declKind": "Accessor",
                 "usr": "s:17BidMachineApiCore18BiddingEnvironmentP13isLoggingModeSbvg",
                 "mangledName": "$s17BidMachineApiCore18BiddingEnvironmentP13isLoggingModeSbvg",
+                "moduleName": "BidMachineApiCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : BidMachineApiCore.BiddingEnvironment>",
+                "sugared_genericSig": "<Self where Self : BidMachineApiCore.BiddingEnvironment>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "omid",
+            "printedName": "omid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BiddingOMID",
+                "printedName": "BidMachineApiCore.BiddingOMID",
+                "usr": "s:17BidMachineApiCore11BiddingOMIDP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17BidMachineApiCore18BiddingEnvironmentP4omidAA0E4OMID_pvp",
+            "mangledName": "$s17BidMachineApiCore18BiddingEnvironmentP4omidAA0E4OMID_pvp",
+            "moduleName": "BidMachineApiCore",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BiddingOMID",
+                    "printedName": "BidMachineApiCore.BiddingOMID",
+                    "usr": "s:17BidMachineApiCore11BiddingOMIDP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17BidMachineApiCore18BiddingEnvironmentP4omidAA0E4OMID_pvg",
+                "mangledName": "$s17BidMachineApiCore18BiddingEnvironmentP4omidAA0E4OMID_pvg",
                 "moduleName": "BidMachineApiCore",
                 "genericSig": "<τ_0_0 where τ_0_0 : BidMachineApiCore.BiddingEnvironment>",
                 "sugared_genericSig": "<Self where Self : BidMachineApiCore.BiddingEnvironment>",
@@ -8105,64 +8092,6 @@
           },
           {
             "kind": "Var",
-            "name": "inputLanguage",
-            "printedName": "inputLanguage",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:17BidMachineApiCore17DeviceEnvironmentP13inputLanguageSaySSGvp",
-            "mangledName": "$s17BidMachineApiCore17DeviceEnvironmentP13inputLanguageSaySSGvp",
-            "moduleName": "BidMachineApiCore",
-            "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.String]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17BidMachineApiCore17DeviceEnvironmentP13inputLanguageSaySSGvg",
-                "mangledName": "$s17BidMachineApiCore17DeviceEnvironmentP13inputLanguageSaySSGvg",
-                "moduleName": "BidMachineApiCore",
-                "genericSig": "<τ_0_0 where τ_0_0 : BidMachineApiCore.DeviceEnvironment>",
-                "sugared_genericSig": "<Self where Self : BidMachineApiCore.DeviceEnvironment>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "deviceLocation",
             "printedName": "deviceLocation",
             "children": [
@@ -8809,48 +8738,6 @@
           },
           {
             "kind": "Var",
-            "name": "emoji",
-            "printedName": "emoji",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:17BidMachineApiCore17DeviceEnvironmentP5emojiSSvp",
-            "mangledName": "$s17BidMachineApiCore17DeviceEnvironmentP5emojiSSvp",
-            "moduleName": "BidMachineApiCore",
-            "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17BidMachineApiCore17DeviceEnvironmentP5emojiSSvg",
-                "mangledName": "$s17BidMachineApiCore17DeviceEnvironmentP5emojiSSvg",
-                "moduleName": "BidMachineApiCore",
-                "genericSig": "<τ_0_0 where τ_0_0 : BidMachineApiCore.DeviceEnvironment>",
-                "sugared_genericSig": "<Self where Self : BidMachineApiCore.DeviceEnvironment>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "accessability",
             "printedName": "accessability",
             "children": [
@@ -9072,8 +8959,8 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "InOut",
-                    "printedName": "inout τ_0_0"
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
                   }
                 ],
                 "typeAttributes": [
@@ -11743,7 +11630,9 @@
             "usr": "c:@M@BidMachineApiCore@E@BidMachinePlacementFormat@BidMachinePlacementFormatMedia",
             "mangledName": "$s17BidMachineApiCore15PlacementFormatO5mediayA2CmF",
             "moduleName": "BidMachineApiCore",
+            "deprecated": true,
             "declAttributes": [
+              "Available",
               "ObjC"
             ],
             "fixedbinaryorder": 11
@@ -12499,7 +12388,7 @@
           {
             "kind": "Function",
             "name": "classImpelementation",
-            "printedName": "classImpelementation(_:)",
+            "printedName": "classImpelementation(_:shouldValidate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -12518,14 +12407,21 @@
                 "kind": "TypeNominal",
                 "name": "GenericTypeParam",
                 "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:17BidMachineApiCore0C12MockProviderC20classImpelementationyqd__SgxlF",
-            "mangledName": "$s17BidMachineApiCore0C12MockProviderC20classImpelementationyqd__SgxlF",
+            "usr": "s:17BidMachineApiCore0C12MockProviderC20classImpelementation_14shouldValidateqd__Sgx_SbtSo8NSObjectRd__lF",
+            "mangledName": "$s17BidMachineApiCore0C12MockProviderC20classImpelementation_14shouldValidateqd__Sgx_SbtSo8NSObjectRd__lF",
             "moduleName": "BidMachineApiCore",
-            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : BidMachineApiCore.ApiMockProviderMethod>",
-            "sugared_genericSig": "<M, T where M : BidMachineApiCore.ApiMockProviderMethod>",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : BidMachineApiCore.ApiMockProviderMethod, τ_1_0 : ObjectiveC.NSObjectProtocol>",
+            "sugared_genericSig": "<M, T where M : BidMachineApiCore.ApiMockProviderMethod, T : ObjectiveC.NSObjectProtocol>",
             "declAttributes": [
               "AccessControl",
               "DiscardableResult"
@@ -12535,17 +12431,18 @@
           {
             "kind": "Function",
             "name": "classImpelementation",
-            "printedName": "classImpelementation(_:)",
+            "printedName": "classImpelementation(_:shouldValidate:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Any?",
+                "printedName": "ObjectiveC.NSObjectProtocol?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
+                    "name": "NSObjectProtocol",
+                    "printedName": "ObjectiveC.NSObjectProtocol",
+                    "usr": "c:objc(pl)NSObject"
                   }
                 ],
                 "usr": "s:Sq"
@@ -12554,11 +12451,18 @@
                 "kind": "TypeNominal",
                 "name": "GenericTypeParam",
                 "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:17BidMachineApiCore0C12MockProviderC20classImpelementationyypSgxF",
-            "mangledName": "$s17BidMachineApiCore0C12MockProviderC20classImpelementationyypSgxF",
+            "usr": "s:17BidMachineApiCore0C12MockProviderC20classImpelementation_14shouldValidateSo8NSObject_pSgx_SbtF",
+            "mangledName": "$s17BidMachineApiCore0C12MockProviderC20classImpelementation_14shouldValidateSo8NSObject_pSgx_SbtF",
             "moduleName": "BidMachineApiCore",
             "genericSig": "<τ_0_0 where τ_0_0 : BidMachineApiCore.ApiMockProviderMethod>",
             "sugared_genericSig": "<M where M : BidMachineApiCore.ApiMockProviderMethod>",
@@ -12603,6 +12507,32 @@
               "DiscardableResult"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "validateInstance",
+            "printedName": "validateInstance(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ApiMockProviderValidationResult",
+                "printedName": "BidMachineApiCore.ApiMockProviderValidationResult",
+                "usr": "s:17BidMachineApiCore0C28MockProviderValidationResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_1_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17BidMachineApiCore0C12MockProviderC16validateInstanceyAA0ceF16ValidationResultOqd__So8NSObjectRd__lF",
+            "mangledName": "$s17BidMachineApiCore0C12MockProviderC16validateInstanceyAA0ceF16ValidationResultOqd__So8NSObjectRd__lF",
+            "moduleName": "BidMachineApiCore",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : BidMachineApiCore.ApiMockProviderMethod, τ_1_0 : ObjectiveC.NSObjectProtocol>",
+            "sugared_genericSig": "<M, T where M : BidMachineApiCore.ApiMockProviderMethod, T : ObjectiveC.NSObjectProtocol>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -12611,6 +12541,114 @@
         "moduleName": "BidMachineApiCore",
         "genericSig": "<τ_0_0 where τ_0_0 : BidMachineApiCore.ApiMockProviderMethod>",
         "sugared_genericSig": "<M where M : BidMachineApiCore.ApiMockProviderMethod>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ApiMockProviderValidationResult",
+        "printedName": "ApiMockProviderValidationResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "valid",
+            "printedName": "valid",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BidMachineApiCore.ApiMockProviderValidationResult.Type) -> BidMachineApiCore.ApiMockProviderValidationResult",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ApiMockProviderValidationResult",
+                    "printedName": "BidMachineApiCore.ApiMockProviderValidationResult",
+                    "usr": "s:17BidMachineApiCore0C28MockProviderValidationResultO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BidMachineApiCore.ApiMockProviderValidationResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApiMockProviderValidationResult",
+                        "printedName": "BidMachineApiCore.ApiMockProviderValidationResult",
+                        "usr": "s:17BidMachineApiCore0C28MockProviderValidationResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17BidMachineApiCore0C28MockProviderValidationResultO5validyA2CmF",
+            "mangledName": "$s17BidMachineApiCore0C28MockProviderValidationResultO5validyA2CmF",
+            "moduleName": "BidMachineApiCore"
+          },
+          {
+            "kind": "Var",
+            "name": "inValid",
+            "printedName": "inValid",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BidMachineApiCore.ApiMockProviderValidationResult.Type) -> (Swift.String) -> BidMachineApiCore.ApiMockProviderValidationResult",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> BidMachineApiCore.ApiMockProviderValidationResult",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApiMockProviderValidationResult",
+                        "printedName": "BidMachineApiCore.ApiMockProviderValidationResult",
+                        "usr": "s:17BidMachineApiCore0C28MockProviderValidationResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BidMachineApiCore.ApiMockProviderValidationResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApiMockProviderValidationResult",
+                        "printedName": "BidMachineApiCore.ApiMockProviderValidationResult",
+                        "usr": "s:17BidMachineApiCore0C28MockProviderValidationResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17BidMachineApiCore0C28MockProviderValidationResultO7inValidyACSS_tcACmF",
+            "mangledName": "$s17BidMachineApiCore0C28MockProviderValidationResultO7inValidyACSS_tcACmF",
+            "moduleName": "BidMachineApiCore"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17BidMachineApiCore0C28MockProviderValidationResultO",
+        "mangledName": "$s17BidMachineApiCore0C28MockProviderValidationResultO",
+        "moduleName": "BidMachineApiCore",
         "declAttributes": [
           "AccessControl"
         ]
@@ -12971,6 +13009,70 @@
           },
           {
             "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17BidMachineApiCore13PlacementTypeO9hashValueSivp",
+            "mangledName": "$s17BidMachineApiCore13PlacementTypeO9hashValueSivp",
+            "moduleName": "BidMachineApiCore",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17BidMachineApiCore13PlacementTypeO9hashValueSivg",
+                "mangledName": "$s17BidMachineApiCore13PlacementTypeO9hashValueSivg",
+                "moduleName": "BidMachineApiCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17BidMachineApiCore13PlacementTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s17BidMachineApiCore13PlacementTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "BidMachineApiCore",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
             "name": "name",
             "printedName": "name",
             "children": [
@@ -13134,6 +13236,13 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -14234,13 +14343,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "_ArrayProtocol",
             "printedName": "_ArrayProtocol",
             "children": [
@@ -14694,6 +14796,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -15932,25 +16041,144 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineApiDefines.swift",
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/DictionaryExtension.swift",
       "kind": "StringLiteral",
-      "offset": 83,
-      "length": 9,
-      "value": "\"2.4.0.0\""
+      "offset": 1293,
+      "length": 31,
+      "value": "\"Json serialization data error\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/DictionaryExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1530,
+      "length": 31,
+      "value": "\"Decode object from json error\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/DictionaryExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1955,
+      "length": 36,
+      "value": "\"Stringify data serialization error\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/DictionaryExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2141,
+      "length": 24,
+      "value": "\"Stringify value is nil\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/DispatchPipeline.swift",
+      "kind": "StringLiteral",
+      "offset": 436,
+      "length": 29,
+      "value": "\"com.bidmachine.serial.queue\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/DispatchPipeline.swift",
+      "kind": "StringLiteral",
+      "offset": 498,
+      "length": 32,
+      "value": "\"com.bidmachine.concurent.queue\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/DispatchPipeline.swift",
+      "kind": "Array",
+      "offset": 650,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/ArrayExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 467,
+      "length": 36,
+      "value": "\"Json serialize array to data error\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/ArrayExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 710,
+      "length": 40,
+      "value": "\"Decode array of decodable object error\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/UnfairLock.swift",
+      "kind": "IntegerLiteral",
+      "offset": 144,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/UnfairLock.swift",
+      "kind": "IntegerLiteral",
+      "offset": 258,
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineApiDefines.swift",
       "kind": "StringLiteral",
-      "offset": 138,
+      "offset": 83,
+      "length": 7,
+      "value": "\"2.6.0\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineApiDefines.swift",
+      "kind": "StringLiteral",
+      "offset": 136,
       "length": 12,
       "value": "\"BidMachine\""
     },
     {
       "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineApiDefines.swift",
       "kind": "StringLiteral",
-      "offset": 196,
+      "offset": 194,
       "length": 10,
       "value": "\"Appodeal\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineTime.swift",
+      "kind": "IntegerLiteral",
+      "offset": 94,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineTime.swift",
+      "kind": "IntegerLiteral",
+      "offset": 131,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineTime.swift",
+      "kind": "IntegerLiteral",
+      "offset": 223,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineTime.swift",
+      "kind": "IntegerLiteral",
+      "offset": 242,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineTime.swift",
+      "kind": "IntegerLiteral",
+      "offset": 259,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineTime.swift",
+      "kind": "IntegerLiteral",
+      "offset": 268,
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineTime.swift",
@@ -15995,11 +16223,25 @@
       "value": "1000000000"
     },
     {
-      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/AtomicWrapper.swift",
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/StringExtension.swift",
       "kind": "StringLiteral",
-      "offset": 116,
-      "length": 23,
-      "value": "\"com.bidmacnine.atomic\""
+      "offset": 212,
+      "length": 33,
+      "value": "\"Serialized string data is empty\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/StringExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 443,
+      "length": 38,
+      "value": "\"Serialized string data to json error\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/StringExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 619,
+      "length": 48,
+      "value": "\"Serialized string is not [String : Any] object\""
     },
     {
       "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineTypes.swift",
@@ -16042,6 +16284,69 @@
       "offset": 125,
       "length": 3,
       "value": "\"F\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineError.swift",
+      "kind": "StringLiteral",
+      "offset": 407,
+      "length": 89,
+      "value": "\"[\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineError.swift",
+      "kind": "StringLiteral",
+      "offset": 425,
+      "length": 1,
+      "value": "\"][\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineError.swift",
+      "kind": "StringLiteral",
+      "offset": 448,
+      "length": 1,
+      "value": "\"][\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineError.swift",
+      "kind": "StringLiteral",
+      "offset": 478,
+      "length": 1,
+      "value": "\"] \""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineError.swift",
+      "kind": "StringLiteral",
+      "offset": 495,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineError.swift",
+      "kind": "StringLiteral",
+      "offset": 605,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineError.swift",
+      "kind": "StringLiteral",
+      "offset": 688,
+      "length": 28,
+      "value": "\" , wrapped error: \""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineError.swift",
+      "kind": "StringLiteral",
+      "offset": 715,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineError.swift",
+      "kind": "StringLiteral",
+      "offset": 866,
+      "length": 30,
+      "value": "\"com.adx.bidmachine.kit.error\""
     },
     {
       "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineDispatcher.swift",
@@ -16049,6 +16354,195 @@
       "offset": 113,
       "length": 33,
       "value": "\"com.bidmachine.background-queue\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineDispatcher.swift",
+      "kind": "StringLiteral",
+      "offset": 276,
+      "length": 33,
+      "value": "\"com.bidmachine.background-queue\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/UIExtension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 284,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/UIExtension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 948,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 408,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 445,
+      "length": 3,
+      "value": "101"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 479,
+      "length": 3,
+      "value": "102"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 515,
+      "length": 3,
+      "value": "103"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 551,
+      "length": 3,
+      "value": "104"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 590,
+      "length": 3,
+      "value": "106"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 627,
+      "length": 3,
+      "value": "107"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 662,
+      "length": 3,
+      "value": "108"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 695,
+      "length": 3,
+      "value": "109"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 732,
+      "length": 3,
+      "value": "110"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 772,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorType.swift",
+      "kind": "StringLiteral",
+      "offset": 882,
+      "length": 12,
+      "value": "\"Connection\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorType.swift",
+      "kind": "StringLiteral",
+      "offset": 928,
+      "length": 13,
+      "value": "\"Bad Content\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorType.swift",
+      "kind": "StringLiteral",
+      "offset": 972,
+      "length": 9,
+      "value": "\"Timeout\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorType.swift",
+      "kind": "StringLiteral",
+      "offset": 1014,
+      "length": 12,
+      "value": "\"No Content\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorType.swift",
+      "kind": "StringLiteral",
+      "offset": 1059,
+      "length": 11,
+      "value": "\"Exception\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorType.swift",
+      "kind": "StringLiteral",
+      "offset": 1106,
+      "length": 11,
+      "value": "\"Destroyed\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorType.swift",
+      "kind": "StringLiteral",
+      "offset": 1151,
+      "length": 9,
+      "value": "\"Expired\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorType.swift",
+      "kind": "StringLiteral",
+      "offset": 1192,
+      "length": 10,
+      "value": "\"Internal\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorType.swift",
+      "kind": "StringLiteral",
+      "offset": 1232,
+      "length": 8,
+      "value": "\"Server\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorType.swift",
+      "kind": "StringLiteral",
+      "offset": 1274,
+      "length": 13,
+      "value": "\"Bad Request\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorType.swift",
+      "kind": "StringLiteral",
+      "offset": 1324,
+      "length": 9,
+      "value": "\"Bidding\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineAsyncOperation.swift",
+      "kind": "StringLiteral",
+      "offset": 269,
+      "length": 4,
+      "value": "\"is\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineAsyncOperation.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1375,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineTimeInterval.swift",
@@ -16072,6 +16566,90 @@
       "value": "1000000000"
     },
     {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/EncodableExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 292,
+      "length": 20,
+      "value": "\"Encoded data error\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/EncodableExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 524,
+      "length": 26,
+      "value": "\"Json serialization error\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/EncodableExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 706,
+      "length": 51,
+      "value": "\"Encodable obj can't represented to [String : Any]\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/EncodableExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1118,
+      "length": 38,
+      "value": "\"Json serialization data string error\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/EncodableExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1317,
+      "length": 43,
+      "value": "\"Encodable obj can't represented to string\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/AnyCodable.swift",
+      "kind": "StringLiteral",
+      "offset": 438,
+      "length": 66,
+      "value": "\"Any codable object can't create single value decodable container\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/AnyCodable.swift",
+      "kind": "StringLiteral",
+      "offset": 1957,
+      "length": 33,
+      "value": "\"Any codable object encode error\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/Placement.swift",
+      "kind": "BooleanLiteral",
+      "offset": 415,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/Placement.swift",
+      "kind": "BooleanLiteral",
+      "offset": 493,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/Placement.swift",
+      "kind": "BooleanLiteral",
+      "offset": 571,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/Placement.swift",
+      "kind": "BooleanLiteral",
+      "offset": 653,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/Placement.swift",
+      "kind": "BooleanLiteral",
+      "offset": 729,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
       "kind": "IntegerLiteral",
       "offset": 124,
@@ -16144,56 +16722,56 @@
     {
       "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
       "kind": "IntegerLiteral",
-      "offset": 364,
+      "offset": 450,
       "length": 5,
       "value": "11"
     },
     {
       "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
       "kind": "IntegerLiteral",
-      "offset": 384,
+      "offset": 470,
       "length": 6,
       "value": "12"
     },
     {
       "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
       "kind": "IntegerLiteral",
-      "offset": 400,
+      "offset": 486,
       "length": 10,
       "value": "13"
     },
     {
       "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
       "kind": "IntegerLiteral",
-      "offset": 420,
+      "offset": 506,
       "length": 11,
       "value": "14"
     },
     {
       "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
       "kind": "IntegerLiteral",
-      "offset": 441,
+      "offset": 527,
       "length": 11,
       "value": "15"
     },
     {
       "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
       "kind": "IntegerLiteral",
-      "offset": 462,
+      "offset": 548,
       "length": 18,
       "value": "16"
     },
     {
       "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
       "kind": "IntegerLiteral",
-      "offset": 490,
+      "offset": 576,
       "length": 18,
       "value": "17"
     },
     {
       "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
       "kind": "IntegerLiteral",
-      "offset": 518,
+      "offset": 604,
       "length": 19,
       "value": "18"
     },
@@ -16270,58 +16848,751 @@
     {
       "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
       "kind": "IntegerLiteral",
-      "offset": 364,
+      "offset": 450,
       "length": 5,
       "value": "11"
     },
     {
       "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
       "kind": "IntegerLiteral",
-      "offset": 384,
+      "offset": 470,
       "length": 6,
       "value": "12"
     },
     {
       "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
       "kind": "IntegerLiteral",
-      "offset": 400,
+      "offset": 486,
       "length": 10,
       "value": "13"
     },
     {
       "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
       "kind": "IntegerLiteral",
-      "offset": 420,
+      "offset": 506,
       "length": 11,
       "value": "14"
     },
     {
       "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
       "kind": "IntegerLiteral",
-      "offset": 441,
+      "offset": 527,
       "length": 11,
       "value": "15"
     },
     {
       "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
       "kind": "IntegerLiteral",
-      "offset": 462,
+      "offset": 548,
       "length": 18,
       "value": "16"
     },
     {
       "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
       "kind": "IntegerLiteral",
-      "offset": 490,
+      "offset": 576,
       "length": 18,
       "value": "17"
     },
     {
       "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
       "kind": "IntegerLiteral",
-      "offset": 518,
+      "offset": 604,
       "length": 19,
       "value": "18"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "IntegerLiteral",
+      "offset": 805,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "IntegerLiteral",
+      "offset": 851,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "IntegerLiteral",
+      "offset": 898,
+      "length": 2,
+      "value": "90"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "IntegerLiteral",
+      "offset": 946,
+      "length": 3,
+      "value": "250"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1000,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1006,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1066,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1073,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1134,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1140,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1188,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1194,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1246,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1253,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1306,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1312,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1354,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1361,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1404,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1410,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1416,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1463,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1469,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1476,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1525,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1532,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1538,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1587,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1594,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1601,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1656,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1662,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1669,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1724,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1730,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1736,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1793,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1800,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1806,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "StringLiteral",
+      "offset": 1947,
+      "length": 8,
+      "value": "\"banner\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "StringLiteral",
+      "offset": 1985,
+      "length": 15,
+      "value": "\"banner_320x50\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "StringLiteral",
+      "offset": 2036,
+      "length": 15,
+      "value": "\"banner_728x90\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "StringLiteral",
+      "offset": 2087,
+      "length": 16,
+      "value": "\"banner_300x250\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "StringLiteral",
+      "offset": 2140,
+      "length": 20,
+      "value": "\"interstitial_video\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "StringLiteral",
+      "offset": 2201,
+      "length": 21,
+      "value": "\"interstitial_static\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "StringLiteral",
+      "offset": 2264,
+      "length": 14,
+      "value": "\"interstitial\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "StringLiteral",
+      "offset": 2314,
+      "length": 16,
+      "value": "\"rewarded_video\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "StringLiteral",
+      "offset": 2367,
+      "length": 17,
+      "value": "\"rewarded_static\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "StringLiteral",
+      "offset": 2422,
+      "length": 10,
+      "value": "\"rewarded\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "StringLiteral",
+      "offset": 2464,
+      "length": 7,
+      "value": "\"media\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "StringLiteral",
+      "offset": 2500,
+      "length": 13,
+      "value": "\"native_icon\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "StringLiteral",
+      "offset": 2547,
+      "length": 14,
+      "value": "\"native_image\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "StringLiteral",
+      "offset": 2596,
+      "length": 14,
+      "value": "\"native_video\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "StringLiteral",
+      "offset": 2645,
+      "length": 19,
+      "value": "\"native_icon_video\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "StringLiteral",
+      "offset": 2706,
+      "length": 19,
+      "value": "\"native_icon_image\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "StringLiteral",
+      "offset": 2767,
+      "length": 20,
+      "value": "\"native_image_video\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementFormat.swift",
+      "kind": "StringLiteral",
+      "offset": 2830,
+      "length": 8,
+      "value": "\"native\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineMockProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 701,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineMockProvider.swift",
+      "kind": "BooleanLiteral",
+      "offset": 832,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineMockProvider.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1028,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineMockProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2548,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineMockProvider.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2620,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineMockProvider.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2626,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineMockProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2718,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineMockProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 2764,
+      "length": 48,
+      "value": "\"Can't get methods from the protocol \""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineMockProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 2811,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineMockProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2860,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineMockProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 2987,
+      "length": 38,
+      "value": "\"Can't find method in the method list\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineMockProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 3147,
+      "length": 35,
+      "value": "\"Can't find selector in the method\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineMockProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 3309,
+      "length": 62,
+      "value": "\"Instance \""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineMockProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 3330,
+      "length": 5,
+      "value": "\" doesn't respond to selector \""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineMockProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 3370,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementType.swift",
+      "kind": "StringLiteral",
+      "offset": 550,
+      "length": 11,
+      "value": "\"RichMedia\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementType.swift",
+      "kind": "StringLiteral",
+      "offset": 591,
+      "length": 8,
+      "value": "\"Banner\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementType.swift",
+      "kind": "StringLiteral",
+      "offset": 629,
+      "length": 8,
+      "value": "\"Native\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementType.swift",
+      "kind": "StringLiteral",
+      "offset": 669,
+      "length": 10,
+      "value": "\"Rewarded\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementType.swift",
+      "kind": "StringLiteral",
+      "offset": 715,
+      "length": 14,
+      "value": "\"Interstitial\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementType.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1625,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2908,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2933,
+      "length": 3,
+      "value": "320"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2946,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2963,
+      "length": 2,
+      "value": "90"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2988,
+      "length": 3,
+      "value": "728"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3001,
+      "length": 2,
+      "value": "90"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3018,
+      "length": 3,
+      "value": "250"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3044,
+      "length": 3,
+      "value": "300"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3057,
+      "length": 3,
+      "value": "250"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3146,
+      "length": 3,
+      "value": "728"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3159,
+      "length": 2,
+      "value": "90"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3179,
+      "length": 3,
+      "value": "320"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/PlacementType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3192,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 228,
+      "length": 5,
+      "value": "\"sdk\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 311,
+      "length": 5,
+      "value": "\"api\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 398,
+      "length": 9,
+      "value": "\"adapter\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 489,
+      "length": 9,
+      "value": "\"network\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 580,
+      "length": 9,
+      "value": "\"bidding\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 671,
+      "length": 9,
+      "value": "\"display\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 764,
+      "length": 11,
+      "value": "\"analytics\""
+    },
+    {
+      "filePath": "\/Users\/aliaksandrharbachou\/Documents\/Repositories\/BidMachine-iOS-SDK\/BidMachine-Modules\/BidMachineApiCore\/BidMachineApiCore\/BidMachineErrorProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 855,
+      "length": 7,
+      "value": "\"event\""
     }
   ]
 }

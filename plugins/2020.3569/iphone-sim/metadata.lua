@@ -4,7 +4,7 @@ local metadata =
 	{
 		format = 'staticLibrary',
 		staticLibs = { 'APDBidMachineAdapter', "objc" },
-		frameworks = { "BidMachine", "BidMachineAdColonyAdapter", "BidMachineApiCore", "BidMachineBidding", "BidMachineCriteoAdapter", "BidMachineMetaAudienceAdapter", "BidMachineModules", "BidMachineMyTargetAdapter", "BidMachinePangleAdapter", "BidMachineTapjoyAdapter", "BidMachineVungleAdapter", "CriteoPublisherSdk", "Protobuf", "StackIABAssets", "StackModules", "SwiftProtobuf" },
+		frameworks = { "BidMachine", "BidMachineApiCore", "BidMachineBidding", "BidMachineMetaAudienceAdapter", "BidMachineModules", "BidMachineMyTargetAdapter", "BidMachineRenderingKit", "BidMachineStoreKit", "BidMachineUtilsKit", "BidMachineVideoKit", "BidMachineVungleAdapter", "BidMachineWebKit", "OMSDK_Appodeal", "Protobuf", "StackIABAssets", "StackModules", "SwiftProtobuf" },
 		frameworksOptional = {},
 		usesSwift = true,
 	},

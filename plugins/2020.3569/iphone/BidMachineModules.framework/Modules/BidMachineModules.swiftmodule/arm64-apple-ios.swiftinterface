@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BidMachineModules
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import BidMachineApiCore
@@ -45,25 +45,25 @@ public enum JSONDecodingError : Swift.Error {
 public protocol AnyMessageExtension {
   var fieldNumber: Swift.Int { get }
   var fieldName: Swift.String { get }
-  var messageType: BidMachineModules.Message.Type { get }
-  func _protobuf_newField<D>(decoder: inout D) throws -> BidMachineModules.AnyExtensionField? where D : BidMachineModules.Decoder
+  var messageType: any BidMachineModules.Message.Type { get }
+  func _protobuf_newField<D>(decoder: inout D) throws -> (any BidMachineModules.AnyExtensionField)? where D : BidMachineModules.Decoder
 }
 public class MessageExtension<FieldType, MessageType> : BidMachineModules.AnyMessageExtension where FieldType : BidMachineModules.ExtensionField, MessageType : BidMachineModules.Message {
   final public let fieldNumber: Swift.Int
   final public let fieldName: Swift.String
-  final public let messageType: BidMachineModules.Message.Type
+  final public let messageType: any BidMachineModules.Message.Type
   public init(_protobuf_fieldNumber: Swift.Int, fieldName: Swift.String)
-  public func _protobuf_newField<D>(decoder: inout D) throws -> BidMachineModules.AnyExtensionField? where D : BidMachineModules.Decoder
+  public func _protobuf_newField<D>(decoder: inout D) throws -> (any BidMachineModules.AnyExtensionField)? where D : BidMachineModules.Decoder
   @objc deinit
 }
 public protocol AnalyticsDelegate : AnyObject {
   func didReceiveMessage(_ message: Swift.String)
-  func didStartMetric(_ metric: BidMachineModules.Metric, _ error: BidMachineApiCore.BidMachineError?)
+  func didStartMetric(_ metric: any BidMachineModules.Metric, _ error: BidMachineApiCore.BidMachineError?)
 }
 public protocol AnalyticsProtocol : AnyObject {
   var id: Swift.String { get }
-  var delegate: BidMachineModules.AnalyticsDelegate? { get set }
-  var metricRegistrator: BidMachineModules.MetricRegistrator { get }
+  var delegate: (any BidMachineModules.AnalyticsDelegate)? { get set }
+  var metricRegistrator: any BidMachineModules.MetricRegistrator { get }
 }
 public typealias ProtoSessionMessageBuilderBlock = (BidMachineModules.ProtoSessionMessageBuilder) -> Swift.Void
 @_hasMissingDesignatedInitializers public class ProtoSessionMessageBuilder {
@@ -107,6 +107,10 @@ extension BidMachineModules.ProtoSessionMessageBuilder {
   @discardableResult
   public func withGeo(_ builderBlock: (BidMachineModules.ProtoGeoMessageBuilder) -> Swift.Void) -> Self
 }
+extension BidMachineModules.ProtoSessionMessageBuilder {
+  @discardableResult
+  public func withContext(_ builderBlock: (BidMachineModules.ProtoAdcomContextMessageBuilder) -> Swift.Void) -> Self
+}
 public struct _ProtobufMap<KeyType, ValueType> where KeyType : BidMachineModules.MapKeyType, ValueType : BidMachineModules.FieldType {
   public typealias Key = KeyType.BaseType
   public typealias Value = ValueType.BaseType
@@ -146,8 +150,8 @@ public class ServerAuctionResponse<T> : BidMachineModules.ServerResponseProtocol
 }
 public enum Internal {
   public static let emptyData: Foundation.Data
-  public static func areAllInitialized(_ listOfMessages: [BidMachineModules.Message]) -> Swift.Bool
-  public static func areAllInitialized<K>(_ mapToMessages: [K : BidMachineModules.Message]) -> Swift.Bool where K : Swift.Hashable
+  public static func areAllInitialized(_ listOfMessages: [any BidMachineModules.Message]) -> Swift.Bool
+  public static func areAllInitialized<K>(_ mapToMessages: [K : any BidMachineModules.Message]) -> Swift.Bool where K : Swift.Hashable
 }
 public protocol Enum : Swift.Hashable, Swift.RawRepresentable {
   init()
@@ -178,7 +182,7 @@ public protocol Message : Swift.CustomDebugStringConvertible {
   mutating func decodeMessage<D>(decoder: inout D) throws where D : BidMachineModules.Decoder
   func traverse<V>(visitor: inout V) throws where V : BidMachineModules.Visitor
   func hash(into hasher: inout Swift.Hasher)
-  func isEqualTo(message: BidMachineModules.Message) -> Swift.Bool
+  func isEqualTo(message: any BidMachineModules.Message) -> Swift.Bool
 }
 extension BidMachineModules.Message {
   public var isInitialized: Swift.Bool {
@@ -194,7 +198,7 @@ public protocol _MessageImplementationBase : BidMachineModules.Message, Swift.Ha
   func _protobuf_generated_isEqualTo(other: Self) -> Swift.Bool
 }
 extension BidMachineModules._MessageImplementationBase {
-  public func isEqualTo(message: BidMachineModules.Message) -> Swift.Bool
+  public func isEqualTo(message: any BidMachineModules.Message) -> Swift.Bool
   public static func == (lhs: Self, rhs: Self) -> Swift.Bool
   public func _protobuf_generated_isEqualTo(other: Self) -> Swift.Bool
 }
@@ -301,9 +305,9 @@ extension BidMachineModules.Message {
   public static func jsonString<C>(from collection: C, options: BidMachineModules.JSONEncodingOptions = JSONEncodingOptions()) throws -> Swift.String where Self == C.Element, C : Swift.Collection
   public static func jsonUTF8Data<C>(from collection: C, options: BidMachineModules.JSONEncodingOptions = JSONEncodingOptions()) throws -> Foundation.Data where Self == C.Element, C : Swift.Collection
   public static func array(fromJSONString jsonString: Swift.String, options: BidMachineModules.JSONDecodingOptions = JSONDecodingOptions()) throws -> [Self]
-  public static func array(fromJSONString jsonString: Swift.String, extensions: BidMachineModules.ExtensionMap = SimpleExtensionMap(), options: BidMachineModules.JSONDecodingOptions = JSONDecodingOptions()) throws -> [Self]
+  public static func array(fromJSONString jsonString: Swift.String, extensions: any BidMachineModules.ExtensionMap = SimpleExtensionMap(), options: BidMachineModules.JSONDecodingOptions = JSONDecodingOptions()) throws -> [Self]
   public static func array(fromJSONUTF8Data jsonUTF8Data: Foundation.Data, options: BidMachineModules.JSONDecodingOptions = JSONDecodingOptions()) throws -> [Self]
-  public static func array(fromJSONUTF8Data jsonUTF8Data: Foundation.Data, extensions: BidMachineModules.ExtensionMap = SimpleExtensionMap(), options: BidMachineModules.JSONDecodingOptions = JSONDecodingOptions()) throws -> [Self]
+  public static func array(fromJSONUTF8Data jsonUTF8Data: Foundation.Data, extensions: any BidMachineModules.ExtensionMap = SimpleExtensionMap(), options: BidMachineModules.JSONDecodingOptions = JSONDecodingOptions()) throws -> [Self]
 }
 public struct Google_Protobuf_Api {
   public var name: Swift.String
@@ -405,9 +409,9 @@ extension BidMachineModules.ProtoGeoMessageBuilder : BidMachineModules.ProtoExtr
   @discardableResult
   public func appendExtension(_ extras: BidMachineModules.ProtoExtrasDataType) -> Self
 }
-extension BidMachineModules.ProtoRequestContextMessageBuilder : BidMachineModules.ProtoExtrasDataMessageProtocol {
+extension BidMachineModules.ProtoAdcomContextMessageBuilder : BidMachineModules.ProtoExtrasDataMessageProtocol {
   @discardableResult
-  public func appendExtension(_ extras: BidMachineModules.ProtoExtrasDataType) -> Self
+  final public func appendExtension(_ extras: BidMachineModules.ProtoExtrasDataType) -> Self
 }
 extension BidMachineModules.ProtoRegsMessageBuilder : BidMachineModules.ProtoExtrasDataMessageProtocol {
   @discardableResult
@@ -466,7 +470,7 @@ extension BidMachineModules.ProtoRequestMessageBuilder {
 }
 extension BidMachineModules.ProtoRequestMessageBuilder {
   @discardableResult
-  public func withContext(_ builderBlock: (BidMachineModules.ProtoRequestContextMessageBuilder) -> Swift.Void) -> Self
+  public func withContext(_ builderBlock: (BidMachineModules.ProtoAdcomContextMessageBuilder) -> Swift.Void) -> Self
 }
 extension BidMachineModules.ProtoRequestMessageBuilder {
   @discardableResult
@@ -479,8 +483,8 @@ extension BidMachineModules.ProtoRequestMessageBuilder {
 extension BidMachineModules.Message {
   public func textFormatString() -> Swift.String
   public func textFormatString(options: BidMachineModules.TextFormatEncodingOptions) -> Swift.String
-  public init(textFormatString: Swift.String, extensions: BidMachineModules.ExtensionMap? = nil) throws
-  public init(textFormatString: Swift.String, options: BidMachineModules.TextFormatDecodingOptions, extensions: BidMachineModules.ExtensionMap? = nil) throws
+  public init(textFormatString: Swift.String, extensions: (any BidMachineModules.ExtensionMap)? = nil) throws
+  public init(textFormatString: Swift.String, options: BidMachineModules.TextFormatDecodingOptions, extensions: (any BidMachineModules.ExtensionMap)? = nil) throws
 }
 public typealias ProtoMetricMessageBuilderBlock = (BidMachineModules.ProtoMetricMessageBuilder) -> Swift.Void
 @_hasMissingDesignatedInitializers public class ProtoMetricMessageBuilder {
@@ -494,9 +498,9 @@ extension BidMachineModules.ProtoMetricMessageBuilder {
 }
 public let defaultAnyTypeURLPrefix: Swift.String
 extension BidMachineModules.Google_Protobuf_Any {
-  public init(message: BidMachineModules.Message, partial: Swift.Bool = false, typePrefix: Swift.String = defaultAnyTypeURLPrefix) throws
-  public init(textFormatString: Swift.String, extensions: BidMachineModules.ExtensionMap? = nil) throws
-  public init(textFormatString: Swift.String, options: BidMachineModules.TextFormatDecodingOptions, extensions: BidMachineModules.ExtensionMap? = nil) throws
+  public init(message: any BidMachineModules.Message, partial: Swift.Bool = false, typePrefix: Swift.String = defaultAnyTypeURLPrefix) throws
+  public init(textFormatString: Swift.String, extensions: (any BidMachineModules.ExtensionMap)? = nil) throws
+  public init(textFormatString: Swift.String, options: BidMachineModules.TextFormatDecodingOptions, extensions: (any BidMachineModules.ExtensionMap)? = nil) throws
   public func isA<M>(_ type: M.Type) -> Swift.Bool where M : BidMachineModules.Message
   public func hash(into hasher: inout Swift.Hasher)
 }
@@ -795,11 +799,11 @@ extension BidMachineModules.Google_Protobuf_Empty : BidMachineModules.Message, B
   }
 }
 @_hasMissingDesignatedInitializers public class BidMachineProtoProvider {
-  public static func tokenMessage(_ builderBlock: (BidMachineModules.ProtoTokenMessageBuilder) -> Swift.Void) -> BidMachineModules.ProtoMessageRestictionProtocol
-  public static func sessionMessage(_ builderBlock: (BidMachineModules.ProtoSessionMessageBuilder) -> Swift.Void) -> BidMachineModules.ProtoMessageRestictionProtocol
-  public static func auctionMessage(_ builderBlock: (BidMachineModules.ProtoAuctionMessageBuilder) -> Swift.Void) -> BidMachineModules.ProtoMessageRestictionProtocol
-  public static func analyticsMessage(_ builderBlock: (BidMachineModules.ProtoAnalyticsMessageBuilder) -> Swift.Void) -> BidMachineModules.ProtoMessageRestictionProtocol
-  public static func eventMessage(_ builderBlock: (BidMachineModules.ProtoEventMessageBuilder) -> Swift.Void) -> BidMachineModules.ProtoMessageRestictionProtocol
+  public static func tokenMessage(_ builderBlock: (BidMachineModules.ProtoTokenMessageBuilder) -> Swift.Void) -> any BidMachineModules.ProtoMessageRestictionProtocol
+  public static func sessionMessage(_ builderBlock: (BidMachineModules.ProtoSessionMessageBuilder) -> Swift.Void) -> any BidMachineModules.ProtoMessageRestictionProtocol
+  public static func auctionMessage(_ builderBlock: (BidMachineModules.ProtoAuctionMessageBuilder) -> Swift.Void) -> any BidMachineModules.ProtoMessageRestictionProtocol
+  public static func analyticsMessage(_ builderBlock: (BidMachineModules.ProtoAnalyticsMessageBuilder) -> Swift.Void) -> any BidMachineModules.ProtoMessageRestictionProtocol
+  public static func eventMessage(_ builderBlock: (BidMachineModules.ProtoEventMessageBuilder) -> Swift.Void) -> any BidMachineModules.ProtoMessageRestictionProtocol
   public static func auctionResponse(_ data: Foundation.Data) throws -> BidMachineModules.ProtoExtrasDataType
   public static func sessionResponse(_ data: Foundation.Data) throws -> BidMachineModules.ProtoExtrasDataType
   public static func payloadResponse(_ data: Foundation.Data) throws -> BidMachineModules.ProtoExtrasDataType
@@ -1183,9 +1187,9 @@ public enum AnyUnpackError : Swift.Error {
   }
 }
 extension BidMachineModules.Message {
-  public init(unpackingAny: BidMachineModules.Google_Protobuf_Any, extensions: BidMachineModules.ExtensionMap? = nil, options: BidMachineModules.BinaryDecodingOptions = BinaryDecodingOptions()) throws
+  public init(unpackingAny: BidMachineModules.Google_Protobuf_Any, extensions: (any BidMachineModules.ExtensionMap)? = nil, options: BidMachineModules.BinaryDecodingOptions = BinaryDecodingOptions()) throws
 }
-public typealias EventMessageBuilderBlock = (BidMachineModules.EventMessageBuilder) -> Swift.Void
+public typealias EventMessageBuilderBlock = (any BidMachineModules.EventMessageBuilder) -> Swift.Void
 public protocol EventMessageBuilder {
   @discardableResult
   func withAction(_ action: Swift.Int32) -> Self
@@ -1461,14 +1465,14 @@ extension BidMachineModules.Visitor {
 }
 public protocol AnalyticsService {
   var configuration: BidMachineModules.AnalyticsConfiguration { get }
-  func didRegisterAnalytics(_ analytics: BidMachineModules.AnalyticsProtocol)
-  func didUnregisterAnalytics(_ analytics: BidMachineModules.AnalyticsProtocol)
+  func didRegisterAnalytics(_ analytics: any BidMachineModules.AnalyticsProtocol)
+  func didUnregisterAnalytics(_ analytics: any BidMachineModules.AnalyticsProtocol)
 }
 extension BidMachineModules.Google_Protobuf_Any {
   @discardableResult
-  public static func register(messageType: BidMachineModules.Message.Type) -> Swift.Bool
-  public static func messageType(forTypeURL url: Swift.String) -> BidMachineModules.Message.Type?
-  public static func messageType(forMessageName name: Swift.String) -> BidMachineModules.Message.Type?
+  public static func register(messageType: any BidMachineModules.Message.Type) -> Swift.Bool
+  public static func messageType(forTypeURL url: Swift.String) -> (any BidMachineModules.Message.Type)?
+  public static func messageType(forMessageName name: Swift.String) -> (any BidMachineModules.Message.Type)?
 }
 extension BidMachineModules.Google_Protobuf_Struct : Swift.ExpressibleByDictionaryLiteral {
   public typealias Key = Swift.String
@@ -1563,9 +1567,9 @@ extension BidMachineModules.Message {
   public func jsonString(options: BidMachineModules.JSONEncodingOptions = JSONEncodingOptions()) throws -> Swift.String
   public func jsonUTF8Data(options: BidMachineModules.JSONEncodingOptions = JSONEncodingOptions()) throws -> Foundation.Data
   public init(jsonString: Swift.String, options: BidMachineModules.JSONDecodingOptions = JSONDecodingOptions()) throws
-  public init(jsonString: Swift.String, extensions: BidMachineModules.ExtensionMap? = nil, options: BidMachineModules.JSONDecodingOptions = JSONDecodingOptions()) throws
+  public init(jsonString: Swift.String, extensions: (any BidMachineModules.ExtensionMap)? = nil, options: BidMachineModules.JSONDecodingOptions = JSONDecodingOptions()) throws
   public init(jsonUTF8Data: Foundation.Data, options: BidMachineModules.JSONDecodingOptions = JSONDecodingOptions()) throws
-  public init(jsonUTF8Data: Foundation.Data, extensions: BidMachineModules.ExtensionMap? = nil, options: BidMachineModules.JSONDecodingOptions = JSONDecodingOptions()) throws
+  public init(jsonUTF8Data: Foundation.Data, extensions: (any BidMachineModules.ExtensionMap)? = nil, options: BidMachineModules.JSONDecodingOptions = JSONDecodingOptions()) throws
 }
 public struct Version {
   public static let major: Swift.Int
@@ -1640,7 +1644,7 @@ extension BidMachineModules.ProtoTokenMessageBuilder {
   @discardableResult
   public func withHashValue(_ value: Swift.String) -> Self
   @discardableResult
-  public func withUnits(_ units: [BidMachineModules.ProtoPlacementConfigurationUnitProtocol]) -> Self
+  public func withUnits(_ units: [any BidMachineModules.ProtoPlacementConfigurationUnitProtocol]) -> Self
 }
 extension BidMachineModules.ProtoTokenMessageBuilder {
   @discardableResult
@@ -1648,7 +1652,7 @@ extension BidMachineModules.ProtoTokenMessageBuilder {
   @discardableResult
   public func withSessionDuration(_ duration: BidMachineApiCore.BidMachineTimeInterval) -> Self
   @discardableResult
-  public func withSessionPlacementData(_ data: [Swift.String : BidMachineModules.ProtoContextualProtocol]) -> Self
+  public func withSessionPlacementData(_ data: [Swift.String : any BidMachineModules.ProtoContextualProtocol]) -> Self
 }
 extension BidMachineModules.ProtoTokenMessageBuilder {
   @discardableResult
@@ -1706,42 +1710,26 @@ extension BidMachineModules.ProtoTokenMessageBuilder {
   @discardableResult
   public func withDeviceName(_ devicename: Swift.String) -> Self
 }
-public typealias ProtoRequestContextMessageBuilderBlock = (BidMachineModules.ProtoRequestContextMessageBuilder) -> Swift.Void
-@_hasMissingDesignatedInitializers public class ProtoRequestContextMessageBuilder {
-  @objc deinit
-}
-extension BidMachineModules.ProtoRequestContextMessageBuilder {
-  @discardableResult
-  public func withRestriction(_ builderBlock: (BidMachineModules.ProtoRestrictionMessageBuilder) -> Swift.Void) -> Self
-  @discardableResult
-  public func withApp(_ builderBlock: (BidMachineModules.ProtoAppMessageBuilder) -> Swift.Void) -> Self
-  @discardableResult
-  public func withDevice(_ builderBlock: (BidMachineModules.ProtoDeviceMessageBuilder) -> Swift.Void) -> Self
-  @discardableResult
-  public func withUser(_ builderBlock: (BidMachineModules.ProtoUserMessageBuilder) -> Swift.Void) -> Self
-  @discardableResult
-  public func withRegs(_ builderBlock: (BidMachineModules.ProtoRegsMessageBuilder) -> Swift.Void) -> Self
-}
 extension BidMachineModules.Message {
   public func serializedData(partial: Swift.Bool = false) throws -> Foundation.Data
-  @inlinable public init(serializedData data: Foundation.Data, extensions: BidMachineModules.ExtensionMap? = nil, partial: Swift.Bool = false, options: BidMachineModules.BinaryDecodingOptions = BinaryDecodingOptions()) throws {
+  @inlinable public init(serializedData data: Foundation.Data, extensions: (any BidMachineModules.ExtensionMap)? = nil, partial: Swift.Bool = false, options: BidMachineModules.BinaryDecodingOptions = BinaryDecodingOptions()) throws {
     self.init()
     try merge(contiguousBytes: data, extensions: extensions, partial: partial, options: options)
   }
-  @inlinable public init<Bytes>(contiguousBytes bytes: Bytes, extensions: BidMachineModules.ExtensionMap? = nil, partial: Swift.Bool = false, options: BidMachineModules.BinaryDecodingOptions = BinaryDecodingOptions()) throws where Bytes : Foundation.ContiguousBytes {
+  @inlinable public init<Bytes>(contiguousBytes bytes: Bytes, extensions: (any BidMachineModules.ExtensionMap)? = nil, partial: Swift.Bool = false, options: BidMachineModules.BinaryDecodingOptions = BinaryDecodingOptions()) throws where Bytes : Foundation.ContiguousBytes {
     self.init()
     try merge(contiguousBytes: bytes, extensions: extensions, partial: partial, options: options)
   }
-  @inlinable public mutating func merge(serializedData data: Foundation.Data, extensions: BidMachineModules.ExtensionMap? = nil, partial: Swift.Bool = false, options: BidMachineModules.BinaryDecodingOptions = BinaryDecodingOptions()) throws {
+  @inlinable public mutating func merge(serializedData data: Foundation.Data, extensions: (any BidMachineModules.ExtensionMap)? = nil, partial: Swift.Bool = false, options: BidMachineModules.BinaryDecodingOptions = BinaryDecodingOptions()) throws {
     try merge(contiguousBytes: data, extensions: extensions, partial: partial, options: options)
   }
-  @inlinable public mutating func merge<Bytes>(contiguousBytes bytes: Bytes, extensions: BidMachineModules.ExtensionMap? = nil, partial: Swift.Bool = false, options: BidMachineModules.BinaryDecodingOptions = BinaryDecodingOptions()) throws where Bytes : Foundation.ContiguousBytes {
+  @inlinable public mutating func merge<Bytes>(contiguousBytes bytes: Bytes, extensions: (any BidMachineModules.ExtensionMap)? = nil, partial: Swift.Bool = false, options: BidMachineModules.BinaryDecodingOptions = BinaryDecodingOptions()) throws where Bytes : Foundation.ContiguousBytes {
     try bytes.withUnsafeBytes { (body: UnsafeRawBufferPointer) in
       try _merge(rawBuffer: body, extensions: extensions, partial: partial, options: options)
     }
   }
   @usableFromInline
-  internal mutating func _merge(rawBuffer body: Swift.UnsafeRawBufferPointer, extensions: BidMachineModules.ExtensionMap?, partial: Swift.Bool, options: BidMachineModules.BinaryDecodingOptions) throws
+  internal mutating func _merge(rawBuffer body: Swift.UnsafeRawBufferPointer, extensions: (any BidMachineModules.ExtensionMap)?, partial: Swift.Bool, options: BidMachineModules.BinaryDecodingOptions) throws
 }
 @_hasMissingDesignatedInitializers final public class ServerCommunicator {
   public static let shared: BidMachineModules.ServerCommunicator
@@ -1755,7 +1743,7 @@ extension BidMachineModules.ServerCommunicator {
   @objc deinit
 }
 extension BidMachineModules.AnalyticsServiceManager {
-  public func registerService(_ service: BidMachineModules.AnalyticsService, by id: Swift.String)
+  public func registerService(_ service: any BidMachineModules.AnalyticsService, by id: Swift.String)
   public func unregisterService(by id: Swift.String)
 }
 public typealias ServerSessionRequestBuilderBlock = (BidMachineModules.ServerSessionRequestBuilder) -> Swift.Void
@@ -1779,7 +1767,7 @@ public struct ExtensionFieldValueSet : Swift.Hashable {
   public init()
   public func hash(into hasher: inout Swift.Hasher)
   public func traverse<V>(visitor: inout V, start: Swift.Int, end: Swift.Int) throws where V : BidMachineModules.Visitor
-  public subscript(index: Swift.Int) -> BidMachineModules.AnyExtensionField? {
+  public subscript(index: Swift.Int) -> (any BidMachineModules.AnyExtensionField)? {
     get
     set
   }
@@ -1824,7 +1812,7 @@ public protocol SQLiteDatabaseDelegate : AnyObject {
 }
 @_hasMissingDesignatedInitializers final public class SQLiteDatabase<T> where T : BidMachineModules.SQLiteTable {
   @objc deinit
-  public static func open(_ delegate: BidMachineModules.SQLiteDatabaseDelegate? = nil) throws -> BidMachineModules.SQLiteDatabase<T>
+  public static func open(_ delegate: (any BidMachineModules.SQLiteDatabaseDelegate)? = nil) throws -> BidMachineModules.SQLiteDatabase<T>
 }
 extension BidMachineModules.SQLiteDatabase {
   final public func createTable() throws
@@ -1834,21 +1822,21 @@ extension BidMachineModules.SQLiteDatabase {
 }
 extension BidMachineModules.SQLiteDatabase {
   final public func count() throws -> Swift.Int32
-  final public func count(_ value: BidMachineModules.SQLiteType, _ name: T.T.T) throws -> Swift.Int32
+  final public func count(_ value: any BidMachineModules.SQLiteType, _ name: T.T.T) throws -> Swift.Int32
   final public func count(_ sql: Swift.String) throws -> Swift.Int32
 }
 extension BidMachineModules.SQLiteDatabase {
   final public func all() throws -> [T.T]
-  final public func all(_ value: BidMachineModules.SQLiteType, _ name: T.T.T) throws -> [T.T]
+  final public func all(_ value: any BidMachineModules.SQLiteType, _ name: T.T.T) throws -> [T.T]
   final public func all(_ sql: Swift.String) throws -> [T.T]
 }
 extension BidMachineModules.SQLiteDatabase {
   final public func remove() throws
-  final public func remove(_ value: BidMachineModules.SQLiteType, _ name: T.T.T) throws
+  final public func remove(_ value: any BidMachineModules.SQLiteType, _ name: T.T.T) throws
   final public func remove(_ sql: Swift.String) throws
 }
 extension BidMachineModules.SQLiteDatabase {
-  final public func update(_ value: BidMachineModules.SQLiteType, _ name: T.T.T, _ filterValue: BidMachineModules.SQLiteType, _ filterName: T.T.T) throws
+  final public func update(_ value: any BidMachineModules.SQLiteType, _ name: T.T.T, _ filterValue: any BidMachineModules.SQLiteType, _ filterName: T.T.T) throws
   final public func update(_ sql: Swift.String) throws
 }
 public enum Google_Protobuf_NullValue : BidMachineModules.Enum {
@@ -1990,14 +1978,14 @@ extension BidMachineModules.ProtoPublisherMessageBuilder {
   public func withCategories(_ cat: [Swift.String]) -> Self
 }
 public protocol MetricRegistrator {
-  func register(_ metric: BidMachineModules.Metric)
+  func register(_ metric: any BidMachineModules.Metric)
 }
 public protocol MetricDelegate : AnyObject {
-  func didPrepareMetric(_ metric: BidMachineModules.Metric, _ error: BidMachineApiCore.BidMachineError?)
-  func didLogMessage(_ metric: BidMachineModules.Metric, _ data: [Swift.String : Any]?, _ error: BidMachineApiCore.BidMachineError?)
+  func didPrepareMetric(_ metric: any BidMachineModules.Metric, _ error: BidMachineApiCore.BidMachineError?)
+  func didLogMessage(_ metric: any BidMachineModules.Metric, _ data: [Swift.String : Any]?, _ error: BidMachineApiCore.BidMachineError?)
 }
 public protocol Metric : AnyObject {
-  var delegate: BidMachineModules.MetricDelegate? { get set }
+  var delegate: (any BidMachineModules.MetricDelegate)? { get set }
   var name: Swift.String { get }
   func prepare()
 }
@@ -2023,7 +2011,7 @@ extension BidMachineModules.ProtoAppMessageBuilder {
   @discardableResult
   public func withPublisher(_ builderBlock: (BidMachineModules.ProtoPublisherMessageBuilder) -> Swift.Void) -> Self
 }
-public typealias ProtoPlacementConfigurationBuilderBlock = (BidMachineModules.ProtoPlacementConfigurationBuilderProtocol) -> Swift.Void
+public typealias ProtoPlacementConfigurationBuilderBlock = (any BidMachineModules.ProtoPlacementConfigurationBuilderProtocol) -> Swift.Void
 public typealias ProtoBiddingUnitParams = [Swift.String : Swift.String]
 public protocol ProtoPlacementConfigurationUnitProtocol {
   var placement: BidMachineApiCore.Placement { get }
@@ -2045,7 +2033,7 @@ public protocol ProtoPlacementConfigurationBuilderProtocol {
   @discardableResult
   func withMinBitrate(_ minbitr: Swift.UInt32) -> Self
   @discardableResult
-  func withUnits(_ units: [BidMachineModules.ProtoPlacementConfigurationUnitProtocol]) -> Self
+  func withUnits(_ units: [any BidMachineModules.ProtoPlacementConfigurationUnitProtocol]) -> Self
 }
 public typealias ProtoPlacementMessageBuilderBlock = (BidMachineModules.ProtoPlacementMessageBuilder) -> Swift.Void
 @_hasMissingDesignatedInitializers public class ProtoPlacementMessageBuilder {
@@ -2061,7 +2049,7 @@ extension BidMachineModules.ProtoPlacementMessageBuilder {
   @discardableResult
   public func withSdkVersion(_ version: Swift.String) -> Self
   @discardableResult
-  public func withPlacement(_ placement: BidMachineApiCore.Placement, _ builderBlock: (BidMachineModules.ProtoPlacementConfigurationBuilderProtocol) -> Swift.Void) -> Self
+  public func withPlacement(_ placement: BidMachineApiCore.Placement, _ builderBlock: (any BidMachineModules.ProtoPlacementConfigurationBuilderProtocol) -> Swift.Void) -> Self
 }
 public protocol ProtoMessageProtocol {
   func jsonUTF8Data() -> Foundation.Data?
@@ -2071,21 +2059,21 @@ public protocol ProtoMessageProtocol {
 }
 public protocol ProtoMessageRestictionProtocol {
   @discardableResult
-  func restrict(_ gdpr: Swift.Bool, _ coppa: Swift.Bool) -> BidMachineModules.ProtoMessageProtocol
+  func restrict(_ gdpr: Swift.Bool, _ coppa: Swift.Bool) -> any BidMachineModules.ProtoMessageProtocol
 }
 public protocol EventTrackerDelegate : AnyObject {
-  func didRegisterEvent(_ event: BidMachineModules.EventProtocol)
-  func didSendEvent(_ event: BidMachineModules.EventProtocol, _ error: BidMachineApiCore.BidMachineError?)
+  func didRegisterEvent(_ event: any BidMachineModules.EventProtocol)
+  func didSendEvent(_ event: any BidMachineModules.EventProtocol, _ error: BidMachineApiCore.BidMachineError?)
 }
-public class EventTracker {
+final public class EventTracker {
   public static var shared: BidMachineModules.EventTracker
   public init()
   @objc deinit
 }
 extension BidMachineModules.EventTracker {
-  public func trackUrl(_ url: Swift.String, _ builderBlock: BidMachineModules.EventMessageBuilderBlock? = nil)
-  public func trackEvent(_ configuration: BidMachineModules.EventConfiguration, _ builderBlock: BidMachineModules.EventMessageBuilderBlock? = nil)
-  public func trackEvent(_ configuration: BidMachineModules.EventConfiguration, _ delegate: BidMachineModules.EventTrackerDelegate?, _ builderBlock: BidMachineModules.EventMessageBuilderBlock? = nil)
+  final public func trackUrl(_ url: Swift.String, _ builderBlock: BidMachineModules.EventMessageBuilderBlock? = nil)
+  final public func trackEvent(_ configuration: BidMachineModules.EventConfiguration, _ builderBlock: BidMachineModules.EventMessageBuilderBlock? = nil)
+  final public func trackEvent(_ configuration: BidMachineModules.EventConfiguration, _ delegate: (any BidMachineModules.EventTrackerDelegate)?, _ builderBlock: BidMachineModules.EventMessageBuilderBlock? = nil)
 }
 public enum BinaryDelimited {
   public enum Error : Swift.Error {
@@ -2097,9 +2085,9 @@ public enum BinaryDelimited {
       get
     }
   }
-  public static func serialize(message: BidMachineModules.Message, to stream: Foundation.OutputStream, partial: Swift.Bool = false) throws
-  public static func parse<M>(messageType: M.Type, from stream: Foundation.InputStream, extensions: BidMachineModules.ExtensionMap? = nil, partial: Swift.Bool = false, options: BidMachineModules.BinaryDecodingOptions = BinaryDecodingOptions()) throws -> M where M : BidMachineModules.Message
-  public static func merge<M>(into message: inout M, from stream: Foundation.InputStream, extensions: BidMachineModules.ExtensionMap? = nil, partial: Swift.Bool = false, options: BidMachineModules.BinaryDecodingOptions = BinaryDecodingOptions()) throws where M : BidMachineModules.Message
+  public static func serialize(message: any BidMachineModules.Message, to stream: Foundation.OutputStream, partial: Swift.Bool = false) throws
+  public static func parse<M>(messageType: M.Type, from stream: Foundation.InputStream, extensions: (any BidMachineModules.ExtensionMap)? = nil, partial: Swift.Bool = false, options: BidMachineModules.BinaryDecodingOptions = BinaryDecodingOptions()) throws -> M where M : BidMachineModules.Message
+  public static func merge<M>(into message: inout M, from stream: Foundation.InputStream, extensions: (any BidMachineModules.ExtensionMap)? = nil, partial: Swift.Bool = false, options: BidMachineModules.BinaryDecodingOptions = BinaryDecodingOptions()) throws where M : BidMachineModules.Message
 }
 public struct Google_Protobuf_FieldMask {
   public var paths: [Swift.String]
@@ -2136,6 +2124,22 @@ extension BidMachineModules.Google_Protobuf_Duration : BidMachineModules.Message
     get
   }
 }
+public typealias ProtoAdcomContextMessageBuilderBlock = (BidMachineModules.ProtoAdcomContextMessageBuilder) -> Swift.Void
+@_hasMissingDesignatedInitializers final public class ProtoAdcomContextMessageBuilder {
+  @objc deinit
+}
+extension BidMachineModules.ProtoAdcomContextMessageBuilder {
+  @discardableResult
+  final public func withRestriction(_ builderBlock: (BidMachineModules.ProtoRestrictionMessageBuilder) -> Swift.Void) -> Self
+  @discardableResult
+  final public func withApp(_ builderBlock: (BidMachineModules.ProtoAppMessageBuilder) -> Swift.Void) -> Self
+  @discardableResult
+  final public func withDevice(_ builderBlock: (BidMachineModules.ProtoDeviceMessageBuilder) -> Swift.Void) -> Self
+  @discardableResult
+  final public func withUser(_ builderBlock: (BidMachineModules.ProtoUserMessageBuilder) -> Swift.Void) -> Self
+  @discardableResult
+  final public func withRegs(_ builderBlock: (BidMachineModules.ProtoRegsMessageBuilder) -> Swift.Void) -> Self
+}
 public typealias ProtoMetricDataMessageBuilderBlock = (BidMachineModules.ProtoMetricDataMessageBuilder) -> Swift.Void
 @_hasMissingDesignatedInitializers public class ProtoMetricDataMessageBuilder {
   @objc deinit
@@ -2146,25 +2150,25 @@ extension BidMachineModules.ProtoMetricDataMessageBuilder {
   @discardableResult
   public func withName(_ name: Swift.String) -> Self
   @discardableResult
-  public func withError(_ error: Swift.Error?) -> Self
+  public func withError(_ error: (any Swift.Error)?) -> Self
   @discardableResult
   public func withDimensions(_ dimensions: [Swift.String : Swift.String]) -> Self
   @discardableResult
   public func withMeasures(_ measures: [Swift.String : Swift.Double]) -> Self
 }
 public protocol EventProtocol {
-  var message: BidMachineModules.EventMessageProtocol { get }
+  var message: any BidMachineModules.EventMessageProtocol { get }
   var configuration: BidMachineModules.EventConfiguration { get }
 }
 public protocol ExtensionMap {
-  subscript(messageType: BidMachineModules.Message.Type, fieldNumber: Swift.Int) -> BidMachineModules.AnyMessageExtension? { get }
-  func fieldNumberForProto(messageType: BidMachineModules.Message.Type, protoFieldName: Swift.String) -> Swift.Int?
+  subscript(messageType: any BidMachineModules.Message.Type, fieldNumber: Swift.Int) -> (any BidMachineModules.AnyMessageExtension)? { get }
+  func fieldNumberForProto(messageType: any BidMachineModules.Message.Type, protoFieldName: Swift.String) -> Swift.Int?
 }
 public struct SQLiteColumn<T> where T : BidMachineModules.SQLiteEntityKey {
   public struct Primary {
     public init(primary: Swift.Bool = false, auto: Swift.Bool = false)
   }
-  public init(primary: BidMachineModules.SQLiteColumn<T>.Primary = Primary(), name: T, type: BidMachineModules.SQLiteType.Type)
+  public init(primary: BidMachineModules.SQLiteColumn<T>.Primary = Primary(), name: T, type: any BidMachineModules.SQLiteType.Type)
 }
 public protocol SQLiteTable {
   associatedtype T : BidMachineModules.SQLiteEntity
@@ -2173,8 +2177,8 @@ public protocol SQLiteTable {
 }
 public protocol AnyExtensionField : Swift.CustomDebugStringConvertible {
   func hash(into hasher: inout Swift.Hasher)
-  var protobufExtension: BidMachineModules.AnyMessageExtension { get }
-  func isEqual(other: BidMachineModules.AnyExtensionField) -> Swift.Bool
+  var protobufExtension: any BidMachineModules.AnyMessageExtension { get }
+  func isEqual(other: any BidMachineModules.AnyExtensionField) -> Swift.Bool
   mutating func decodeExtensionField<T>(decoder: inout T) throws where T : BidMachineModules.Decoder
   func traverse<V>(visitor: inout V) throws where V : BidMachineModules.Visitor
   var isInitialized: Swift.Bool { get }
@@ -2187,23 +2191,23 @@ extension BidMachineModules.AnyExtensionField {
 public protocol ExtensionField : BidMachineModules.AnyExtensionField, Swift.Hashable {
   associatedtype ValueType
   var value: Self.ValueType { get set }
-  init(protobufExtension: BidMachineModules.AnyMessageExtension, value: Self.ValueType)
-  init?<D>(protobufExtension: BidMachineModules.AnyMessageExtension, decoder: inout D) throws where D : BidMachineModules.Decoder
+  init(protobufExtension: any BidMachineModules.AnyMessageExtension, value: Self.ValueType)
+  init?<D>(protobufExtension: any BidMachineModules.AnyMessageExtension, decoder: inout D) throws where D : BidMachineModules.Decoder
 }
 public struct OptionalExtensionField<T> : BidMachineModules.ExtensionField where T : BidMachineModules.FieldType {
   public typealias BaseType = T.BaseType
   public typealias ValueType = BidMachineModules.OptionalExtensionField<T>.BaseType
   public var value: BidMachineModules.OptionalExtensionField<T>.ValueType
-  public var protobufExtension: BidMachineModules.AnyMessageExtension
+  public var protobufExtension: any BidMachineModules.AnyMessageExtension
   public static func == (lhs: BidMachineModules.OptionalExtensionField<T>, rhs: BidMachineModules.OptionalExtensionField<T>) -> Swift.Bool
-  public init(protobufExtension: BidMachineModules.AnyMessageExtension, value: BidMachineModules.OptionalExtensionField<T>.ValueType)
+  public init(protobufExtension: any BidMachineModules.AnyMessageExtension, value: BidMachineModules.OptionalExtensionField<T>.ValueType)
   public var debugDescription: Swift.String {
     get
   }
   public func hash(into hasher: inout Swift.Hasher)
-  public func isEqual(other: BidMachineModules.AnyExtensionField) -> Swift.Bool
+  public func isEqual(other: any BidMachineModules.AnyExtensionField) -> Swift.Bool
   public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : BidMachineModules.Decoder
-  public init?<D>(protobufExtension: BidMachineModules.AnyMessageExtension, decoder: inout D) throws where D : BidMachineModules.Decoder
+  public init?<D>(protobufExtension: any BidMachineModules.AnyMessageExtension, decoder: inout D) throws where D : BidMachineModules.Decoder
   public func traverse<V>(visitor: inout V) throws where V : BidMachineModules.Visitor
   public var hashValue: Swift.Int {
     get
@@ -2213,16 +2217,16 @@ public struct RepeatedExtensionField<T> : BidMachineModules.ExtensionField where
   public typealias BaseType = T.BaseType
   public typealias ValueType = [BidMachineModules.RepeatedExtensionField<T>.BaseType]
   public var value: BidMachineModules.RepeatedExtensionField<T>.ValueType
-  public var protobufExtension: BidMachineModules.AnyMessageExtension
+  public var protobufExtension: any BidMachineModules.AnyMessageExtension
   public static func == (lhs: BidMachineModules.RepeatedExtensionField<T>, rhs: BidMachineModules.RepeatedExtensionField<T>) -> Swift.Bool
-  public init(protobufExtension: BidMachineModules.AnyMessageExtension, value: BidMachineModules.RepeatedExtensionField<T>.ValueType)
+  public init(protobufExtension: any BidMachineModules.AnyMessageExtension, value: BidMachineModules.RepeatedExtensionField<T>.ValueType)
   public func hash(into hasher: inout Swift.Hasher)
-  public func isEqual(other: BidMachineModules.AnyExtensionField) -> Swift.Bool
+  public func isEqual(other: any BidMachineModules.AnyExtensionField) -> Swift.Bool
   public var debugDescription: Swift.String {
     get
   }
   public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : BidMachineModules.Decoder
-  public init?<D>(protobufExtension: BidMachineModules.AnyMessageExtension, decoder: inout D) throws where D : BidMachineModules.Decoder
+  public init?<D>(protobufExtension: any BidMachineModules.AnyMessageExtension, decoder: inout D) throws where D : BidMachineModules.Decoder
   public func traverse<V>(visitor: inout V) throws where V : BidMachineModules.Visitor
   public var hashValue: Swift.Int {
     get
@@ -2232,16 +2236,16 @@ public struct PackedExtensionField<T> : BidMachineModules.ExtensionField where T
   public typealias BaseType = T.BaseType
   public typealias ValueType = [BidMachineModules.PackedExtensionField<T>.BaseType]
   public var value: BidMachineModules.PackedExtensionField<T>.ValueType
-  public var protobufExtension: BidMachineModules.AnyMessageExtension
+  public var protobufExtension: any BidMachineModules.AnyMessageExtension
   public static func == (lhs: BidMachineModules.PackedExtensionField<T>, rhs: BidMachineModules.PackedExtensionField<T>) -> Swift.Bool
-  public init(protobufExtension: BidMachineModules.AnyMessageExtension, value: BidMachineModules.PackedExtensionField<T>.ValueType)
+  public init(protobufExtension: any BidMachineModules.AnyMessageExtension, value: BidMachineModules.PackedExtensionField<T>.ValueType)
   public func hash(into hasher: inout Swift.Hasher)
-  public func isEqual(other: BidMachineModules.AnyExtensionField) -> Swift.Bool
+  public func isEqual(other: any BidMachineModules.AnyExtensionField) -> Swift.Bool
   public var debugDescription: Swift.String {
     get
   }
   public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : BidMachineModules.Decoder
-  public init?<D>(protobufExtension: BidMachineModules.AnyMessageExtension, decoder: inout D) throws where D : BidMachineModules.Decoder
+  public init?<D>(protobufExtension: any BidMachineModules.AnyMessageExtension, decoder: inout D) throws where D : BidMachineModules.Decoder
   public func traverse<V>(visitor: inout V) throws where V : BidMachineModules.Visitor
   public var hashValue: Swift.Int {
     get
@@ -2251,16 +2255,16 @@ public struct OptionalEnumExtensionField<E> : BidMachineModules.ExtensionField w
   public typealias BaseType = E
   public typealias ValueType = E
   public var value: BidMachineModules.OptionalEnumExtensionField<E>.ValueType
-  public var protobufExtension: BidMachineModules.AnyMessageExtension
+  public var protobufExtension: any BidMachineModules.AnyMessageExtension
   public static func == (lhs: BidMachineModules.OptionalEnumExtensionField<E>, rhs: BidMachineModules.OptionalEnumExtensionField<E>) -> Swift.Bool
-  public init(protobufExtension: BidMachineModules.AnyMessageExtension, value: BidMachineModules.OptionalEnumExtensionField<E>.ValueType)
+  public init(protobufExtension: any BidMachineModules.AnyMessageExtension, value: BidMachineModules.OptionalEnumExtensionField<E>.ValueType)
   public var debugDescription: Swift.String {
     get
   }
   public func hash(into hasher: inout Swift.Hasher)
-  public func isEqual(other: BidMachineModules.AnyExtensionField) -> Swift.Bool
+  public func isEqual(other: any BidMachineModules.AnyExtensionField) -> Swift.Bool
   public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : BidMachineModules.Decoder
-  public init?<D>(protobufExtension: BidMachineModules.AnyMessageExtension, decoder: inout D) throws where D : BidMachineModules.Decoder
+  public init?<D>(protobufExtension: any BidMachineModules.AnyMessageExtension, decoder: inout D) throws where D : BidMachineModules.Decoder
   public func traverse<V>(visitor: inout V) throws where V : BidMachineModules.Visitor
   public var hashValue: Swift.Int {
     get
@@ -2270,16 +2274,16 @@ public struct RepeatedEnumExtensionField<E> : BidMachineModules.ExtensionField w
   public typealias BaseType = E
   public typealias ValueType = [E]
   public var value: BidMachineModules.RepeatedEnumExtensionField<E>.ValueType
-  public var protobufExtension: BidMachineModules.AnyMessageExtension
+  public var protobufExtension: any BidMachineModules.AnyMessageExtension
   public static func == (lhs: BidMachineModules.RepeatedEnumExtensionField<E>, rhs: BidMachineModules.RepeatedEnumExtensionField<E>) -> Swift.Bool
-  public init(protobufExtension: BidMachineModules.AnyMessageExtension, value: BidMachineModules.RepeatedEnumExtensionField<E>.ValueType)
+  public init(protobufExtension: any BidMachineModules.AnyMessageExtension, value: BidMachineModules.RepeatedEnumExtensionField<E>.ValueType)
   public func hash(into hasher: inout Swift.Hasher)
-  public func isEqual(other: BidMachineModules.AnyExtensionField) -> Swift.Bool
+  public func isEqual(other: any BidMachineModules.AnyExtensionField) -> Swift.Bool
   public var debugDescription: Swift.String {
     get
   }
   public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : BidMachineModules.Decoder
-  public init?<D>(protobufExtension: BidMachineModules.AnyMessageExtension, decoder: inout D) throws where D : BidMachineModules.Decoder
+  public init?<D>(protobufExtension: any BidMachineModules.AnyMessageExtension, decoder: inout D) throws where D : BidMachineModules.Decoder
   public func traverse<V>(visitor: inout V) throws where V : BidMachineModules.Visitor
   public var hashValue: Swift.Int {
     get
@@ -2289,16 +2293,16 @@ public struct PackedEnumExtensionField<E> : BidMachineModules.ExtensionField whe
   public typealias BaseType = E
   public typealias ValueType = [E]
   public var value: BidMachineModules.PackedEnumExtensionField<E>.ValueType
-  public var protobufExtension: BidMachineModules.AnyMessageExtension
+  public var protobufExtension: any BidMachineModules.AnyMessageExtension
   public static func == (lhs: BidMachineModules.PackedEnumExtensionField<E>, rhs: BidMachineModules.PackedEnumExtensionField<E>) -> Swift.Bool
-  public init(protobufExtension: BidMachineModules.AnyMessageExtension, value: BidMachineModules.PackedEnumExtensionField<E>.ValueType)
+  public init(protobufExtension: any BidMachineModules.AnyMessageExtension, value: BidMachineModules.PackedEnumExtensionField<E>.ValueType)
   public func hash(into hasher: inout Swift.Hasher)
-  public func isEqual(other: BidMachineModules.AnyExtensionField) -> Swift.Bool
+  public func isEqual(other: any BidMachineModules.AnyExtensionField) -> Swift.Bool
   public var debugDescription: Swift.String {
     get
   }
   public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : BidMachineModules.Decoder
-  public init?<D>(protobufExtension: BidMachineModules.AnyMessageExtension, decoder: inout D) throws where D : BidMachineModules.Decoder
+  public init?<D>(protobufExtension: any BidMachineModules.AnyMessageExtension, decoder: inout D) throws where D : BidMachineModules.Decoder
   public func traverse<V>(visitor: inout V) throws where V : BidMachineModules.Visitor
   public var hashValue: Swift.Int {
     get
@@ -2308,16 +2312,16 @@ public struct OptionalMessageExtensionField<M> : BidMachineModules.ExtensionFiel
   public typealias BaseType = M
   public typealias ValueType = BidMachineModules.OptionalMessageExtensionField<M>.BaseType
   public var value: BidMachineModules.OptionalMessageExtensionField<M>.ValueType
-  public var protobufExtension: BidMachineModules.AnyMessageExtension
+  public var protobufExtension: any BidMachineModules.AnyMessageExtension
   public static func == (lhs: BidMachineModules.OptionalMessageExtensionField<M>, rhs: BidMachineModules.OptionalMessageExtensionField<M>) -> Swift.Bool
-  public init(protobufExtension: BidMachineModules.AnyMessageExtension, value: BidMachineModules.OptionalMessageExtensionField<M>.ValueType)
+  public init(protobufExtension: any BidMachineModules.AnyMessageExtension, value: BidMachineModules.OptionalMessageExtensionField<M>.ValueType)
   public var debugDescription: Swift.String {
     get
   }
   public func hash(into hasher: inout Swift.Hasher)
-  public func isEqual(other: BidMachineModules.AnyExtensionField) -> Swift.Bool
+  public func isEqual(other: any BidMachineModules.AnyExtensionField) -> Swift.Bool
   public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : BidMachineModules.Decoder
-  public init?<D>(protobufExtension: BidMachineModules.AnyMessageExtension, decoder: inout D) throws where D : BidMachineModules.Decoder
+  public init?<D>(protobufExtension: any BidMachineModules.AnyMessageExtension, decoder: inout D) throws where D : BidMachineModules.Decoder
   public func traverse<V>(visitor: inout V) throws where V : BidMachineModules.Visitor
   public var isInitialized: Swift.Bool {
     get
@@ -2330,16 +2334,16 @@ public struct RepeatedMessageExtensionField<M> : BidMachineModules.ExtensionFiel
   public typealias BaseType = M
   public typealias ValueType = [BidMachineModules.RepeatedMessageExtensionField<M>.BaseType]
   public var value: BidMachineModules.RepeatedMessageExtensionField<M>.ValueType
-  public var protobufExtension: BidMachineModules.AnyMessageExtension
+  public var protobufExtension: any BidMachineModules.AnyMessageExtension
   public static func == (lhs: BidMachineModules.RepeatedMessageExtensionField<M>, rhs: BidMachineModules.RepeatedMessageExtensionField<M>) -> Swift.Bool
-  public init(protobufExtension: BidMachineModules.AnyMessageExtension, value: BidMachineModules.RepeatedMessageExtensionField<M>.ValueType)
+  public init(protobufExtension: any BidMachineModules.AnyMessageExtension, value: BidMachineModules.RepeatedMessageExtensionField<M>.ValueType)
   public func hash(into hasher: inout Swift.Hasher)
-  public func isEqual(other: BidMachineModules.AnyExtensionField) -> Swift.Bool
+  public func isEqual(other: any BidMachineModules.AnyExtensionField) -> Swift.Bool
   public var debugDescription: Swift.String {
     get
   }
   public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : BidMachineModules.Decoder
-  public init?<D>(protobufExtension: BidMachineModules.AnyMessageExtension, decoder: inout D) throws where D : BidMachineModules.Decoder
+  public init?<D>(protobufExtension: any BidMachineModules.AnyMessageExtension, decoder: inout D) throws where D : BidMachineModules.Decoder
   public func traverse<V>(visitor: inout V) throws where V : BidMachineModules.Visitor
   public var isInitialized: Swift.Bool {
     get
@@ -2352,16 +2356,16 @@ public struct OptionalGroupExtensionField<G> : BidMachineModules.ExtensionField 
   public typealias BaseType = G
   public typealias ValueType = BidMachineModules.OptionalGroupExtensionField<G>.BaseType
   public var value: G
-  public var protobufExtension: BidMachineModules.AnyMessageExtension
+  public var protobufExtension: any BidMachineModules.AnyMessageExtension
   public static func == (lhs: BidMachineModules.OptionalGroupExtensionField<G>, rhs: BidMachineModules.OptionalGroupExtensionField<G>) -> Swift.Bool
-  public init(protobufExtension: BidMachineModules.AnyMessageExtension, value: BidMachineModules.OptionalGroupExtensionField<G>.ValueType)
+  public init(protobufExtension: any BidMachineModules.AnyMessageExtension, value: BidMachineModules.OptionalGroupExtensionField<G>.ValueType)
   public func hash(into hasher: inout Swift.Hasher)
   public var debugDescription: Swift.String {
     get
   }
-  public func isEqual(other: BidMachineModules.AnyExtensionField) -> Swift.Bool
+  public func isEqual(other: any BidMachineModules.AnyExtensionField) -> Swift.Bool
   public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : BidMachineModules.Decoder
-  public init?<D>(protobufExtension: BidMachineModules.AnyMessageExtension, decoder: inout D) throws where D : BidMachineModules.Decoder
+  public init?<D>(protobufExtension: any BidMachineModules.AnyMessageExtension, decoder: inout D) throws where D : BidMachineModules.Decoder
   public func traverse<V>(visitor: inout V) throws where V : BidMachineModules.Visitor
   public var isInitialized: Swift.Bool {
     get
@@ -2374,16 +2378,16 @@ public struct RepeatedGroupExtensionField<G> : BidMachineModules.ExtensionField 
   public typealias BaseType = G
   public typealias ValueType = [BidMachineModules.RepeatedGroupExtensionField<G>.BaseType]
   public var value: BidMachineModules.RepeatedGroupExtensionField<G>.ValueType
-  public var protobufExtension: BidMachineModules.AnyMessageExtension
+  public var protobufExtension: any BidMachineModules.AnyMessageExtension
   public static func == (lhs: BidMachineModules.RepeatedGroupExtensionField<G>, rhs: BidMachineModules.RepeatedGroupExtensionField<G>) -> Swift.Bool
-  public init(protobufExtension: BidMachineModules.AnyMessageExtension, value: BidMachineModules.RepeatedGroupExtensionField<G>.ValueType)
+  public init(protobufExtension: any BidMachineModules.AnyMessageExtension, value: BidMachineModules.RepeatedGroupExtensionField<G>.ValueType)
   public func hash(into hasher: inout Swift.Hasher)
   public var debugDescription: Swift.String {
     get
   }
-  public func isEqual(other: BidMachineModules.AnyExtensionField) -> Swift.Bool
+  public func isEqual(other: any BidMachineModules.AnyExtensionField) -> Swift.Bool
   public mutating func decodeExtensionField<D>(decoder: inout D) throws where D : BidMachineModules.Decoder
-  public init?<D>(protobufExtension: BidMachineModules.AnyMessageExtension, decoder: inout D) throws where D : BidMachineModules.Decoder
+  public init?<D>(protobufExtension: any BidMachineModules.AnyMessageExtension, decoder: inout D) throws where D : BidMachineModules.Decoder
   public func traverse<V>(visitor: inout V) throws where V : BidMachineModules.Visitor
   public var isInitialized: Swift.Bool {
     get
@@ -2485,20 +2489,20 @@ extension BidMachineModules.Google_Protobuf_SourceContext : BidMachineModules.Me
 public struct SimpleExtensionMap : BidMachineModules.ExtensionMap, Swift.ExpressibleByArrayLiteral, Swift.CustomDebugStringConvertible {
   public typealias Element = BidMachineModules.AnyMessageExtension
   public init()
-  public init(arrayLiteral: BidMachineModules.SimpleExtensionMap.Element...)
+  public init(arrayLiteral: any BidMachineModules.AnyMessageExtension...)
   public init(_ others: BidMachineModules.SimpleExtensionMap...)
-  public subscript(messageType: BidMachineModules.Message.Type, fieldNumber: Swift.Int) -> BidMachineModules.AnyMessageExtension? {
+  public subscript(messageType: any BidMachineModules.Message.Type, fieldNumber: Swift.Int) -> (any BidMachineModules.AnyMessageExtension)? {
     get
   }
-  public func fieldNumberForProto(messageType: BidMachineModules.Message.Type, protoFieldName: Swift.String) -> Swift.Int?
-  public mutating func insert(_ newValue: BidMachineModules.SimpleExtensionMap.Element)
-  public mutating func insert(contentsOf: [BidMachineModules.SimpleExtensionMap.Element])
+  public func fieldNumberForProto(messageType: any BidMachineModules.Message.Type, protoFieldName: Swift.String) -> Swift.Int?
+  public mutating func insert(_ newValue: any BidMachineModules.AnyMessageExtension)
+  public mutating func insert(contentsOf: [any BidMachineModules.AnyMessageExtension])
   public mutating func formUnion(_ other: BidMachineModules.SimpleExtensionMap)
   public func union(_ other: BidMachineModules.SimpleExtensionMap) -> BidMachineModules.SimpleExtensionMap
   public var debugDescription: Swift.String {
     get
   }
-  public typealias ArrayLiteralElement = BidMachineModules.SimpleExtensionMap.Element
+  public typealias ArrayLiteralElement = any BidMachineModules.AnyMessageExtension
 }
 public protocol Decoder {
   mutating func handleConflictingOneOf() throws
@@ -2558,11 +2562,11 @@ public protocol Decoder {
   mutating func decodeMapField<KeyType, ValueType>(fieldType: BidMachineModules._ProtobufMap<KeyType, ValueType>.Type, value: inout BidMachineModules._ProtobufMap<KeyType, ValueType>.BaseType) throws where KeyType : BidMachineModules.MapKeyType, ValueType : BidMachineModules.MapValueType
   mutating func decodeMapField<KeyType, ValueType>(fieldType: BidMachineModules._ProtobufEnumMap<KeyType, ValueType>.Type, value: inout BidMachineModules._ProtobufEnumMap<KeyType, ValueType>.BaseType) throws where KeyType : BidMachineModules.MapKeyType, ValueType : BidMachineModules.Enum, ValueType.RawValue == Swift.Int
   mutating func decodeMapField<KeyType, ValueType>(fieldType: BidMachineModules._ProtobufMessageMap<KeyType, ValueType>.Type, value: inout BidMachineModules._ProtobufMessageMap<KeyType, ValueType>.BaseType) throws where KeyType : BidMachineModules.MapKeyType, ValueType : BidMachineModules.Message, ValueType : Swift.Hashable
-  mutating func decodeExtensionField(values: inout BidMachineModules.ExtensionFieldValueSet, messageType: BidMachineModules.Message.Type, fieldNumber: Swift.Int) throws
-  mutating func decodeExtensionFieldsAsMessageSet(values: inout BidMachineModules.ExtensionFieldValueSet, messageType: BidMachineModules.Message.Type) throws
+  mutating func decodeExtensionField(values: inout BidMachineModules.ExtensionFieldValueSet, messageType: any BidMachineModules.Message.Type, fieldNumber: Swift.Int) throws
+  mutating func decodeExtensionFieldsAsMessageSet(values: inout BidMachineModules.ExtensionFieldValueSet, messageType: any BidMachineModules.Message.Type) throws
 }
 extension BidMachineModules.Decoder {
-  public mutating func decodeExtensionFieldsAsMessageSet(values: inout BidMachineModules.ExtensionFieldValueSet, messageType: BidMachineModules.Message.Type) throws
+  public mutating func decodeExtensionFieldsAsMessageSet(values: inout BidMachineModules.ExtensionFieldValueSet, messageType: any BidMachineModules.Message.Type) throws
 }
 public enum Google_Protobuf_Edition : BidMachineModules.Enum {
   public typealias RawValue = Swift.Int

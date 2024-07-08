@@ -4,9 +4,29 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>BidMachineRenderingKit.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+		</data>
+		<key>BidMachineStoreKit.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+		</data>
+		<key>BidMachineUtilsKit.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+		</data>
+		<key>BidMachineVideoKit.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+		</data>
+		<key>BidMachineWebKit.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		jR5kks/wyXPVXeOvTLbLYPKn2g0=
+		</data>
 		<key>Headers/BidMachineBidding-Swift.h</key>
 		<data>
-		iLQD8Su2a6/n/v+Tf8+pcUJVz8E=
+		AfT++tFPFEBWlT1IggGvgkjLtX8=
 		</data>
 		<key>Headers/BidMachineBidding.h</key>
 		<data>
@@ -14,64 +34,167 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		puVY6j77GFQ58lDAc7YW14Ub060=
+		bviuDfZNO58abfF47DzgiaTcXBM=
 		</data>
 		<key>Modules/BidMachineBidding.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		RTnBkAO2zzqeeAkgIeblZ8ah3Jw=
+		/IpppJZYFoh5ncA5F8wya2RHzDI=
 		</data>
 		<key>Modules/BidMachineBidding.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		gZhigv7O60F9NmL/yBCQR4Sp8nE=
+		EUyOkDeIAH1mtfO7+1ShEgnyFBQ=
 		</data>
 		<key>Modules/BidMachineBidding.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		xH5Pve4/UDQwtcu9qKpiGit+Xec=
+		sA+vPq/UdO0v87cgUHMixTmqjVY=
 		</data>
 		<key>Modules/BidMachineBidding.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		gZhigv7O60F9NmL/yBCQR4Sp8nE=
+		EUyOkDeIAH1mtfO7+1ShEgnyFBQ=
 		</data>
 		<key>Modules/BidMachineBidding.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		qbeyCLWZXHns0stacmrwzfjT9a8=
+		NF4ZmqXuOEknXHG+W8JWtmcGziM=
 		</data>
 		<key>Modules/BidMachineBidding.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		RTnBkAO2zzqeeAkgIeblZ8ah3Jw=
+		/IpppJZYFoh5ncA5F8wya2RHzDI=
 		</data>
 		<key>Modules/BidMachineBidding.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		uulqTujtOWbLEis9viBr1P+cDeE=
+		PM4Cj2Fqej1rjZgZjG3pY+PSqrs=
 		</data>
 		<key>Modules/BidMachineBidding.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		wrDKukpFhMOKAyqANXauIvzm4Sg=
+		5yHoHt2Y6t+ppGeENcMjV+Qwd4c=
 		</data>
 		<key>Modules/BidMachineBidding.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		uulqTujtOWbLEis9viBr1P+cDeE=
+		PM4Cj2Fqej1rjZgZjG3pY+PSqrs=
 		</data>
 		<key>Modules/BidMachineBidding.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6gmItcZ5JLXlpCeLbufGG0CGn48=
+		tH/cWc8bsK73rqcLaSLjRxBRXpo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		9BiimXM2nbdW9IQDuu909Qi56e4=
 		</data>
+		<key>StackFoundation.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		PehKh85ACMAJeaVumbBh74Ik6uM=
+		</data>
+		<key>StackIABAssets.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+		</data>
+		<key>StackMRAIDKit.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		jR5kks/wyXPVXeOvTLbLYPKn2g0=
+		</data>
+		<key>StackNASTKit.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+		</data>
+		<key>StackOpenMeasure.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+		</data>
+		<key>StackProductPresentation.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+		</data>
+		<key>StackRichMedia.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+		</data>
+		<key>StackUIKit.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+		</data>
+		<key>StackVASTAssets.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+		</data>
+		<key>StackVASTKit.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+		</data>
+		<key>StackVideoPlayer.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+		</data>
+		<key>StackXML.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>BidMachineRenderingKit.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+			</data>
+			<key>hash2</key>
+			<data>
+			oOieiiHwPwrN8Jcb7UfQIsN5K/r7ZuKQ3AfMZT8usiw=
+			</data>
+		</dict>
+		<key>BidMachineStoreKit.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+			</data>
+			<key>hash2</key>
+			<data>
+			oOieiiHwPwrN8Jcb7UfQIsN5K/r7ZuKQ3AfMZT8usiw=
+			</data>
+		</dict>
+		<key>BidMachineUtilsKit.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+			</data>
+			<key>hash2</key>
+			<data>
+			oOieiiHwPwrN8Jcb7UfQIsN5K/r7ZuKQ3AfMZT8usiw=
+			</data>
+		</dict>
+		<key>BidMachineVideoKit.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+			</data>
+			<key>hash2</key>
+			<data>
+			oOieiiHwPwrN8Jcb7UfQIsN5K/r7ZuKQ3AfMZT8usiw=
+			</data>
+		</dict>
+		<key>BidMachineWebKit.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jR5kks/wyXPVXeOvTLbLYPKn2g0=
+			</data>
+			<key>hash2</key>
+			<data>
+			gOOIgdv7OxZfnvNc+kOyjqwA1bGAWKEnWIwpQZOEHJ8=
+			</data>
+		</dict>
 		<key>Headers/BidMachineBidding-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iLQD8Su2a6/n/v+Tf8+pcUJVz8E=
+			AfT++tFPFEBWlT1IggGvgkjLtX8=
 			</data>
 			<key>hash2</key>
 			<data>
-			FV9Tg5GMI9SphzOASJUubKNRcNDSOLGuze/0Af6Uba4=
+			hfrk6rmA75n65kJd2KnS1bIjT1DtoGoS8nKikEXkkcw=
 			</data>
 		</dict>
 		<key>Headers/BidMachineBidding.h</key>
@@ -89,110 +212,110 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RTnBkAO2zzqeeAkgIeblZ8ah3Jw=
+			/IpppJZYFoh5ncA5F8wya2RHzDI=
 			</data>
 			<key>hash2</key>
 			<data>
-			76/VjXuSI82+bWdDdkYvB++D6TIVoDi96bxxXZX4az4=
+			7b1uqssxHRj1a2GDlohd+C2rKTm+UySRAHZZf/gbkAE=
 			</data>
 		</dict>
 		<key>Modules/BidMachineBidding.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gZhigv7O60F9NmL/yBCQR4Sp8nE=
+			EUyOkDeIAH1mtfO7+1ShEgnyFBQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			3h42yfuhEj4He44JHmBGbIJ5uzSBA1IK0Z94jlY2p1s=
+			NG2m4BY69pAQlYrcrddNI04sWO1YalUweYxcSluKNeY=
 			</data>
 		</dict>
 		<key>Modules/BidMachineBidding.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xH5Pve4/UDQwtcu9qKpiGit+Xec=
+			sA+vPq/UdO0v87cgUHMixTmqjVY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Y2PyMhuxvREC6RVKRkGbIvTXoGyEYoE8Ebm/nuOIORc=
+			J4RyRIzMbb1H7TkdPGE8v4JabUghn0My2upzJMrBdF8=
 			</data>
 		</dict>
 		<key>Modules/BidMachineBidding.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gZhigv7O60F9NmL/yBCQR4Sp8nE=
+			EUyOkDeIAH1mtfO7+1ShEgnyFBQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			3h42yfuhEj4He44JHmBGbIJ5uzSBA1IK0Z94jlY2p1s=
+			NG2m4BY69pAQlYrcrddNI04sWO1YalUweYxcSluKNeY=
 			</data>
 		</dict>
 		<key>Modules/BidMachineBidding.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qbeyCLWZXHns0stacmrwzfjT9a8=
+			NF4ZmqXuOEknXHG+W8JWtmcGziM=
 			</data>
 			<key>hash2</key>
 			<data>
-			gDvDCtOHQyJUyfUtaEQGRvPR0Vo8PDzNHFIjhy4ttF4=
+			n6fUt5aQk5i+aFle8IAd8FHSLJCvH9CGyrAlWxG0orU=
 			</data>
 		</dict>
 		<key>Modules/BidMachineBidding.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RTnBkAO2zzqeeAkgIeblZ8ah3Jw=
+			/IpppJZYFoh5ncA5F8wya2RHzDI=
 			</data>
 			<key>hash2</key>
 			<data>
-			76/VjXuSI82+bWdDdkYvB++D6TIVoDi96bxxXZX4az4=
+			7b1uqssxHRj1a2GDlohd+C2rKTm+UySRAHZZf/gbkAE=
 			</data>
 		</dict>
 		<key>Modules/BidMachineBidding.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uulqTujtOWbLEis9viBr1P+cDeE=
+			PM4Cj2Fqej1rjZgZjG3pY+PSqrs=
 			</data>
 			<key>hash2</key>
 			<data>
-			shNBkXlIhgi7xsZ5AlylRMMK9idwoFoc4XxJGtd/FjM=
+			lKXRVTIq2lU0QMgk7q0jYZf/OCTnDik5kufzjwtVPhk=
 			</data>
 		</dict>
 		<key>Modules/BidMachineBidding.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wrDKukpFhMOKAyqANXauIvzm4Sg=
+			5yHoHt2Y6t+ppGeENcMjV+Qwd4c=
 			</data>
 			<key>hash2</key>
 			<data>
-			pXnYHGpqX47PP2mO0EvAUeKS1dG64bhBniWK3M+kx2w=
+			4y11anpnPQnYK2QbN0ha5nuEIGSZ2nylSs3HLLFpv/g=
 			</data>
 		</dict>
 		<key>Modules/BidMachineBidding.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uulqTujtOWbLEis9viBr1P+cDeE=
+			PM4Cj2Fqej1rjZgZjG3pY+PSqrs=
 			</data>
 			<key>hash2</key>
 			<data>
-			shNBkXlIhgi7xsZ5AlylRMMK9idwoFoc4XxJGtd/FjM=
+			lKXRVTIq2lU0QMgk7q0jYZf/OCTnDik5kufzjwtVPhk=
 			</data>
 		</dict>
 		<key>Modules/BidMachineBidding.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6gmItcZ5JLXlpCeLbufGG0CGn48=
+			tH/cWc8bsK73rqcLaSLjRxBRXpo=
 			</data>
 			<key>hash2</key>
 			<data>
-			L/bz+4DrxkN/SNGp7qR40HKBzD31so54/eJEdXDuvR8=
+			t7hhS61agPGITg7RLfgi8hC61+u/TmzQfskeKvQks6s=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -204,6 +327,138 @@
 			<key>hash2</key>
 			<data>
 			vslfnmwz0fow/bCO09lV/aSFNjleBr9ukEhJXIvd0H8=
+			</data>
+		</dict>
+		<key>StackFoundation.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PehKh85ACMAJeaVumbBh74Ik6uM=
+			</data>
+			<key>hash2</key>
+			<data>
+			ziopBf5Z2+3YiSbyK1rHnLjnoN5dvC2/y2ULp6Tn0JE=
+			</data>
+		</dict>
+		<key>StackIABAssets.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+			</data>
+			<key>hash2</key>
+			<data>
+			oOieiiHwPwrN8Jcb7UfQIsN5K/r7ZuKQ3AfMZT8usiw=
+			</data>
+		</dict>
+		<key>StackMRAIDKit.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jR5kks/wyXPVXeOvTLbLYPKn2g0=
+			</data>
+			<key>hash2</key>
+			<data>
+			gOOIgdv7OxZfnvNc+kOyjqwA1bGAWKEnWIwpQZOEHJ8=
+			</data>
+		</dict>
+		<key>StackNASTKit.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+			</data>
+			<key>hash2</key>
+			<data>
+			oOieiiHwPwrN8Jcb7UfQIsN5K/r7ZuKQ3AfMZT8usiw=
+			</data>
+		</dict>
+		<key>StackOpenMeasure.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+			</data>
+			<key>hash2</key>
+			<data>
+			oOieiiHwPwrN8Jcb7UfQIsN5K/r7ZuKQ3AfMZT8usiw=
+			</data>
+		</dict>
+		<key>StackProductPresentation.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+			</data>
+			<key>hash2</key>
+			<data>
+			oOieiiHwPwrN8Jcb7UfQIsN5K/r7ZuKQ3AfMZT8usiw=
+			</data>
+		</dict>
+		<key>StackRichMedia.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+			</data>
+			<key>hash2</key>
+			<data>
+			oOieiiHwPwrN8Jcb7UfQIsN5K/r7ZuKQ3AfMZT8usiw=
+			</data>
+		</dict>
+		<key>StackUIKit.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+			</data>
+			<key>hash2</key>
+			<data>
+			oOieiiHwPwrN8Jcb7UfQIsN5K/r7ZuKQ3AfMZT8usiw=
+			</data>
+		</dict>
+		<key>StackVASTAssets.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+			</data>
+			<key>hash2</key>
+			<data>
+			oOieiiHwPwrN8Jcb7UfQIsN5K/r7ZuKQ3AfMZT8usiw=
+			</data>
+		</dict>
+		<key>StackVASTKit.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+			</data>
+			<key>hash2</key>
+			<data>
+			oOieiiHwPwrN8Jcb7UfQIsN5K/r7ZuKQ3AfMZT8usiw=
+			</data>
+		</dict>
+		<key>StackVideoPlayer.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+			</data>
+			<key>hash2</key>
+			<data>
+			oOieiiHwPwrN8Jcb7UfQIsN5K/r7ZuKQ3AfMZT8usiw=
+			</data>
+		</dict>
+		<key>StackXML.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+			</data>
+			<key>hash2</key>
+			<data>
+			oOieiiHwPwrN8Jcb7UfQIsN5K/r7ZuKQ3AfMZT8usiw=
 			</data>
 		</dict>
 	</dict>
