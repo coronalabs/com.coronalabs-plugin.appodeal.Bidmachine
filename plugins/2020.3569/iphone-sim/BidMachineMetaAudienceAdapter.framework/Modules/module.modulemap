@@ -1,7 +1,7 @@
 framework module BidMachineMetaAudienceAdapter {
   umbrella header "BidMachineMetaAudienceAdapter.h"
-
   export *
+
   module * { export * }
 }
 

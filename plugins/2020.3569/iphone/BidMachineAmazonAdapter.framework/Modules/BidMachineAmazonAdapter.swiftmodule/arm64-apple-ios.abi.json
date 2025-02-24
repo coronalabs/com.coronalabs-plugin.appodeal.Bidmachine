@@ -1,0 +1,159 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachineAmazonAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "DTBiOSSDK",
+        "printedName": "DTBiOSSDK",
+        "declKind": "Import",
+        "moduleName": "BidMachineAmazonAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachine",
+        "printedName": "BidMachine",
+        "declKind": "Import",
+        "moduleName": "BidMachineAmazonAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "DTBiOSSDK",
+        "printedName": "DTBiOSSDK",
+        "declKind": "Import",
+        "moduleName": "BidMachineAmazonAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidMachineAmazonAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachine",
+        "printedName": "BidMachine",
+        "declKind": "Import",
+        "moduleName": "BidMachineAmazonAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "DTBiOSSDK",
+        "printedName": "DTBiOSSDK",
+        "declKind": "Import",
+        "moduleName": "BidMachineAmazonAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidMachineAmazonAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachine",
+        "printedName": "BidMachine",
+        "declKind": "Import",
+        "moduleName": "BidMachineAmazonAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachineAmazonAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "DTBiOSSDK",
+        "printedName": "DTBiOSSDK",
+        "declKind": "Import",
+        "moduleName": "BidMachineAmazonAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachine",
+        "printedName": "BidMachine",
+        "declKind": "Import",
+        "moduleName": "BidMachineAmazonAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachineAmazonAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "DTBiOSSDK",
+        "printedName": "DTBiOSSDK",
+        "declKind": "Import",
+        "moduleName": "BidMachineAmazonAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachine",
+        "printedName": "BidMachine",
+        "declKind": "Import",
+        "moduleName": "BidMachineAmazonAdapter"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineAmazonAdapter\/AmazonFullscreenAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 56,
+      "length": 23,
+      "value": "\"BidMachineAmazonAdapter.AmazonFullscreenAdapter\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineAmazonAdapter\/AmazonBannerAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 56,
+      "length": 19,
+      "value": "\"BidMachineAmazonAdapter.AmazonBannerAdapter\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineAmazonAdapter\/AmazonNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 316,
+      "length": 9,
+      "value": "\"app_key\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineAmazonAdapter\/AmazonNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 359,
+      "length": 11,
+      "value": "\"slot_uuid\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineAmazonAdapter\/AmazonNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 412,
+      "length": 8,
+      "value": "\"amazon\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineAmazonAdapter\/AmazonNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 543,
+      "length": 4,
+      "value": "\".0\""
+    }
+  ]
+}

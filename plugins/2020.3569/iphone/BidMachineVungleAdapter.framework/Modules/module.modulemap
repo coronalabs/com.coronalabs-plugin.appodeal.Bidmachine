@@ -1,7 +1,7 @@
 framework module BidMachineVungleAdapter {
   umbrella header "BidMachineVungleAdapter.h"
-
   export *
+
   module * { export * }
 }
 

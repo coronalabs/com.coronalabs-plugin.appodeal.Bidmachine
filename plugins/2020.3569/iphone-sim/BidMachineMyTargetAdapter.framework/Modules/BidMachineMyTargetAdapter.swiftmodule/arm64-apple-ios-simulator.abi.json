@@ -13,8 +13,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "BidMachine",
+        "printedName": "BidMachine",
         "declKind": "Import",
         "moduleName": "BidMachineMyTargetAdapter"
       },
@@ -22,20 +22,6 @@
         "kind": "Import",
         "name": "MyTargetSDK",
         "printedName": "MyTargetSDK",
-        "declKind": "Import",
-        "moduleName": "BidMachineMyTargetAdapter"
-      },
-      {
-        "kind": "Import",
-        "name": "BidMachineApiCore",
-        "printedName": "BidMachineApiCore",
-        "declKind": "Import",
-        "moduleName": "BidMachineMyTargetAdapter"
-      },
-      {
-        "kind": "Import",
-        "name": "BidMachineBidding",
-        "printedName": "BidMachineBidding",
         "declKind": "Import",
         "moduleName": "BidMachineMyTargetAdapter"
       },
@@ -48,8 +34,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "BidMachine",
+        "printedName": "BidMachine",
         "declKind": "Import",
         "moduleName": "BidMachineMyTargetAdapter"
       },
@@ -62,20 +48,6 @@
       },
       {
         "kind": "Import",
-        "name": "BidMachineApiCore",
-        "printedName": "BidMachineApiCore",
-        "declKind": "Import",
-        "moduleName": "BidMachineMyTargetAdapter"
-      },
-      {
-        "kind": "Import",
-        "name": "BidMachineBidding",
-        "printedName": "BidMachineBidding",
-        "declKind": "Import",
-        "moduleName": "BidMachineMyTargetAdapter"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -83,15 +55,8 @@
       },
       {
         "kind": "Import",
-        "name": "BidMachineApiCore",
-        "printedName": "BidMachineApiCore",
-        "declKind": "Import",
-        "moduleName": "BidMachineMyTargetAdapter"
-      },
-      {
-        "kind": "Import",
-        "name": "BidMachineBidding",
-        "printedName": "BidMachineBidding",
+        "name": "BidMachine",
+        "printedName": "BidMachine",
         "declKind": "Import",
         "moduleName": "BidMachineMyTargetAdapter"
       },
@@ -104,15 +69,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "BidMachineMyTargetAdapter"
-      },
-      {
-        "kind": "Import",
-        "name": "StackUIKit",
-        "printedName": "StackUIKit",
+        "name": "BidMachine",
+        "printedName": "BidMachine",
         "declKind": "Import",
         "moduleName": "BidMachineMyTargetAdapter"
       },
@@ -120,20 +78,6 @@
         "kind": "Import",
         "name": "MyTargetSDK",
         "printedName": "MyTargetSDK",
-        "declKind": "Import",
-        "moduleName": "BidMachineMyTargetAdapter"
-      },
-      {
-        "kind": "Import",
-        "name": "BidMachineApiCore",
-        "printedName": "BidMachineApiCore",
-        "declKind": "Import",
-        "moduleName": "BidMachineMyTargetAdapter"
-      },
-      {
-        "kind": "Import",
-        "name": "BidMachineBidding",
-        "printedName": "BidMachineBidding",
         "declKind": "Import",
         "moduleName": "BidMachineMyTargetAdapter"
       },
@@ -146,8 +90,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "BidMachine",
+        "printedName": "BidMachine",
         "declKind": "Import",
         "moduleName": "BidMachineMyTargetAdapter"
       },
@@ -155,20 +99,6 @@
         "kind": "Import",
         "name": "MyTargetSDK",
         "printedName": "MyTargetSDK",
-        "declKind": "Import",
-        "moduleName": "BidMachineMyTargetAdapter"
-      },
-      {
-        "kind": "Import",
-        "name": "BidMachineApiCore",
-        "printedName": "BidMachineApiCore",
-        "declKind": "Import",
-        "moduleName": "BidMachineMyTargetAdapter"
-      },
-      {
-        "kind": "Import",
-        "name": "BidMachineBidding",
-        "printedName": "BidMachineBidding",
         "declKind": "Import",
         "moduleName": "BidMachineMyTargetAdapter"
       },
@@ -181,8 +111,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "BidMachine",
+        "printedName": "BidMachine",
         "declKind": "Import",
         "moduleName": "BidMachineMyTargetAdapter"
       },
@@ -190,20 +120,6 @@
         "kind": "Import",
         "name": "MyTargetSDK",
         "printedName": "MyTargetSDK",
-        "declKind": "Import",
-        "moduleName": "BidMachineMyTargetAdapter"
-      },
-      {
-        "kind": "Import",
-        "name": "BidMachineApiCore",
-        "printedName": "BidMachineApiCore",
-        "declKind": "Import",
-        "moduleName": "BidMachineMyTargetAdapter"
-      },
-      {
-        "kind": "Import",
-        "name": "BidMachineBidding",
-        "printedName": "BidMachineBidding",
         "declKind": "Import",
         "moduleName": "BidMachineMyTargetAdapter"
       },
@@ -216,8 +132,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "BidMachine",
+        "printedName": "BidMachine",
         "declKind": "Import",
         "moduleName": "BidMachineMyTargetAdapter"
       },
@@ -225,20 +141,6 @@
         "kind": "Import",
         "name": "MyTargetSDK",
         "printedName": "MyTargetSDK",
-        "declKind": "Import",
-        "moduleName": "BidMachineMyTargetAdapter"
-      },
-      {
-        "kind": "Import",
-        "name": "BidMachineApiCore",
-        "printedName": "BidMachineApiCore",
-        "declKind": "Import",
-        "moduleName": "BidMachineMyTargetAdapter"
-      },
-      {
-        "kind": "Import",
-        "name": "BidMachineBidding",
-        "printedName": "BidMachineBidding",
         "declKind": "Import",
         "moduleName": "BidMachineMyTargetAdapter"
       }
@@ -247,214 +149,67 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNetwork.swift",
+      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 206,
+      "offset": 313,
       "length": 14,
       "value": "\"bidder_token\""
     },
     {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNetwork.swift",
+      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 250,
+      "offset": 357,
       "length": 8,
       "value": "\"bid_id\""
     },
     {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNetwork.swift",
+      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 292,
+      "offset": 399,
       "length": 9,
       "value": "\"slot_id\""
     },
     {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNetwork.swift",
+      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 350,
+      "offset": 451,
       "length": 11,
       "value": "\"my_target\""
     },
     {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNetwork.swift",
+      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 520,
+      "offset": 597,
       "length": 4,
-      "value": "\".0\""
+      "value": "\".1\""
     },
     {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNetwork.swift",
+      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNativeAdapter.swift",
       "kind": "StringLiteral",
-      "offset": 1208,
-      "length": 49,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 1249,
-      "length": 2,
-      "value": "\" is nil\""
-    },
-    {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 1451,
-      "length": 54,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 1492,
-      "length": 2,
-      "value": "\" is not UInt\""
-    },
-    {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 2438,
-      "length": 64,
-      "value": "\"Can't create adapter provider with placement \""
-    },
-    {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 2501,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNativeAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 109,
+      "offset": 58,
       "length": 21,
       "value": "\"BidMachineMyTargetAdapter.MyTargetNativeAdapter\""
     },
     {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNativeAdapter.swift",
+      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineMyTargetAdapter\/MyTargetBannerAdapter.swift",
       "kind": "StringLiteral",
-      "offset": 1124,
-      "length": 11,
-      "value": "\"Ad is nil\""
-    },
-    {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNativeAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 1779,
-      "length": 14,
-      "value": "\"Fail to load\""
-    },
-    {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetBannerAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 127,
+      "offset": 58,
       "length": 21,
       "value": "\"BidMachineMyTargetAdapter.MyTargetBannerAdapter\""
     },
     {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetBannerAdapter.swift",
+      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineMyTargetAdapter\/MyTargetFullscreenAdapter.swift",
       "kind": "StringLiteral",
-      "offset": 902,
-      "length": 19,
-      "value": "\"Controller is nil\""
-    },
-    {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetBannerAdapter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1013,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetBannerAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 1485,
-      "length": 11,
-      "value": "\"Ad is nil\""
-    },
-    {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetBannerAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 2773,
-      "length": 14,
-      "value": "\"Fail to load\""
-    },
-    {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetBannerAdapter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3460,
-      "length": 3,
-      "value": "250"
-    },
-    {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetBannerAdapter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3512,
-      "length": 2,
-      "value": "90"
-    },
-    {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 839,
-      "length": 43,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 874,
-      "length": 2,
-      "value": "\" is nil\""
-    },
-    {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 1407,
-      "length": 45,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 1444,
-      "length": 2,
-      "value": "\" is nil\""
-    },
-    {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetFullscreenAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 109,
+      "offset": 58,
       "length": 25,
       "value": "\"BidMachineMyTargetAdapter.MyTargetFullscreenAdapter\""
     },
     {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetFullscreenAdapter.swift",
+      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNativeAdRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 1176,
-      "length": 11,
-      "value": "\"Ad is nil\""
-    },
-    {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetFullscreenAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 1551,
-      "length": 14,
-      "value": "\"Fail to load\""
-    },
-    {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNativeAdRenderer.swift",
-      "kind": "StringLiteral",
-      "offset": 109,
+      "offset": 58,
       "length": 24,
       "value": "\"BidMachineMyTargetAdapter.MyTargetNativeAdRenderer\""
-    },
-    {
-      "filePath": "\/Users\/artur.h\/Desktop\/Stack\/BidMachine\/BidMachine-iOS-SDK\/BidMachine-Adaptors\/BidMachineMyTargetAdapter\/MyTargetNativeAdRenderer.swift",
-      "kind": "Array",
-      "offset": 2909,
-      "length": 2,
-      "value": "[]"
     }
   ]
 }

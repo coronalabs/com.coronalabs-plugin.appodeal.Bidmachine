@@ -1,7 +1,7 @@
 framework module BidMachineMyTargetAdapter {
   umbrella header "BidMachineMyTargetAdapter.h"
-
   export *
+
   module * { export * }
 }
 

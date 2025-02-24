@@ -1,0 +1,194 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BidMachinePangleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachine",
+        "printedName": "BidMachine",
+        "declKind": "Import",
+        "moduleName": "BidMachinePangleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachinePangleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "PAGAdSDK",
+        "printedName": "PAGAdSDK",
+        "declKind": "Import",
+        "moduleName": "BidMachinePangleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachine",
+        "printedName": "BidMachine",
+        "declKind": "Import",
+        "moduleName": "BidMachinePangleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachinePangleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachine",
+        "printedName": "BidMachine",
+        "declKind": "Import",
+        "moduleName": "BidMachinePangleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "PAGAdSDK",
+        "printedName": "PAGAdSDK",
+        "declKind": "Import",
+        "moduleName": "BidMachinePangleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachinePangleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "PAGAdSDK",
+        "printedName": "PAGAdSDK",
+        "declKind": "Import",
+        "moduleName": "BidMachinePangleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachine",
+        "printedName": "BidMachine",
+        "declKind": "Import",
+        "moduleName": "BidMachinePangleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachinePangleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "PAGAdSDK",
+        "printedName": "PAGAdSDK",
+        "declKind": "Import",
+        "moduleName": "BidMachinePangleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachine",
+        "printedName": "BidMachine",
+        "declKind": "Import",
+        "moduleName": "BidMachinePangleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidMachinePangleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "PAGAdSDK",
+        "printedName": "PAGAdSDK",
+        "declKind": "Import",
+        "moduleName": "BidMachinePangleAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "BidMachine",
+        "printedName": "BidMachine",
+        "declKind": "Import",
+        "moduleName": "BidMachinePangleAdapter"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachinePangleAdapter\/PangleBannerAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 55,
+      "length": 19,
+      "value": "\"BidMachinePangleAdapter.PangleBannerAdapter\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachinePangleAdapter\/PangleNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 315,
+      "length": 19,
+      "value": "\"network_bid_token\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachinePangleAdapter\/PangleNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 364,
+      "length": 13,
+      "value": "\"bid_payload\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachinePangleAdapter\/PangleNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 411,
+      "length": 9,
+      "value": "\"slot_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachinePangleAdapter\/PangleNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 454,
+      "length": 8,
+      "value": "\"app_id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachinePangleAdapter\/PangleNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 504,
+      "length": 12,
+      "value": "\"pangle_sdk\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachinePangleAdapter\/PangleNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 640,
+      "length": 4,
+      "value": "\".0\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachinePangleAdapter\/PangleInterstitialAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 55,
+      "length": 25,
+      "value": "\"BidMachinePangleAdapter.PangleInterstitialAdapter\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachinePangleAdapter\/PangleRewardedAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 55,
+      "length": 21,
+      "value": "\"BidMachinePangleAdapter.PangleRewardedAdapter\""
+    }
+  ]
+}
