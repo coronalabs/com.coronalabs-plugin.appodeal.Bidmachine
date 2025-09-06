@@ -6,15 +6,15 @@
 	<dict>
 		<key>BidMachine.bundle/Info.plist</key>
 		<data>
-		hUBk/+/pZ7dlcErxvFxkFYpNF+8=
+		NjpEA2zFcp/qecKz/TrTNd4y6rY=
 		</data>
 		<key>BidMachine.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
-		uYPUl+KUsWu+RdQbziu1AtJFxwo=
+		KzGN9kIaiUzlyqYSrB4HMQ7GY6Q=
 		</data>
 		<key>Headers/BidMachineMyTargetAdapter-Swift.h</key>
 		<data>
-		KWKQZrizWR73sCI8iW2gfnO6zOI=
+		bNEDZ19995Wkf0DC3OGtN+IxVNQ=
 		</data>
 		<key>Headers/BidMachineMyTargetAdapter.h</key>
 		<data>
@@ -22,47 +22,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		TkMvKhWsjo8BoLSmtwmMSN5KsMU=
+		nLHaAKW0GGQ8hp92bR7FHnmPHgo=
 		</data>
 		<key>Modules/BidMachineMyTargetAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		di2ogT3Pkmekh/KCplm6kgvl648=
+		IXYZupbVAvG7u/lW48nwb6/9QeM=
 		</data>
 		<key>Modules/BidMachineMyTargetAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		uDuTY1eEqv+F1kIxpUvK4G1Pgfc=
+		Btu8Qf7+GSq0hC6Na31Y/dBqDwg=
 		</data>
 		<key>Modules/BidMachineMyTargetAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		4GcVUCpQH3cLnrvXUv09gTALad4=
+		o1wOpg+SYcudB5FW2LDUl7VLpaM=
 		</data>
 		<key>Modules/BidMachineMyTargetAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		uDuTY1eEqv+F1kIxpUvK4G1Pgfc=
+		Btu8Qf7+GSq0hC6Na31Y/dBqDwg=
 		</data>
 		<key>Modules/BidMachineMyTargetAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IZNRcBgiU/REbRZ/nLj2ciDsr44=
+		zYVdNmQKXXhWElI0Z8tz3iaMgQc=
 		</data>
 		<key>Modules/BidMachineMyTargetAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		di2ogT3Pkmekh/KCplm6kgvl648=
+		IXYZupbVAvG7u/lW48nwb6/9QeM=
 		</data>
 		<key>Modules/BidMachineMyTargetAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		J2xc49DVep3ikLuKdv7WP96UMpA=
+		GqfJOOpppUhHbweYNNA73+PxMEs=
 		</data>
 		<key>Modules/BidMachineMyTargetAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		HUDXDtY338agfcPNFxER4imZvy0=
+		LLeTlNsL6n+tgbwmQe58dHCMohI=
 		</data>
 		<key>Modules/BidMachineMyTargetAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		J2xc49DVep3ikLuKdv7WP96UMpA=
+		GqfJOOpppUhHbweYNNA73+PxMEs=
 		</data>
 		<key>Modules/BidMachineMyTargetAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		oTSQdMr2W7qWao/NwxvAUDQ9E6g=
+		GVrmRnnu8x+VJtTj6RzoV+rN7IY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>StackModules.bundle/Info.plist</key>
 		<data>
-		eCZS1OPvXvpZ+Huh1sq7TWgoFHs=
+		ZOXcf0ZQbp3zwqs49HQoBuSVO+c=
 		</data>
 		<key>StackModules.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>StackProductPresentation.bundle/Info.plist</key>
 		<data>
-		vE730jXMXbXgCqRWpqavZAYG318=
+		Vb34UIOzFtu2rFImsMMj8mW4ya8=
 		</data>
 		<key>StackProductPresentation.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>StackRendering.bundle/Info.plist</key>
 		<data>
-		+n3U9zNwGM9ypIS5cyE2bMzbw9A=
+		c7Xd76Saoz4UiXNYzkJUS7u3GX4=
 		</data>
 		<key>StackRendering.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -99,33 +99,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hUBk/+/pZ7dlcErxvFxkFYpNF+8=
+			NjpEA2zFcp/qecKz/TrTNd4y6rY=
 			</data>
 			<key>hash2</key>
 			<data>
-			X525ENvldebI+S/D1DxVMhYpRgxuEcAZ9YGkQ/+BWhs=
+			H7piR99eYjokGvOoJw2ECJi1V+Q+SEq9jahJ1iRM4vY=
 			</data>
 		</dict>
 		<key>BidMachine.bundle/PrivacyInfo.xcprivacy</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uYPUl+KUsWu+RdQbziu1AtJFxwo=
+			KzGN9kIaiUzlyqYSrB4HMQ7GY6Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			CqVN116ZDpCcMdsO8zwcEjYNu8SVLFn/b+dg+BseNis=
+			0H2yqL1OorskXVA3Xgd6k4OR0cLDQkxIdx17ngKx6QU=
 			</data>
 		</dict>
 		<key>Headers/BidMachineMyTargetAdapter-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KWKQZrizWR73sCI8iW2gfnO6zOI=
+			bNEDZ19995Wkf0DC3OGtN+IxVNQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			UgP/lNdYtad0EuB6GE2Mve9tEX4lBepGsKEg8VxL++o=
+			zbbirrOEBHVQOH1QzLWa20T2hHOn8wululjLvVlX7oU=
 			</data>
 		</dict>
 		<key>Headers/BidMachineMyTargetAdapter.h</key>
@@ -143,110 +143,110 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			di2ogT3Pkmekh/KCplm6kgvl648=
+			IXYZupbVAvG7u/lW48nwb6/9QeM=
 			</data>
 			<key>hash2</key>
 			<data>
-			j+SiBDGU+QCo1K6VIRu+spYfq32hFL5SrROgMabgrNM=
+			/9mX/7z2E2h0yN8hyd9l0V/79msqDfSuVENkjuvQls8=
 			</data>
 		</dict>
 		<key>Modules/BidMachineMyTargetAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uDuTY1eEqv+F1kIxpUvK4G1Pgfc=
+			Btu8Qf7+GSq0hC6Na31Y/dBqDwg=
 			</data>
 			<key>hash2</key>
 			<data>
-			8HGIF2TwLXylQAXTBrCi01go6qYefkicvHrjn6QVh7I=
+			U3UB1q5Vhm+wd9cm/nlECrXtefZNwv4lx8jM8iSUqDE=
 			</data>
 		</dict>
 		<key>Modules/BidMachineMyTargetAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4GcVUCpQH3cLnrvXUv09gTALad4=
+			o1wOpg+SYcudB5FW2LDUl7VLpaM=
 			</data>
 			<key>hash2</key>
 			<data>
-			+5FFUPXWVOV4Wofl/MdZB4cgnXl+9FNTkJZxY3Z1wD0=
+			s6clFZjGhUPKjDHIrM+mW8x9Z5/n4gAi7FZvcmU3SFc=
 			</data>
 		</dict>
 		<key>Modules/BidMachineMyTargetAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uDuTY1eEqv+F1kIxpUvK4G1Pgfc=
+			Btu8Qf7+GSq0hC6Na31Y/dBqDwg=
 			</data>
 			<key>hash2</key>
 			<data>
-			8HGIF2TwLXylQAXTBrCi01go6qYefkicvHrjn6QVh7I=
+			U3UB1q5Vhm+wd9cm/nlECrXtefZNwv4lx8jM8iSUqDE=
 			</data>
 		</dict>
 		<key>Modules/BidMachineMyTargetAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IZNRcBgiU/REbRZ/nLj2ciDsr44=
+			zYVdNmQKXXhWElI0Z8tz3iaMgQc=
 			</data>
 			<key>hash2</key>
 			<data>
-			4Gre2OnEmJpPsIP+zp2yXUA1jT1lpWGopgwv2EhAOXo=
+			F2gS0KBwJ9/Vk1Y2FC80J+gwvpdK5ynU8Kxnq1kX14c=
 			</data>
 		</dict>
 		<key>Modules/BidMachineMyTargetAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			di2ogT3Pkmekh/KCplm6kgvl648=
+			IXYZupbVAvG7u/lW48nwb6/9QeM=
 			</data>
 			<key>hash2</key>
 			<data>
-			j+SiBDGU+QCo1K6VIRu+spYfq32hFL5SrROgMabgrNM=
+			/9mX/7z2E2h0yN8hyd9l0V/79msqDfSuVENkjuvQls8=
 			</data>
 		</dict>
 		<key>Modules/BidMachineMyTargetAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			J2xc49DVep3ikLuKdv7WP96UMpA=
+			GqfJOOpppUhHbweYNNA73+PxMEs=
 			</data>
 			<key>hash2</key>
 			<data>
-			ts/suI6J9CXSoJnODA8sixVFd9eg6Nxd10Ko6JHcOfc=
+			Hgowhsy+QactS3A9PrGfw2U28M6QDWIOUqWOfH8Bkgg=
 			</data>
 		</dict>
 		<key>Modules/BidMachineMyTargetAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HUDXDtY338agfcPNFxER4imZvy0=
+			LLeTlNsL6n+tgbwmQe58dHCMohI=
 			</data>
 			<key>hash2</key>
 			<data>
-			dG4kyzPuE97B3eoWJOadpnqrnGnSd8LPGChm1YXxMpc=
+			OYZFwN1aIXOvbjA/OC5+dRpH3x7tt/OZxBXveGjtzxM=
 			</data>
 		</dict>
 		<key>Modules/BidMachineMyTargetAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			J2xc49DVep3ikLuKdv7WP96UMpA=
+			GqfJOOpppUhHbweYNNA73+PxMEs=
 			</data>
 			<key>hash2</key>
 			<data>
-			ts/suI6J9CXSoJnODA8sixVFd9eg6Nxd10Ko6JHcOfc=
+			Hgowhsy+QactS3A9PrGfw2U28M6QDWIOUqWOfH8Bkgg=
 			</data>
 		</dict>
 		<key>Modules/BidMachineMyTargetAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oTSQdMr2W7qWao/NwxvAUDQ9E6g=
+			GVrmRnnu8x+VJtTj6RzoV+rN7IY=
 			</data>
 			<key>hash2</key>
 			<data>
-			t1i68tW1xcvSnj6cJexgi1jW4LUHEq5y65+ILM3M070=
+			iYDe3+lcNEAq7de5HUePik+OwIU3EwuVmE0OS4iO3zQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -264,11 +264,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eCZS1OPvXvpZ+Huh1sq7TWgoFHs=
+			ZOXcf0ZQbp3zwqs49HQoBuSVO+c=
 			</data>
 			<key>hash2</key>
 			<data>
-			zMnUNZLaASiGDL1ECUu+tW7nPu3RNonAB3T2LERkN4Q=
+			Aw45OEr8MtKDNLkYtj2X0yvLlJwpWqbfCJmOd5jFTBg=
 			</data>
 		</dict>
 		<key>StackModules.bundle/PrivacyInfo.xcprivacy</key>
@@ -286,11 +286,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vE730jXMXbXgCqRWpqavZAYG318=
+			Vb34UIOzFtu2rFImsMMj8mW4ya8=
 			</data>
 			<key>hash2</key>
 			<data>
-			YdPE7UJv/J8wLjpIKkLNuFDMwGuKj+sBb6ToCgzalZs=
+			QuZq8ewVQCS1QbrPuOP93M2SHuK/X438QuIpfiKsf3M=
 			</data>
 		</dict>
 		<key>StackProductPresentation.bundle/PrivacyInfo.xcprivacy</key>
@@ -308,11 +308,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+n3U9zNwGM9ypIS5cyE2bMzbw9A=
+			c7Xd76Saoz4UiXNYzkJUS7u3GX4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Nc9nZYIYKuGoeM+yrFZPHJLXCk/PS8GkVGgDDbNRewA=
+			IHA2jntIhAQHP/wdgLCyCqN2gLzotW9j9ZhnNZu5kUI=
 			</data>
 		</dict>
 		<key>StackRendering.bundle/PrivacyInfo.xcprivacy</key>

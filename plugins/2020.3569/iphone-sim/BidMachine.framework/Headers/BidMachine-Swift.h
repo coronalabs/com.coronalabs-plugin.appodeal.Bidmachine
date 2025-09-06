@@ -322,21 +322,42 @@ SWIFT_PROTOCOL("_TtP10BidMachine20BidMachineAdDelegate_")
 - (void)didReceiveReward:(id <BidMachineAdProtocol> _Nonnull)ad;
 @end
 
+@class BidMachineRendererConfiguration;
 @protocol BidMachineAuctionResponseProtocol;
 @protocol BidMachineRequestInfoProtocol;
+@class BidMachineAuctionRequest;
 @class UIViewController;
 
 SWIFT_PROTOCOL("_TtP10BidMachine20BidMachineAdProtocol_")
 @protocol BidMachineAdProtocol
+@property (nonatomic, readonly, strong) BidMachineRendererConfiguration * _Nonnull rendererConfiguration;
 @property (nonatomic, readonly, strong) id <BidMachineAuctionResponseProtocol> _Nonnull auctionInfo;
-@property (nonatomic, readonly, strong) id <BidMachineRequestInfoProtocol> _Nonnull requestInfo;
+@property (nonatomic, readonly, strong) id <BidMachineRequestInfoProtocol> _Nonnull requestInfo SWIFT_DEPRECATED_MSG("Use `auctionRequest` instead.");
+@property (nonatomic, readonly, strong) BidMachineAuctionRequest * _Nonnull auctionRequest;
 @property (nonatomic, strong) UIViewController * _Nullable controller;
 @property (nonatomic, strong) id <BidMachineAdDelegate> _Nullable delegate;
 @property (nonatomic, readonly) BOOL canShow;
 - (void)loadAd;
 @end
 
+
+SWIFT_CLASS("_TtC10BidMachine24BidMachineAuctionRequest")
+@interface BidMachineAuctionRequest : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 @class NSString;
+@class BidMachineBiddingUnitConfiguration;
+
+SWIFT_PROTOCOL("_TtP10BidMachine39BidMachineAuctionRequestBuilderProtocol_")
+@protocol BidMachineAuctionRequestBuilderProtocol
+- (nonnull instancetype)withPayload:(NSString * _Nonnull)payload;
+- (nonnull instancetype)withUnitConfigurations:(NSArray<BidMachineBiddingUnitConfiguration *> * _Nonnull)configurations;
+- (nonnull instancetype)appendPriceFloor:(double)price :(NSString * _Nonnull)name;
+@end
+
 
 SWIFT_PROTOCOL("_TtP10BidMachine33BidMachineAuctionResponseProtocol_")
 @protocol BidMachineAuctionResponseProtocol
@@ -356,6 +377,9 @@ SWIFT_CLASS("_TtC10BidMachine16BidMachineBanner")
 @interface BidMachineBanner : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)didMoveToSuperview;
+@property (nonatomic, readonly, strong) BidMachineRendererConfiguration * _Nonnull rendererConfiguration;
+@property (nonatomic, readonly, strong) BidMachineAuctionRequest * _Nonnull auctionRequest;
+@property (nonatomic, readonly, strong) id <BidMachineRequestInfoProtocol> _Nonnull requestInfo;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
@@ -365,7 +389,6 @@ SWIFT_CLASS("_TtC10BidMachine16BidMachineBanner")
 
 @interface BidMachineBanner (SWIFT_EXTENSION(BidMachine)) <BidMachineAdProtocol>
 @property (nonatomic, readonly) BOOL canShow;
-@property (nonatomic, readonly, strong) id <BidMachineRequestInfoProtocol> _Nonnull requestInfo;
 @property (nonatomic, readonly, strong) id <BidMachineAuctionResponseProtocol> _Nonnull auctionInfo;
 @property (nonatomic, strong) id <BidMachineAdDelegate> _Nullable delegate;
 @property (nonatomic, strong) UIViewController * _Nullable controller;
@@ -398,7 +421,6 @@ SWIFT_CLASS("_TtC10BidMachine36BidMachineBiddingNetworkConfiguraton")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-
 enum BidMachinePlacementFormat : NSInteger;
 
 SWIFT_CLASS("_TtC10BidMachine34BidMachineBiddingUnitConfiguration")
@@ -412,17 +434,6 @@ SWIFT_CLASS("_TtC10BidMachine34BidMachineBiddingUnitConfiguration")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-
-
-SWIFT_PROTOCOL("_TtP10BidMachine32BidMachineContextualDataProtocol_") SWIFT_DEPRECATED_MSG("Will be remove")
-@protocol BidMachineContextualDataProtocol
-@property (nonatomic, readonly) uint32_t impressions;
-@property (nonatomic, readonly) float clickRate;
-@property (nonatomic, readonly) float completionRate;
-@property (nonatomic, readonly) BOOL lastClickForImpression;
-@property (nonatomic, readonly, copy) NSString * _Nullable lastBundle;
-@property (nonatomic, readonly, copy) NSString * _Nullable lastAdomain;
-@end
 
 
 SWIFT_PROTOCOL("_TtP10BidMachine29BidMachineInfoBuilderProtocol_")
@@ -452,6 +463,9 @@ SWIFT_PROTOCOL("_TtP10BidMachine22BidMachineInfoProtocol_")
 
 SWIFT_CLASS("_TtC10BidMachine22BidMachineInterstitial")
 @interface BidMachineInterstitial : NSObject
+@property (nonatomic, readonly, strong) BidMachineRendererConfiguration * _Nonnull rendererConfiguration;
+@property (nonatomic, readonly, strong) BidMachineAuctionRequest * _Nonnull auctionRequest;
+@property (nonatomic, readonly, strong) id <BidMachineRequestInfoProtocol> _Nonnull requestInfo;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -461,7 +475,6 @@ SWIFT_CLASS("_TtC10BidMachine22BidMachineInterstitial")
 
 @interface BidMachineInterstitial (SWIFT_EXTENSION(BidMachine)) <BidMachineAdProtocol>
 @property (nonatomic, readonly) BOOL canShow;
-@property (nonatomic, readonly, strong) id <BidMachineRequestInfoProtocol> _Nonnull requestInfo;
 @property (nonatomic, readonly, strong) id <BidMachineAuctionResponseProtocol> _Nonnull auctionInfo;
 @property (nonatomic, strong) id <BidMachineAdDelegate> _Nullable delegate;
 @property (nonatomic, strong) UIViewController * _Nullable controller;
@@ -472,12 +485,29 @@ SWIFT_CLASS("_TtC10BidMachine22BidMachineInterstitial")
 
 SWIFT_CLASS("_TtC10BidMachine16BidMachineNative")
 @interface BidMachineNative : NSObject
+@property (nonatomic, readonly, strong) BidMachineRendererConfiguration * _Nonnull rendererConfiguration;
+@property (nonatomic, readonly, strong) BidMachineAuctionRequest * _Nonnull auctionRequest;
+@property (nonatomic, readonly, strong) id <BidMachineRequestInfoProtocol> _Nonnull requestInfo;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
 
+
+@protocol BidMachineNativeAdRendering;
+
+@interface BidMachineNative (SWIFT_EXTENSION(BidMachine)) <BidMachineAdProtocol>
+@property (nonatomic, readonly) BOOL canShow;
+@property (nonatomic, readonly, strong) id <BidMachineAuctionResponseProtocol> _Nonnull auctionInfo;
+@property (nonatomic, strong) id <BidMachineAdDelegate> _Nullable delegate;
+@property (nonatomic, strong) UIViewController * _Nullable controller;
+- (void)loadAd;
+- (BOOL)presentAd:(UIView * _Nonnull)container :(id <BidMachineNativeAdRendering> _Nonnull)renderingAd error:(NSError * _Nullable * _Nullable)error;
+- (void)registerDefaultAssetsForInteraction;
+- (void)registerAssetsForInteraction:(NSArray<NSNumber *> * _Nonnull)assets;
+- (void)unregisterView;
+@end
 
 
 @interface BidMachineNative (SWIFT_EXTENSION(BidMachine))
@@ -490,21 +520,6 @@ SWIFT_CLASS("_TtC10BidMachine16BidMachineNative")
 - (void)trackContainerAdded;
 - (void)trackImpression;
 - (void)trackClick;
-@end
-
-@protocol BidMachineNativeAdRendering;
-
-@interface BidMachineNative (SWIFT_EXTENSION(BidMachine)) <BidMachineAdProtocol>
-@property (nonatomic, readonly) BOOL canShow;
-@property (nonatomic, readonly, strong) id <BidMachineRequestInfoProtocol> _Nonnull requestInfo;
-@property (nonatomic, readonly, strong) id <BidMachineAuctionResponseProtocol> _Nonnull auctionInfo;
-@property (nonatomic, strong) id <BidMachineAdDelegate> _Nullable delegate;
-@property (nonatomic, strong) UIViewController * _Nullable controller;
-- (void)loadAd;
-- (BOOL)presentAd:(UIView * _Nonnull)container :(id <BidMachineNativeAdRendering> _Nonnull)renderingAd error:(NSError * _Nullable * _Nullable)error;
-- (void)registerDefaultAssetsForInteraction;
-- (void)registerAssetsForInteraction:(NSArray<NSNumber *> * _Nonnull)assets;
-- (void)unregisterView;
 @end
 
 @class UILabel;
@@ -528,6 +543,24 @@ typedef SWIFT_ENUM(NSInteger, BidMachineNativeAdRenderingAssetType, open) {
   BidMachineNativeAdRenderingAssetTypeMediaContainerView = 4,
   BidMachineNativeAdRenderingAssetTypeAdChoiceView = 5,
 };
+
+
+SWIFT_CLASS("_TtC10BidMachine19BidMachinePlacement")
+@interface BidMachinePlacement : NSObject
+@property (nonatomic, readonly) enum BidMachinePlacementFormat format;
+@property (nonatomic, readonly, copy) NSString * _Nullable placementId;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull customParameters;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+
+SWIFT_PROTOCOL("_TtP10BidMachine34BidMachinePlacementBuilderProtocol_")
+@protocol BidMachinePlacementBuilderProtocol
+- (nonnull instancetype)withPlacementId:(NSString * _Nonnull)placementId;
+- (nonnull instancetype)withCustomParameters:(NSDictionary<NSString *, id> * _Nonnull)params;
+@end
 
 
 SWIFT_PROTOCOL("_TtP10BidMachine28BidMachinePriceFloorProtocol_")
@@ -593,15 +626,22 @@ SWIFT_PROTOCOL("_TtP10BidMachine32BidMachineRegulationZoneProtocol_")
 @end
 
 
+SWIFT_CLASS("_TtC10BidMachine31BidMachineRendererConfiguration")
+@interface BidMachineRendererConfiguration : NSObject
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull extras;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_PROTOCOL("_TtP10BidMachine32BidMachineRequestBuilderProtocol_")
 @protocol BidMachineRequestBuilderProtocol
 - (nonnull instancetype)withPlacementId:(NSString * _Nonnull)ID;
-- (nonnull instancetype)withPayload:(NSString * _Nonnull)payload;
 - (nonnull instancetype)withTimeout:(double)timeout;
 - (nonnull instancetype)withCustomParameters:(NSDictionary<NSString *, id> * _Nonnull)params;
 - (nonnull instancetype)appendPriceFloor:(double)price :(NSString * _Nonnull)name;
+- (nonnull instancetype)withPayload:(NSString * _Nonnull)payload;
 - (nonnull instancetype)withUnitConfigurations:(NSArray<BidMachineBiddingUnitConfiguration *> * _Nonnull)configurations;
-- (nonnull instancetype)withContextualData:(uint64_t)sessionDuration :(id <BidMachineContextualDataProtocol> _Nonnull)data SWIFT_DEPRECATED_MSG("Will be remove");
 @end
 
 
@@ -621,8 +661,6 @@ SWIFT_PROTOCOL("_TtP10BidMachine29BidMachineRequestInfoProtocol_")
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull customParams;
 @property (nonatomic, readonly, copy) NSArray<id <BidMachinePriceFloorProtocol>> * _Nonnull priceFloors;
 @property (nonatomic, readonly, copy) NSArray<BidMachineBiddingUnitConfiguration *> * _Nonnull unitsConfigurations;
-@property (nonatomic, readonly) uint64_t sessionDuration SWIFT_DEPRECATED_MSG("Will be remove");
-@property (nonatomic, readonly, strong) id <BidMachineContextualDataProtocol> _Nullable contextualData SWIFT_DEPRECATED_MSG("Will be remove");
 @end
 
 
@@ -634,15 +672,22 @@ SWIFT_PROTOCOL("_TtP10BidMachine38BidMachineRequestConfigurationProtocol_")
 
 SWIFT_CLASS("_TtC10BidMachine26BidMachineRequestPlacement")
 @interface BidMachineRequestPlacement : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull name;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface BidMachineRequestPlacement (SWIFT_EXTENSION(BidMachine))
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
 @end
 
 
 
 SWIFT_CLASS("_TtC10BidMachine18BidMachineRewarded")
 @interface BidMachineRewarded : NSObject
+@property (nonatomic, readonly, strong) BidMachineRendererConfiguration * _Nonnull rendererConfiguration;
+@property (nonatomic, readonly, strong) BidMachineAuctionRequest * _Nonnull auctionRequest;
+@property (nonatomic, readonly, strong) id <BidMachineRequestInfoProtocol> _Nonnull requestInfo;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -652,7 +697,6 @@ SWIFT_CLASS("_TtC10BidMachine18BidMachineRewarded")
 
 @interface BidMachineRewarded (SWIFT_EXTENSION(BidMachine)) <BidMachineAdProtocol>
 @property (nonatomic, readonly) BOOL canShow;
-@property (nonatomic, readonly, strong) id <BidMachineRequestInfoProtocol> _Nonnull requestInfo;
 @property (nonatomic, readonly, strong) id <BidMachineAuctionResponseProtocol> _Nonnull auctionInfo;
 @property (nonatomic, strong) id <BidMachineAdDelegate> _Nullable delegate;
 @property (nonatomic, strong) UIViewController * _Nullable controller;
@@ -678,8 +722,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @end
 
 
+
 @interface BidMachineSdk (SWIFT_EXTENSION(BidMachine))
-- (id <BidMachineRequestConfigurationProtocol> _Nullable)requestConfiguration:(enum BidMachinePlacementFormat)format error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)extrasValueBy:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface BidMachineSdk (SWIFT_EXTENSION(BidMachine))
+- (BidMachinePlacement * _Nullable)placementFrom:(enum BidMachinePlacementFormat)format error:(NSError * _Nullable * _Nullable)error builder:(void (^ _Nullable)(id <BidMachinePlacementBuilderProtocol> _Nonnull))builder SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -688,16 +738,17 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @end
 
 
+
 @interface BidMachineSdk (SWIFT_EXTENSION(BidMachine))
-- (id _Nullable)extrasValueBy:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (id <BidMachineRequestConfigurationProtocol> _Nullable)requestConfiguration:(enum BidMachinePlacementFormat)format error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use `auctionRequest(placement:builder:)` instead.");
+- (BidMachineAuctionRequest * _Nonnull)auctionRequestWithPlacement:(BidMachinePlacement * _Nonnull)placement builder:(void (^ _Nullable)(id <BidMachineAuctionRequestBuilderProtocol> _Nonnull))builder SWIFT_WARN_UNUSED_RESULT;
 @end
-
-
 
 
 @interface BidMachineSdk (SWIFT_EXTENSION(BidMachine))
 - (void)initializeSdk:(NSString * _Nonnull)sourceId;
-- (void)tokenWith:(enum BidMachinePlacementFormat)format completion:(void (^ _Nonnull)(NSString * _Nullable))completion;
+- (void)tokenWith:(enum BidMachinePlacementFormat)format completion:(void (^ _Nonnull)(NSString * _Nullable))completion SWIFT_DEPRECATED_MSG("Use `token(placement:completion:)` instead.");
+- (void)tokenWithPlacement:(BidMachinePlacement * _Nonnull)placement completion:(void (^ _Nonnull)(NSString * _Nullable))completion;
 @end
 
 
@@ -709,11 +760,20 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 
 
 @interface BidMachineSdk (SWIFT_EXTENSION(BidMachine))
-- (void)ad:(id <BidMachineRequestConfigurationProtocol> _Nullable)configuration :(void (^ _Nonnull)(id <BidMachineAdProtocol> _Nullable, NSError * _Nullable))completion;
-- (void)interstitial:(id <BidMachineRequestConfigurationProtocol> _Nullable)configuration :(void (^ _Nonnull)(BidMachineInterstitial * _Nullable, NSError * _Nullable))completion;
-- (void)rewarded:(id <BidMachineRequestConfigurationProtocol> _Nullable)configuration :(void (^ _Nonnull)(BidMachineRewarded * _Nullable, NSError * _Nullable))completion;
-- (void)banner:(id <BidMachineRequestConfigurationProtocol> _Nullable)configuration :(void (^ _Nonnull)(BidMachineBanner * _Nullable, NSError * _Nullable))completion;
-- (void)native:(id <BidMachineRequestConfigurationProtocol> _Nullable)configuration :(void (^ _Nonnull)(BidMachineNative * _Nullable, NSError * _Nullable))completion;
+- (void)ad:(id <BidMachineRequestConfigurationProtocol> _Nullable)configuration :(void (^ _Nonnull)(id <BidMachineAdProtocol> _Nullable, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("Use `ad(request:completion:)` instead.");
+- (void)interstitial:(id <BidMachineRequestConfigurationProtocol> _Nullable)configuration :(void (^ _Nonnull)(BidMachineInterstitial * _Nullable, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("Use `interstitial(request:completion:)` instead.");
+- (void)rewarded:(id <BidMachineRequestConfigurationProtocol> _Nullable)configuration :(void (^ _Nonnull)(BidMachineRewarded * _Nullable, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("Use `rewarded(request:completion:)` instead.");
+- (void)banner:(id <BidMachineRequestConfigurationProtocol> _Nullable)configuration :(void (^ _Nonnull)(BidMachineBanner * _Nullable, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("Use `banner(request:completion:)` instead.");
+- (void)native:(id <BidMachineRequestConfigurationProtocol> _Nullable)configuration :(void (^ _Nonnull)(BidMachineNative * _Nullable, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("Use `native(request:completion:)` instead.");
+@end
+
+
+@interface BidMachineSdk (SWIFT_EXTENSION(BidMachine))
+- (void)adWithRequest:(BidMachineAuctionRequest * _Nullable)request completion:(void (^ _Nonnull)(id <BidMachineAdProtocol> _Nullable, NSError * _Nullable))completion;
+- (void)interstitialWithRequest:(BidMachineAuctionRequest * _Nullable)request completion:(void (^ _Nonnull)(BidMachineInterstitial * _Nullable, NSError * _Nullable))completion;
+- (void)rewardedWithRequest:(BidMachineAuctionRequest * _Nullable)request completion:(void (^ _Nonnull)(BidMachineRewarded * _Nullable, NSError * _Nullable))completion;
+- (void)bannerWithRequest:(BidMachineAuctionRequest * _Nullable)request completion:(void (^ _Nonnull)(BidMachineBanner * _Nullable, NSError * _Nullable))completion;
+- (void)nativeWithRequest:(BidMachineAuctionRequest * _Nullable)request completion:(void (^ _Nonnull)(BidMachineNative * _Nullable, NSError * _Nullable))completion;
 @end
 
 
@@ -812,6 +872,10 @@ typedef SWIFT_ENUM_NAMED(NSInteger, BidMachinePlacementFormat, "PlacementFormat"
   BidMachinePlacementFormatNativeIconAndImage = 16,
   BidMachinePlacementFormatNativeImageAndVideo = 17,
 };
+
+
+
+
 
 
 
@@ -1163,21 +1227,42 @@ SWIFT_PROTOCOL("_TtP10BidMachine20BidMachineAdDelegate_")
 - (void)didReceiveReward:(id <BidMachineAdProtocol> _Nonnull)ad;
 @end
 
+@class BidMachineRendererConfiguration;
 @protocol BidMachineAuctionResponseProtocol;
 @protocol BidMachineRequestInfoProtocol;
+@class BidMachineAuctionRequest;
 @class UIViewController;
 
 SWIFT_PROTOCOL("_TtP10BidMachine20BidMachineAdProtocol_")
 @protocol BidMachineAdProtocol
+@property (nonatomic, readonly, strong) BidMachineRendererConfiguration * _Nonnull rendererConfiguration;
 @property (nonatomic, readonly, strong) id <BidMachineAuctionResponseProtocol> _Nonnull auctionInfo;
-@property (nonatomic, readonly, strong) id <BidMachineRequestInfoProtocol> _Nonnull requestInfo;
+@property (nonatomic, readonly, strong) id <BidMachineRequestInfoProtocol> _Nonnull requestInfo SWIFT_DEPRECATED_MSG("Use `auctionRequest` instead.");
+@property (nonatomic, readonly, strong) BidMachineAuctionRequest * _Nonnull auctionRequest;
 @property (nonatomic, strong) UIViewController * _Nullable controller;
 @property (nonatomic, strong) id <BidMachineAdDelegate> _Nullable delegate;
 @property (nonatomic, readonly) BOOL canShow;
 - (void)loadAd;
 @end
 
+
+SWIFT_CLASS("_TtC10BidMachine24BidMachineAuctionRequest")
+@interface BidMachineAuctionRequest : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 @class NSString;
+@class BidMachineBiddingUnitConfiguration;
+
+SWIFT_PROTOCOL("_TtP10BidMachine39BidMachineAuctionRequestBuilderProtocol_")
+@protocol BidMachineAuctionRequestBuilderProtocol
+- (nonnull instancetype)withPayload:(NSString * _Nonnull)payload;
+- (nonnull instancetype)withUnitConfigurations:(NSArray<BidMachineBiddingUnitConfiguration *> * _Nonnull)configurations;
+- (nonnull instancetype)appendPriceFloor:(double)price :(NSString * _Nonnull)name;
+@end
+
 
 SWIFT_PROTOCOL("_TtP10BidMachine33BidMachineAuctionResponseProtocol_")
 @protocol BidMachineAuctionResponseProtocol
@@ -1197,6 +1282,9 @@ SWIFT_CLASS("_TtC10BidMachine16BidMachineBanner")
 @interface BidMachineBanner : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)didMoveToSuperview;
+@property (nonatomic, readonly, strong) BidMachineRendererConfiguration * _Nonnull rendererConfiguration;
+@property (nonatomic, readonly, strong) BidMachineAuctionRequest * _Nonnull auctionRequest;
+@property (nonatomic, readonly, strong) id <BidMachineRequestInfoProtocol> _Nonnull requestInfo;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
@@ -1206,7 +1294,6 @@ SWIFT_CLASS("_TtC10BidMachine16BidMachineBanner")
 
 @interface BidMachineBanner (SWIFT_EXTENSION(BidMachine)) <BidMachineAdProtocol>
 @property (nonatomic, readonly) BOOL canShow;
-@property (nonatomic, readonly, strong) id <BidMachineRequestInfoProtocol> _Nonnull requestInfo;
 @property (nonatomic, readonly, strong) id <BidMachineAuctionResponseProtocol> _Nonnull auctionInfo;
 @property (nonatomic, strong) id <BidMachineAdDelegate> _Nullable delegate;
 @property (nonatomic, strong) UIViewController * _Nullable controller;
@@ -1239,7 +1326,6 @@ SWIFT_CLASS("_TtC10BidMachine36BidMachineBiddingNetworkConfiguraton")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-
 enum BidMachinePlacementFormat : NSInteger;
 
 SWIFT_CLASS("_TtC10BidMachine34BidMachineBiddingUnitConfiguration")
@@ -1253,17 +1339,6 @@ SWIFT_CLASS("_TtC10BidMachine34BidMachineBiddingUnitConfiguration")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-
-
-SWIFT_PROTOCOL("_TtP10BidMachine32BidMachineContextualDataProtocol_") SWIFT_DEPRECATED_MSG("Will be remove")
-@protocol BidMachineContextualDataProtocol
-@property (nonatomic, readonly) uint32_t impressions;
-@property (nonatomic, readonly) float clickRate;
-@property (nonatomic, readonly) float completionRate;
-@property (nonatomic, readonly) BOOL lastClickForImpression;
-@property (nonatomic, readonly, copy) NSString * _Nullable lastBundle;
-@property (nonatomic, readonly, copy) NSString * _Nullable lastAdomain;
-@end
 
 
 SWIFT_PROTOCOL("_TtP10BidMachine29BidMachineInfoBuilderProtocol_")
@@ -1293,6 +1368,9 @@ SWIFT_PROTOCOL("_TtP10BidMachine22BidMachineInfoProtocol_")
 
 SWIFT_CLASS("_TtC10BidMachine22BidMachineInterstitial")
 @interface BidMachineInterstitial : NSObject
+@property (nonatomic, readonly, strong) BidMachineRendererConfiguration * _Nonnull rendererConfiguration;
+@property (nonatomic, readonly, strong) BidMachineAuctionRequest * _Nonnull auctionRequest;
+@property (nonatomic, readonly, strong) id <BidMachineRequestInfoProtocol> _Nonnull requestInfo;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1302,7 +1380,6 @@ SWIFT_CLASS("_TtC10BidMachine22BidMachineInterstitial")
 
 @interface BidMachineInterstitial (SWIFT_EXTENSION(BidMachine)) <BidMachineAdProtocol>
 @property (nonatomic, readonly) BOOL canShow;
-@property (nonatomic, readonly, strong) id <BidMachineRequestInfoProtocol> _Nonnull requestInfo;
 @property (nonatomic, readonly, strong) id <BidMachineAuctionResponseProtocol> _Nonnull auctionInfo;
 @property (nonatomic, strong) id <BidMachineAdDelegate> _Nullable delegate;
 @property (nonatomic, strong) UIViewController * _Nullable controller;
@@ -1313,12 +1390,29 @@ SWIFT_CLASS("_TtC10BidMachine22BidMachineInterstitial")
 
 SWIFT_CLASS("_TtC10BidMachine16BidMachineNative")
 @interface BidMachineNative : NSObject
+@property (nonatomic, readonly, strong) BidMachineRendererConfiguration * _Nonnull rendererConfiguration;
+@property (nonatomic, readonly, strong) BidMachineAuctionRequest * _Nonnull auctionRequest;
+@property (nonatomic, readonly, strong) id <BidMachineRequestInfoProtocol> _Nonnull requestInfo;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
 
+
+@protocol BidMachineNativeAdRendering;
+
+@interface BidMachineNative (SWIFT_EXTENSION(BidMachine)) <BidMachineAdProtocol>
+@property (nonatomic, readonly) BOOL canShow;
+@property (nonatomic, readonly, strong) id <BidMachineAuctionResponseProtocol> _Nonnull auctionInfo;
+@property (nonatomic, strong) id <BidMachineAdDelegate> _Nullable delegate;
+@property (nonatomic, strong) UIViewController * _Nullable controller;
+- (void)loadAd;
+- (BOOL)presentAd:(UIView * _Nonnull)container :(id <BidMachineNativeAdRendering> _Nonnull)renderingAd error:(NSError * _Nullable * _Nullable)error;
+- (void)registerDefaultAssetsForInteraction;
+- (void)registerAssetsForInteraction:(NSArray<NSNumber *> * _Nonnull)assets;
+- (void)unregisterView;
+@end
 
 
 @interface BidMachineNative (SWIFT_EXTENSION(BidMachine))
@@ -1331,21 +1425,6 @@ SWIFT_CLASS("_TtC10BidMachine16BidMachineNative")
 - (void)trackContainerAdded;
 - (void)trackImpression;
 - (void)trackClick;
-@end
-
-@protocol BidMachineNativeAdRendering;
-
-@interface BidMachineNative (SWIFT_EXTENSION(BidMachine)) <BidMachineAdProtocol>
-@property (nonatomic, readonly) BOOL canShow;
-@property (nonatomic, readonly, strong) id <BidMachineRequestInfoProtocol> _Nonnull requestInfo;
-@property (nonatomic, readonly, strong) id <BidMachineAuctionResponseProtocol> _Nonnull auctionInfo;
-@property (nonatomic, strong) id <BidMachineAdDelegate> _Nullable delegate;
-@property (nonatomic, strong) UIViewController * _Nullable controller;
-- (void)loadAd;
-- (BOOL)presentAd:(UIView * _Nonnull)container :(id <BidMachineNativeAdRendering> _Nonnull)renderingAd error:(NSError * _Nullable * _Nullable)error;
-- (void)registerDefaultAssetsForInteraction;
-- (void)registerAssetsForInteraction:(NSArray<NSNumber *> * _Nonnull)assets;
-- (void)unregisterView;
 @end
 
 @class UILabel;
@@ -1369,6 +1448,24 @@ typedef SWIFT_ENUM(NSInteger, BidMachineNativeAdRenderingAssetType, open) {
   BidMachineNativeAdRenderingAssetTypeMediaContainerView = 4,
   BidMachineNativeAdRenderingAssetTypeAdChoiceView = 5,
 };
+
+
+SWIFT_CLASS("_TtC10BidMachine19BidMachinePlacement")
+@interface BidMachinePlacement : NSObject
+@property (nonatomic, readonly) enum BidMachinePlacementFormat format;
+@property (nonatomic, readonly, copy) NSString * _Nullable placementId;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull customParameters;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+
+SWIFT_PROTOCOL("_TtP10BidMachine34BidMachinePlacementBuilderProtocol_")
+@protocol BidMachinePlacementBuilderProtocol
+- (nonnull instancetype)withPlacementId:(NSString * _Nonnull)placementId;
+- (nonnull instancetype)withCustomParameters:(NSDictionary<NSString *, id> * _Nonnull)params;
+@end
 
 
 SWIFT_PROTOCOL("_TtP10BidMachine28BidMachinePriceFloorProtocol_")
@@ -1434,15 +1531,22 @@ SWIFT_PROTOCOL("_TtP10BidMachine32BidMachineRegulationZoneProtocol_")
 @end
 
 
+SWIFT_CLASS("_TtC10BidMachine31BidMachineRendererConfiguration")
+@interface BidMachineRendererConfiguration : NSObject
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull extras;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_PROTOCOL("_TtP10BidMachine32BidMachineRequestBuilderProtocol_")
 @protocol BidMachineRequestBuilderProtocol
 - (nonnull instancetype)withPlacementId:(NSString * _Nonnull)ID;
-- (nonnull instancetype)withPayload:(NSString * _Nonnull)payload;
 - (nonnull instancetype)withTimeout:(double)timeout;
 - (nonnull instancetype)withCustomParameters:(NSDictionary<NSString *, id> * _Nonnull)params;
 - (nonnull instancetype)appendPriceFloor:(double)price :(NSString * _Nonnull)name;
+- (nonnull instancetype)withPayload:(NSString * _Nonnull)payload;
 - (nonnull instancetype)withUnitConfigurations:(NSArray<BidMachineBiddingUnitConfiguration *> * _Nonnull)configurations;
-- (nonnull instancetype)withContextualData:(uint64_t)sessionDuration :(id <BidMachineContextualDataProtocol> _Nonnull)data SWIFT_DEPRECATED_MSG("Will be remove");
 @end
 
 
@@ -1462,8 +1566,6 @@ SWIFT_PROTOCOL("_TtP10BidMachine29BidMachineRequestInfoProtocol_")
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull customParams;
 @property (nonatomic, readonly, copy) NSArray<id <BidMachinePriceFloorProtocol>> * _Nonnull priceFloors;
 @property (nonatomic, readonly, copy) NSArray<BidMachineBiddingUnitConfiguration *> * _Nonnull unitsConfigurations;
-@property (nonatomic, readonly) uint64_t sessionDuration SWIFT_DEPRECATED_MSG("Will be remove");
-@property (nonatomic, readonly, strong) id <BidMachineContextualDataProtocol> _Nullable contextualData SWIFT_DEPRECATED_MSG("Will be remove");
 @end
 
 
@@ -1475,15 +1577,22 @@ SWIFT_PROTOCOL("_TtP10BidMachine38BidMachineRequestConfigurationProtocol_")
 
 SWIFT_CLASS("_TtC10BidMachine26BidMachineRequestPlacement")
 @interface BidMachineRequestPlacement : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull name;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface BidMachineRequestPlacement (SWIFT_EXTENSION(BidMachine))
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
 @end
 
 
 
 SWIFT_CLASS("_TtC10BidMachine18BidMachineRewarded")
 @interface BidMachineRewarded : NSObject
+@property (nonatomic, readonly, strong) BidMachineRendererConfiguration * _Nonnull rendererConfiguration;
+@property (nonatomic, readonly, strong) BidMachineAuctionRequest * _Nonnull auctionRequest;
+@property (nonatomic, readonly, strong) id <BidMachineRequestInfoProtocol> _Nonnull requestInfo;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1493,7 +1602,6 @@ SWIFT_CLASS("_TtC10BidMachine18BidMachineRewarded")
 
 @interface BidMachineRewarded (SWIFT_EXTENSION(BidMachine)) <BidMachineAdProtocol>
 @property (nonatomic, readonly) BOOL canShow;
-@property (nonatomic, readonly, strong) id <BidMachineRequestInfoProtocol> _Nonnull requestInfo;
 @property (nonatomic, readonly, strong) id <BidMachineAuctionResponseProtocol> _Nonnull auctionInfo;
 @property (nonatomic, strong) id <BidMachineAdDelegate> _Nullable delegate;
 @property (nonatomic, strong) UIViewController * _Nullable controller;
@@ -1519,8 +1627,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @end
 
 
+
 @interface BidMachineSdk (SWIFT_EXTENSION(BidMachine))
-- (id <BidMachineRequestConfigurationProtocol> _Nullable)requestConfiguration:(enum BidMachinePlacementFormat)format error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)extrasValueBy:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface BidMachineSdk (SWIFT_EXTENSION(BidMachine))
+- (BidMachinePlacement * _Nullable)placementFrom:(enum BidMachinePlacementFormat)format error:(NSError * _Nullable * _Nullable)error builder:(void (^ _Nullable)(id <BidMachinePlacementBuilderProtocol> _Nonnull))builder SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -1529,16 +1643,17 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @end
 
 
+
 @interface BidMachineSdk (SWIFT_EXTENSION(BidMachine))
-- (id _Nullable)extrasValueBy:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (id <BidMachineRequestConfigurationProtocol> _Nullable)requestConfiguration:(enum BidMachinePlacementFormat)format error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use `auctionRequest(placement:builder:)` instead.");
+- (BidMachineAuctionRequest * _Nonnull)auctionRequestWithPlacement:(BidMachinePlacement * _Nonnull)placement builder:(void (^ _Nullable)(id <BidMachineAuctionRequestBuilderProtocol> _Nonnull))builder SWIFT_WARN_UNUSED_RESULT;
 @end
-
-
 
 
 @interface BidMachineSdk (SWIFT_EXTENSION(BidMachine))
 - (void)initializeSdk:(NSString * _Nonnull)sourceId;
-- (void)tokenWith:(enum BidMachinePlacementFormat)format completion:(void (^ _Nonnull)(NSString * _Nullable))completion;
+- (void)tokenWith:(enum BidMachinePlacementFormat)format completion:(void (^ _Nonnull)(NSString * _Nullable))completion SWIFT_DEPRECATED_MSG("Use `token(placement:completion:)` instead.");
+- (void)tokenWithPlacement:(BidMachinePlacement * _Nonnull)placement completion:(void (^ _Nonnull)(NSString * _Nullable))completion;
 @end
 
 
@@ -1550,11 +1665,20 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 
 
 @interface BidMachineSdk (SWIFT_EXTENSION(BidMachine))
-- (void)ad:(id <BidMachineRequestConfigurationProtocol> _Nullable)configuration :(void (^ _Nonnull)(id <BidMachineAdProtocol> _Nullable, NSError * _Nullable))completion;
-- (void)interstitial:(id <BidMachineRequestConfigurationProtocol> _Nullable)configuration :(void (^ _Nonnull)(BidMachineInterstitial * _Nullable, NSError * _Nullable))completion;
-- (void)rewarded:(id <BidMachineRequestConfigurationProtocol> _Nullable)configuration :(void (^ _Nonnull)(BidMachineRewarded * _Nullable, NSError * _Nullable))completion;
-- (void)banner:(id <BidMachineRequestConfigurationProtocol> _Nullable)configuration :(void (^ _Nonnull)(BidMachineBanner * _Nullable, NSError * _Nullable))completion;
-- (void)native:(id <BidMachineRequestConfigurationProtocol> _Nullable)configuration :(void (^ _Nonnull)(BidMachineNative * _Nullable, NSError * _Nullable))completion;
+- (void)ad:(id <BidMachineRequestConfigurationProtocol> _Nullable)configuration :(void (^ _Nonnull)(id <BidMachineAdProtocol> _Nullable, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("Use `ad(request:completion:)` instead.");
+- (void)interstitial:(id <BidMachineRequestConfigurationProtocol> _Nullable)configuration :(void (^ _Nonnull)(BidMachineInterstitial * _Nullable, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("Use `interstitial(request:completion:)` instead.");
+- (void)rewarded:(id <BidMachineRequestConfigurationProtocol> _Nullable)configuration :(void (^ _Nonnull)(BidMachineRewarded * _Nullable, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("Use `rewarded(request:completion:)` instead.");
+- (void)banner:(id <BidMachineRequestConfigurationProtocol> _Nullable)configuration :(void (^ _Nonnull)(BidMachineBanner * _Nullable, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("Use `banner(request:completion:)` instead.");
+- (void)native:(id <BidMachineRequestConfigurationProtocol> _Nullable)configuration :(void (^ _Nonnull)(BidMachineNative * _Nullable, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("Use `native(request:completion:)` instead.");
+@end
+
+
+@interface BidMachineSdk (SWIFT_EXTENSION(BidMachine))
+- (void)adWithRequest:(BidMachineAuctionRequest * _Nullable)request completion:(void (^ _Nonnull)(id <BidMachineAdProtocol> _Nullable, NSError * _Nullable))completion;
+- (void)interstitialWithRequest:(BidMachineAuctionRequest * _Nullable)request completion:(void (^ _Nonnull)(BidMachineInterstitial * _Nullable, NSError * _Nullable))completion;
+- (void)rewardedWithRequest:(BidMachineAuctionRequest * _Nullable)request completion:(void (^ _Nonnull)(BidMachineRewarded * _Nullable, NSError * _Nullable))completion;
+- (void)bannerWithRequest:(BidMachineAuctionRequest * _Nullable)request completion:(void (^ _Nonnull)(BidMachineBanner * _Nullable, NSError * _Nullable))completion;
+- (void)nativeWithRequest:(BidMachineAuctionRequest * _Nullable)request completion:(void (^ _Nonnull)(BidMachineNative * _Nullable, NSError * _Nullable))completion;
 @end
 
 
@@ -1653,6 +1777,10 @@ typedef SWIFT_ENUM_NAMED(NSInteger, BidMachinePlacementFormat, "PlacementFormat"
   BidMachinePlacementFormatNativeIconAndImage = 16,
   BidMachinePlacementFormatNativeImageAndVideo = 17,
 };
+
+
+
+
 
 
 

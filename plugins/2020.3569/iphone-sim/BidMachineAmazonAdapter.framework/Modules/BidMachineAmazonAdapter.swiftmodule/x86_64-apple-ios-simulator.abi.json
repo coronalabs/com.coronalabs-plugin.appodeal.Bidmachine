@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "BidMachineAmazonAdapter",
+    "printedName": "BidMachineAmazonAdapter",
     "children": [
       {
         "kind": "Import",
@@ -113,20 +113,6 @@
     "json_format_version": 8
   },
   "ConstValues": [
-    {
-      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineAmazonAdapter\/AmazonFullscreenAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 56,
-      "length": 23,
-      "value": "\"BidMachineAmazonAdapter.AmazonFullscreenAdapter\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineAmazonAdapter\/AmazonBannerAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 56,
-      "length": 19,
-      "value": "\"BidMachineAmazonAdapter.AmazonBannerAdapter\""
-    },
     {
       "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineAmazonAdapter\/AmazonNetwork.swift",
       "kind": "StringLiteral",

@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "BidMachineVungleAdapter",
+    "printedName": "BidMachineVungleAdapter",
     "children": [
       {
         "kind": "Import",
@@ -121,25 +121,11 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineVungleAdapter\/VungleRewardedAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 59,
-      "length": 21,
-      "value": "\"BidMachineVungleAdapter.VungleRewardedAdapter\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineVungleAdapter\/VungleInterstitialAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 59,
-      "length": 25,
-      "value": "\"BidMachineVungleAdapter.VungleInterstitialAdapter\""
-    },
-    {
       "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineVungleAdapter\/VungleBannerAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 59,
-      "length": 19,
-      "value": "\"BidMachineVungleAdapter.VungleBannerAdapter\""
+      "kind": "BooleanLiteral",
+      "offset": 400,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineVungleAdapter\/VungleNetwork.swift",

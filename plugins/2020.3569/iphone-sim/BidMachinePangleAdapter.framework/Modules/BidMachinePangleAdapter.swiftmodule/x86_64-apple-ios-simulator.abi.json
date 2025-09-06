@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "BidMachinePangleAdapter",
+    "printedName": "BidMachinePangleAdapter",
     "children": [
       {
         "kind": "Import",
@@ -128,13 +128,6 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachinePangleAdapter\/PangleBannerAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 55,
-      "length": 19,
-      "value": "\"BidMachinePangleAdapter.PangleBannerAdapter\""
-    },
-    {
       "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachinePangleAdapter\/PangleNetwork.swift",
       "kind": "StringLiteral",
       "offset": 315,
@@ -175,20 +168,6 @@
       "offset": 640,
       "length": 4,
       "value": "\".0\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachinePangleAdapter\/PangleInterstitialAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 55,
-      "length": 25,
-      "value": "\"BidMachinePangleAdapter.PangleInterstitialAdapter\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachinePangleAdapter\/PangleRewardedAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 55,
-      "length": 21,
-      "value": "\"BidMachinePangleAdapter.PangleRewardedAdapter\""
     }
   ]
 }

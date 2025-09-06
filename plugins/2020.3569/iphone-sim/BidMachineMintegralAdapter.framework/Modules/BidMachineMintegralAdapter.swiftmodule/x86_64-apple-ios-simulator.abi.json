@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "BidMachineMintegralAdapter",
+    "printedName": "BidMachineMintegralAdapter",
     "children": [
       {
         "kind": "Import",
@@ -156,55 +156,6 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineMintegralAdapter\/MintegralBannerAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 73,
-      "length": 22,
-      "value": "\"BidMachineMintegralAdapter.MintegralBannerAdapter\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineMintegralAdapter\/MintegralRewardedAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 73,
-      "length": 24,
-      "value": "\"BidMachineMintegralAdapter.MintegralRewardedAdapter\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineMintegralAdapter\/MintegralInterstitialAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 82,
-      "length": 28,
-      "value": "\"BidMachineMintegralAdapter.MintegralInterstitialAdapter\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineMintegralAdapter\/MintegralNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 347,
-      "length": 8,
-      "value": "\"app_id\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineMintegralAdapter\/MintegralNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 379,
-      "length": 9,
-      "value": "\"app_key\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineMintegralAdapter\/MintegralNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 415,
-      "length": 12,
-      "value": "\"ad_unit_id\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineMintegralAdapter\/MintegralNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 457,
-      "length": 14,
-      "value": "\"placement_id\""
-    },
-    {
       "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineMintegralAdapter\/MintegralNetwork.swift",
       "kind": "StringLiteral",
       "offset": 347,
@@ -238,20 +189,6 @@
       "offset": 543,
       "length": 11,
       "value": "\"buyer_uid\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineMintegralAdapter\/MintegralNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 543,
-      "length": 11,
-      "value": "\"buyer_uid\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineMintegralAdapter\/MintegralNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 629,
-      "length": 11,
-      "value": "\"bid_token\""
     },
     {
       "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineMintegralAdapter\/MintegralNetwork.swift",

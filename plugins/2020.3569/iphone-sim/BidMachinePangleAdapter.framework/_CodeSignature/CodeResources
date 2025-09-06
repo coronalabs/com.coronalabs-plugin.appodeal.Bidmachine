@@ -6,7 +6,7 @@
 	<dict>
 		<key>AdsGlobalSDK.bundle/Info.plist</key>
 		<data>
-		BRLdMHdA3uU1OOz9il4DispVEaI=
+		gYfDGSUDmmbHEF/GwWsQwQyjhF8=
 		</data>
 		<key>AdsGlobalSDK.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>BidMachine.bundle/Info.plist</key>
 		<data>
-		hUBk/+/pZ7dlcErxvFxkFYpNF+8=
+		NjpEA2zFcp/qecKz/TrTNd4y6rY=
 		</data>
 		<key>BidMachine.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
-		uYPUl+KUsWu+RdQbziu1AtJFxwo=
+		KzGN9kIaiUzlyqYSrB4HMQ7GY6Q=
 		</data>
 		<key>Headers/BidMachinePangleAdapter-Swift.h</key>
 		<data>
-		gcNZHN4/o4n0XNHDiopj6oqoX9c=
+		7qjy3hJ++cBfNx0S+GQXXHy14W4=
 		</data>
 		<key>Headers/BidMachinePangleAdapter.h</key>
 		<data>
@@ -30,266 +30,107 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Eec8XrnC9eBDpE8pYoopuTsclBM=
+		ftSXRuFIb8ilwxivRw3LrPdpjEo=
 		</data>
 		<key>Modules/BidMachinePangleAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		zTPFzdWJGFtTeyexyQK9P627X28=
+		ehCS+PjEjFsO8puzgtlZnPLE6Uo=
 		</data>
 		<key>Modules/BidMachinePangleAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		26pme0IwUE888sg1L373aZ7G5Ns=
+		Ac7kilLTw11qgWmDPosLdxoTRv8=
 		</data>
 		<key>Modules/BidMachinePangleAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		HCYcvH94YN8JRAWJ3/rsHOU78DY=
+		g0ZcJyCQLSLXkF/SDcIZPKm2iew=
 		</data>
 		<key>Modules/BidMachinePangleAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		26pme0IwUE888sg1L373aZ7G5Ns=
+		Ac7kilLTw11qgWmDPosLdxoTRv8=
 		</data>
 		<key>Modules/BidMachinePangleAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JTK3+dgZFxC5eVeWxYjdXoB+aoY=
+		tjzLj53+9ExrU5E9jzVtSsGtl8s=
 		</data>
 		<key>Modules/BidMachinePangleAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		zTPFzdWJGFtTeyexyQK9P627X28=
+		ehCS+PjEjFsO8puzgtlZnPLE6Uo=
 		</data>
 		<key>Modules/BidMachinePangleAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		U+PcTk/yFpLd7ABYIZTddIrZifc=
+		e64gf4KyUgu46i3lCnkDDe4CfP0=
 		</data>
 		<key>Modules/BidMachinePangleAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Y0HQUFqA0WFmSsKqwma/CT573Mw=
+		oxQh1M/V7RlTvI23JlbJBbf7RJI=
 		</data>
 		<key>Modules/BidMachinePangleAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		U+PcTk/yFpLd7ABYIZTddIrZifc=
+		e64gf4KyUgu46i3lCnkDDe4CfP0=
 		</data>
 		<key>Modules/BidMachinePangleAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		QLdPCJArI/kiTxkIk3UaEhNKzcY=
+		OlpID+gmNyVihYDaD2JoiE/TxcU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		TCWruMgNg4tG9KzpHG6nCiGT0jY=
 		</data>
+		<key>PAGAdSDK.bundle/400001559.json</key>
+		<data>
+		MqDmI9ufimNrfXvsmxfwGuODYig=
+		</data>
+		<key>PAGAdSDK.bundle/400001562.json</key>
+		<data>
+		J5Ijptt+2UP486yU/qrjpJGonF0=
+		</data>
+		<key>PAGAdSDK.bundle/400001923.json</key>
+		<data>
+		Gmu2EL9OxTJn8GvIOa9Z3p3CtTQ=
+		</data>
+		<key>PAGAdSDK.bundle/400001924.json</key>
+		<data>
+		2eckjXlUFc7yq+lU2DzFDLJnujE=
+		</data>
+		<key>PAGAdSDK.bundle/400001925.json</key>
+		<data>
+		hcfxoRU2jscn+TVXliMw1IwK8gY=
+		</data>
+		<key>PAGAdSDK.bundle/400001964.json</key>
+		<data>
+		Ex0xyq1+I23I7yu7RsNUCWVpEYs=
+		</data>
+		<key>PAGAdSDK.bundle/400001965.json</key>
+		<data>
+		0Pe66i+Ln7O2oAGT2tLg2rEFPHU=
+		</data>
+		<key>PAGAdSDK.bundle/400002028.json</key>
+		<data>
+		KqhwBEnzl4rA1wG90gKqqMYXXO4=
+		</data>
+		<key>PAGAdSDK.bundle/400002029.json</key>
+		<data>
+		gPThAeZBfq0pZx8O2wYOaRkR5wM=
+		</data>
 		<key>PAGAdSDK.bundle/Assets.car</key>
 		<data>
-		k1jRERLUW6HSSrZsWCgyV+zfXmY=
+		7p9aS9xmPIWM7ssl5k8EXmPauIU=
 		</data>
 		<key>PAGAdSDK.bundle/Info.plist</key>
 		<data>
-		wUK5lCFjzBIxJgJoMNByXtoOurA=
+		K4MZlIZdYo4uaPHKxobiJRZuUVg=
 		</data>
 		<key>PAGAdSDK.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
 		/9EtcEGxvliJS6WqSyAMGN1TBwE=
 		</data>
-		<key>PAGAdSDK.bundle/ar.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1cjBezsrbkZz1BaVvT4VrWqFb3M=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/biz.json</key>
-		<data>
-		uoq1oCgLlTqpdDX/iUbLy7J1Wic=
-		</data>
-		<key>PAGAdSDK.bundle/bu_dynamic_default.json</key>
-		<data>
-		bq+EQgtComvnQStA2ZiGevb/z9Y=
-		</data>
-		<key>PAGAdSDK.bundle/bu_slienceAudio.aiff</key>
-		<data>
-		v74jzRIcosmBtYPI2ZcLbyHgbog=
-		</data>
-		<key>PAGAdSDK.bundle/de.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			vWP0tyWFPesghuFzvTi84W+DR7Y=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/en.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			I/YOJMwnEvW+fLvZXEqCeiunXaY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/es.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			8Lhv29FmccaKcj8bi5Gh25aCJ+k=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/fr.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+whNsaqT/k3/eG1CatZrZy4HO0I=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/hi.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			evCM/3g9lrqdARjHA7rEH8hEdjs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/id.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			NvWc7B7n48Ah5fZk1r7A2fLgGVI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/it.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			lba9De5NBlWa2G+w3GokkItPQBE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/ja.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			70Gym7bSvbVo6AJl/d+JbLhGJ5A=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/ko.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OfnxOVDEI97cIIEva8ElQNc9bU0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/ms.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			7GtXqdQ8EU823hNd/UZSviX30MM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/omsdk-v1.js</key>
-		<data>
-		wh6XC7qHRjX+Gr7DjO8H3R5QegY=
-		</data>
-		<key>PAGAdSDK.bundle/pl.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9ApJC7JWAmPT10a6ZJu6Reeut4I=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/pt.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			kyzDgYTKX3v3Lvxkb7pvQsCVWZg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/ru.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			qBEUCp4s69vNYIJLHwcTYOHVyHU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/setup.txt</key>
-		<data>
-		ZM3A57y/v18OGzuvfRFEJO3U2Co=
-		</data>
-		<key>PAGAdSDK.bundle/template.json</key>
-		<data>
-		uoq1oCgLlTqpdDX/iUbLy7J1Wic=
-		</data>
-		<key>PAGAdSDK.bundle/th.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ycyRpj+Dg2VTBMtI66foGlRCJ9U=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/tr.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			W37CPidBpy3Nq3VrLUpCrBZ+rfs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>PAGAdSDK.bundle/version.txt</key>
 		<data>
-		pvTqcPkoAq/NQtbpkdbF6ndRNEE=
+		YJspkiqiTp11w/ZiYa09aF+nJ0c=
 		</data>
-		<key>PAGAdSDK.bundle/vi.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			PgbL7jqsoMQF8OcS1wIGEe9PHnE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/zh-Hans.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MS3LHiFloA9WeIYBme0Sy20vz+4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/zh-Hant.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			VAB8x7rCkBYnw2VLao0BL85zxWA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>StackModules.bundle/Info.plist</key>
 		<data>
-		eCZS1OPvXvpZ+Huh1sq7TWgoFHs=
+		ZOXcf0ZQbp3zwqs49HQoBuSVO+c=
 		</data>
 		<key>StackModules.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -297,7 +138,7 @@
 		</data>
 		<key>StackProductPresentation.bundle/Info.plist</key>
 		<data>
-		vE730jXMXbXgCqRWpqavZAYG318=
+		Vb34UIOzFtu2rFImsMMj8mW4ya8=
 		</data>
 		<key>StackProductPresentation.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -305,7 +146,7 @@
 		</data>
 		<key>StackRendering.bundle/Info.plist</key>
 		<data>
-		+n3U9zNwGM9ypIS5cyE2bMzbw9A=
+		c7Xd76Saoz4UiXNYzkJUS7u3GX4=
 		</data>
 		<key>StackRendering.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -318,11 +159,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BRLdMHdA3uU1OOz9il4DispVEaI=
+			gYfDGSUDmmbHEF/GwWsQwQyjhF8=
 			</data>
 			<key>hash2</key>
 			<data>
-			XZ2KvrngBTwtp1F1jjFJmrWZhbbb8gj83ESyydqmCTw=
+			8pAmoc6ZK76JvT3ICb+aXgf8w6Sj6kjA+mL2X62/iGc=
 			</data>
 		</dict>
 		<key>AdsGlobalSDK.bundle/PrivacyInfo.xcprivacy</key>
@@ -340,33 +181,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hUBk/+/pZ7dlcErxvFxkFYpNF+8=
+			NjpEA2zFcp/qecKz/TrTNd4y6rY=
 			</data>
 			<key>hash2</key>
 			<data>
-			X525ENvldebI+S/D1DxVMhYpRgxuEcAZ9YGkQ/+BWhs=
+			H7piR99eYjokGvOoJw2ECJi1V+Q+SEq9jahJ1iRM4vY=
 			</data>
 		</dict>
 		<key>BidMachine.bundle/PrivacyInfo.xcprivacy</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uYPUl+KUsWu+RdQbziu1AtJFxwo=
+			KzGN9kIaiUzlyqYSrB4HMQ7GY6Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			CqVN116ZDpCcMdsO8zwcEjYNu8SVLFn/b+dg+BseNis=
+			0H2yqL1OorskXVA3Xgd6k4OR0cLDQkxIdx17ngKx6QU=
 			</data>
 		</dict>
 		<key>Headers/BidMachinePangleAdapter-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gcNZHN4/o4n0XNHDiopj6oqoX9c=
+			7qjy3hJ++cBfNx0S+GQXXHy14W4=
 			</data>
 			<key>hash2</key>
 			<data>
-			YM0fHaGWFUn49q29WFO6BqzStRsAcRJcPPjRSG4udmg=
+			/LFR111ySO00a8yYZOx+Gnq5ezP5HdW0fstFBjuPZ8I=
 			</data>
 		</dict>
 		<key>Headers/BidMachinePangleAdapter.h</key>
@@ -384,110 +225,110 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zTPFzdWJGFtTeyexyQK9P627X28=
+			ehCS+PjEjFsO8puzgtlZnPLE6Uo=
 			</data>
 			<key>hash2</key>
 			<data>
-			320cYqO2C1O+aK/SbpXO+KgKOdAotIWETinvhLFQoZY=
+			q1uWnYPG0QQP1S1mtJ7VendhHeD7QH1uHC3H5H19eMw=
 			</data>
 		</dict>
 		<key>Modules/BidMachinePangleAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			26pme0IwUE888sg1L373aZ7G5Ns=
+			Ac7kilLTw11qgWmDPosLdxoTRv8=
 			</data>
 			<key>hash2</key>
 			<data>
-			a0EJt6xcsAhB5Ma9XOBYgMC54A8kQkkthLxLv17OFHw=
+			lpSWEsJJxS8iQX8aEbl2Y+sQPL/JuMqwPICck/lIkV0=
 			</data>
 		</dict>
 		<key>Modules/BidMachinePangleAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HCYcvH94YN8JRAWJ3/rsHOU78DY=
+			g0ZcJyCQLSLXkF/SDcIZPKm2iew=
 			</data>
 			<key>hash2</key>
 			<data>
-			F96+ReSuk8NlYrq0gHCdiadNYFDmIW1hxra2Z8YbquY=
+			Ueu2rsDKqw+CJDhXmntKjFW1zl6glSEXYGBmmW+L1rA=
 			</data>
 		</dict>
 		<key>Modules/BidMachinePangleAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			26pme0IwUE888sg1L373aZ7G5Ns=
+			Ac7kilLTw11qgWmDPosLdxoTRv8=
 			</data>
 			<key>hash2</key>
 			<data>
-			a0EJt6xcsAhB5Ma9XOBYgMC54A8kQkkthLxLv17OFHw=
+			lpSWEsJJxS8iQX8aEbl2Y+sQPL/JuMqwPICck/lIkV0=
 			</data>
 		</dict>
 		<key>Modules/BidMachinePangleAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JTK3+dgZFxC5eVeWxYjdXoB+aoY=
+			tjzLj53+9ExrU5E9jzVtSsGtl8s=
 			</data>
 			<key>hash2</key>
 			<data>
-			/7WJSgDpB2gG9M4AfBs5F05fIjpCtYw7vYgA6eQ1ag4=
+			yBiR4ttyntjRLMabLLrQY0OBJ0djXz6aWYkWHZmNWz4=
 			</data>
 		</dict>
 		<key>Modules/BidMachinePangleAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zTPFzdWJGFtTeyexyQK9P627X28=
+			ehCS+PjEjFsO8puzgtlZnPLE6Uo=
 			</data>
 			<key>hash2</key>
 			<data>
-			320cYqO2C1O+aK/SbpXO+KgKOdAotIWETinvhLFQoZY=
+			q1uWnYPG0QQP1S1mtJ7VendhHeD7QH1uHC3H5H19eMw=
 			</data>
 		</dict>
 		<key>Modules/BidMachinePangleAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			U+PcTk/yFpLd7ABYIZTddIrZifc=
+			e64gf4KyUgu46i3lCnkDDe4CfP0=
 			</data>
 			<key>hash2</key>
 			<data>
-			WlewCGn6nBG1D5L3EcdrkujZlnnIsJEuVHgU5m8MlLw=
+			Q84DdXhkj3o/EXzAEquD9W3/Qbvs6/nIV6BqpX8v2nQ=
 			</data>
 		</dict>
 		<key>Modules/BidMachinePangleAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Y0HQUFqA0WFmSsKqwma/CT573Mw=
+			oxQh1M/V7RlTvI23JlbJBbf7RJI=
 			</data>
 			<key>hash2</key>
 			<data>
-			AGlrXu2GUe53dEBL7DdrJgmtzVb/kXyx4qIRxc7Djw4=
+			FEhSG0L+0zpZHLo/aDLIanx80nodwmOAnECQXXqn8/c=
 			</data>
 		</dict>
 		<key>Modules/BidMachinePangleAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			U+PcTk/yFpLd7ABYIZTddIrZifc=
+			e64gf4KyUgu46i3lCnkDDe4CfP0=
 			</data>
 			<key>hash2</key>
 			<data>
-			WlewCGn6nBG1D5L3EcdrkujZlnnIsJEuVHgU5m8MlLw=
+			Q84DdXhkj3o/EXzAEquD9W3/Qbvs6/nIV6BqpX8v2nQ=
 			</data>
 		</dict>
 		<key>Modules/BidMachinePangleAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QLdPCJArI/kiTxkIk3UaEhNKzcY=
+			OlpID+gmNyVihYDaD2JoiE/TxcU=
 			</data>
 			<key>hash2</key>
 			<data>
-			BnBtKy3GB6nen74L41ueYFRqMYdOHGxSG9fOwkW+xZU=
+			3qNXrE//oN+8wbvir8jHsc+FGkck6RyOHXeIg5pZCyg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -501,26 +342,125 @@
 			juViAMyYw4fLtVlqpo+TSh9d7w7DoIcqUCYtSNW4DQY=
 			</data>
 		</dict>
+		<key>PAGAdSDK.bundle/400001559.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MqDmI9ufimNrfXvsmxfwGuODYig=
+			</data>
+			<key>hash2</key>
+			<data>
+			kKddEH7HuKc2AxIqPcbMsE2NXu6ubkC6noqXFDTvsOc=
+			</data>
+		</dict>
+		<key>PAGAdSDK.bundle/400001562.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			J5Ijptt+2UP486yU/qrjpJGonF0=
+			</data>
+			<key>hash2</key>
+			<data>
+			fpYras6LM7co3VGvxa9lVPTKjqBq31X2vKsg3ilMYzI=
+			</data>
+		</dict>
+		<key>PAGAdSDK.bundle/400001923.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Gmu2EL9OxTJn8GvIOa9Z3p3CtTQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			8wdHMzLIeZb8xXjvWh7d835Zhr5N2g1OhfEJRtUqU64=
+			</data>
+		</dict>
+		<key>PAGAdSDK.bundle/400001924.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2eckjXlUFc7yq+lU2DzFDLJnujE=
+			</data>
+			<key>hash2</key>
+			<data>
+			pLkzm5XY/ZxAY33Goq/80RIJyX+9m5lZneOJH82qZPI=
+			</data>
+		</dict>
+		<key>PAGAdSDK.bundle/400001925.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hcfxoRU2jscn+TVXliMw1IwK8gY=
+			</data>
+			<key>hash2</key>
+			<data>
+			O7jaluGMq4FozRHLlf4fenIHwhFHkbWVaxgAQNiQreg=
+			</data>
+		</dict>
+		<key>PAGAdSDK.bundle/400001964.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ex0xyq1+I23I7yu7RsNUCWVpEYs=
+			</data>
+			<key>hash2</key>
+			<data>
+			Jc/tiK3fQvgkKCLsiVjghTLaRHiLhmaVLdAyc3L6dRQ=
+			</data>
+		</dict>
+		<key>PAGAdSDK.bundle/400001965.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0Pe66i+Ln7O2oAGT2tLg2rEFPHU=
+			</data>
+			<key>hash2</key>
+			<data>
+			kKIbMHkFu17qwy2hzkg8nDzjPRz9tUC+2IkA545nG90=
+			</data>
+		</dict>
+		<key>PAGAdSDK.bundle/400002028.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KqhwBEnzl4rA1wG90gKqqMYXXO4=
+			</data>
+			<key>hash2</key>
+			<data>
+			+MXAjNrJ/4hRqcTOLVsSzJQy+IvFccQ2tNMdF9akrXY=
+			</data>
+		</dict>
+		<key>PAGAdSDK.bundle/400002029.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gPThAeZBfq0pZx8O2wYOaRkR5wM=
+			</data>
+			<key>hash2</key>
+			<data>
+			TMsuvjLT0DCgtjREz8cMw7sth2TCRQ6yxv7gX1ghxnI=
+			</data>
+		</dict>
 		<key>PAGAdSDK.bundle/Assets.car</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			k1jRERLUW6HSSrZsWCgyV+zfXmY=
+			7p9aS9xmPIWM7ssl5k8EXmPauIU=
 			</data>
 			<key>hash2</key>
 			<data>
-			trYzmVVZgXlKvcvIEG2q0OIeTxqNzVYMg26IH5mOp2Y=
+			A7tCMFqJuVHlyvL0gGM8FrHLvcWyxNVk+DlsoXLy6dY=
 			</data>
 		</dict>
 		<key>PAGAdSDK.bundle/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wUK5lCFjzBIxJgJoMNByXtoOurA=
+			K4MZlIZdYo4uaPHKxobiJRZuUVg=
 			</data>
 			<key>hash2</key>
 			<data>
-			TGMs/+F15e6nRLK2nfcytOfGCnRk2LSIjV3sK+PcBPI=
+			1meLPm4nvrPIc5P5Nmb3zGKnNB1TtAhOCqQgFHoyBAw=
 			</data>
 		</dict>
 		<key>PAGAdSDK.bundle/PrivacyInfo.xcprivacy</key>
@@ -534,339 +474,26 @@
 			y5cXDuafZAHCK9CZXFBYYkEI7u+LZGwDEwlq24JR8ik=
 			</data>
 		</dict>
-		<key>PAGAdSDK.bundle/ar.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1cjBezsrbkZz1BaVvT4VrWqFb3M=
-			</data>
-			<key>hash2</key>
-			<data>
-			MovjRcgJobS8yZjaKgJnvOSnhGX0k4cGNC3nLMBeUtA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/biz.json</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			uoq1oCgLlTqpdDX/iUbLy7J1Wic=
-			</data>
-			<key>hash2</key>
-			<data>
-			frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN/XKdLCPjaYaY=
-			</data>
-		</dict>
-		<key>PAGAdSDK.bundle/bu_dynamic_default.json</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			bq+EQgtComvnQStA2ZiGevb/z9Y=
-			</data>
-			<key>hash2</key>
-			<data>
-			qtl0P/D3t/4DW5mLgbINpsvwyAMS3btgAv+o3j8oZgo=
-			</data>
-		</dict>
-		<key>PAGAdSDK.bundle/bu_slienceAudio.aiff</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			v74jzRIcosmBtYPI2ZcLbyHgbog=
-			</data>
-			<key>hash2</key>
-			<data>
-			DWsomZiPM/47JpKBs9w/AAdB4pofnAkaiDL01VZGjDo=
-			</data>
-		</dict>
-		<key>PAGAdSDK.bundle/de.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			vWP0tyWFPesghuFzvTi84W+DR7Y=
-			</data>
-			<key>hash2</key>
-			<data>
-			Fn5XWK57VD+BOXL/cllLM5uZr+dESqPyXX9ZiY/m6+U=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/en.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			I/YOJMwnEvW+fLvZXEqCeiunXaY=
-			</data>
-			<key>hash2</key>
-			<data>
-			65iXqQEuAJtzFZ7jgie8UzQbx59ZFe3Vo8BBCsXbZJo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/es.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			8Lhv29FmccaKcj8bi5Gh25aCJ+k=
-			</data>
-			<key>hash2</key>
-			<data>
-			Ng5pqZq6b7YiIKg9AEwY19nBsfq36z65SytbVCgcb10=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/fr.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+whNsaqT/k3/eG1CatZrZy4HO0I=
-			</data>
-			<key>hash2</key>
-			<data>
-			qQ2EAEd5kdbAGzYYLMbODuecYqGxXSq9to/OQKu/P88=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/hi.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			evCM/3g9lrqdARjHA7rEH8hEdjs=
-			</data>
-			<key>hash2</key>
-			<data>
-			FP2Fbxn3a5/RZ/eoBqx9PNbYcqb/v9ikw8EcMBCIKsM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/id.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			NvWc7B7n48Ah5fZk1r7A2fLgGVI=
-			</data>
-			<key>hash2</key>
-			<data>
-			IEiHItAZh/dhvDyP1oS+ZFh2zQmSGqe/TkYGbbrJ8uY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/it.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			lba9De5NBlWa2G+w3GokkItPQBE=
-			</data>
-			<key>hash2</key>
-			<data>
-			otKFz3LjT7q8zDRvEA2kMQsMCGI9S4B8Ku8EwSX7ZLM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/ja.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			70Gym7bSvbVo6AJl/d+JbLhGJ5A=
-			</data>
-			<key>hash2</key>
-			<data>
-			gsQWDOOsVdV84uLcTRgAFklOu0HzTMgzP2kvP2ItEQI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/ko.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OfnxOVDEI97cIIEva8ElQNc9bU0=
-			</data>
-			<key>hash2</key>
-			<data>
-			6nGqTPQ232MLtKMoq3ljTPE7vdDMPl3f+oXeBcoIFTI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/ms.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			7GtXqdQ8EU823hNd/UZSviX30MM=
-			</data>
-			<key>hash2</key>
-			<data>
-			D1YhLh9vwk/ejwmaVezE+zb7cfWIlv00vNzTlDaKn1E=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/omsdk-v1.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			wh6XC7qHRjX+Gr7DjO8H3R5QegY=
-			</data>
-			<key>hash2</key>
-			<data>
-			ajgmBpu4Daz5aH8DaB6UtzgLB7puYm7pPDSSwwqspnY=
-			</data>
-		</dict>
-		<key>PAGAdSDK.bundle/pl.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9ApJC7JWAmPT10a6ZJu6Reeut4I=
-			</data>
-			<key>hash2</key>
-			<data>
-			bvl4VRPC6v0AjdxuFIJIfCvJQ626BvfR5m8l/AVRyQQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/pt.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			kyzDgYTKX3v3Lvxkb7pvQsCVWZg=
-			</data>
-			<key>hash2</key>
-			<data>
-			DnidKGWskLXcXMLHLZbz2M+HOm8rM9uZXlwt0b5lCGk=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/ru.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			qBEUCp4s69vNYIJLHwcTYOHVyHU=
-			</data>
-			<key>hash2</key>
-			<data>
-			GEAlV53O+hCz4pjMU+IG6uMQEY4e0nIdBsNIZbX87/o=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/setup.txt</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZM3A57y/v18OGzuvfRFEJO3U2Co=
-			</data>
-			<key>hash2</key>
-			<data>
-			vM2IxdHZV33CH67WhjzFydq4IsFZFtzRed5nq4T+8Dg=
-			</data>
-		</dict>
-		<key>PAGAdSDK.bundle/template.json</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			uoq1oCgLlTqpdDX/iUbLy7J1Wic=
-			</data>
-			<key>hash2</key>
-			<data>
-			frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN/XKdLCPjaYaY=
-			</data>
-		</dict>
-		<key>PAGAdSDK.bundle/th.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ycyRpj+Dg2VTBMtI66foGlRCJ9U=
-			</data>
-			<key>hash2</key>
-			<data>
-			3tjFpP3lkOmFqM7D6xv1SoJcRBiEnoF09jMa6ny5mzg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/tr.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			W37CPidBpy3Nq3VrLUpCrBZ+rfs=
-			</data>
-			<key>hash2</key>
-			<data>
-			Jd9kb3glzKBbTYqPnHRNFL1cgQZVo33VUpFei7qrXlU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>PAGAdSDK.bundle/version.txt</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pvTqcPkoAq/NQtbpkdbF6ndRNEE=
+			YJspkiqiTp11w/ZiYa09aF+nJ0c=
 			</data>
 			<key>hash2</key>
 			<data>
-			Poz4cvGCQvQKNjUg937ScXCAo8E6t3I/GueLi1i+FAc=
+			SWes52lLP5789tHnISTps4y0wYhq4UoNFHpL3CksBfc=
 			</data>
-		</dict>
-		<key>PAGAdSDK.bundle/vi.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			PgbL7jqsoMQF8OcS1wIGEe9PHnE=
-			</data>
-			<key>hash2</key>
-			<data>
-			b0mhNJj9KTpeVtm0oakhg0ic9jqQod0WwpY4UeImgYA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/zh-Hans.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MS3LHiFloA9WeIYBme0Sy20vz+4=
-			</data>
-			<key>hash2</key>
-			<data>
-			nS/CueG2X7uWcbOVfFXNwbC/qJhXRGQsMdH/pCGh5H4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PAGAdSDK.bundle/zh-Hant.lproj/BULanguage.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			VAB8x7rCkBYnw2VLao0BL85zxWA=
-			</data>
-			<key>hash2</key>
-			<data>
-			XToq3Se0w85ke14QXVHqp7gjsqlFlSHq6tESxgvqZVE=
-			</data>
-			<key>optional</key>
-			<true/>
 		</dict>
 		<key>StackModules.bundle/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eCZS1OPvXvpZ+Huh1sq7TWgoFHs=
+			ZOXcf0ZQbp3zwqs49HQoBuSVO+c=
 			</data>
 			<key>hash2</key>
 			<data>
-			zMnUNZLaASiGDL1ECUu+tW7nPu3RNonAB3T2LERkN4Q=
+			Aw45OEr8MtKDNLkYtj2X0yvLlJwpWqbfCJmOd5jFTBg=
 			</data>
 		</dict>
 		<key>StackModules.bundle/PrivacyInfo.xcprivacy</key>
@@ -884,11 +511,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vE730jXMXbXgCqRWpqavZAYG318=
+			Vb34UIOzFtu2rFImsMMj8mW4ya8=
 			</data>
 			<key>hash2</key>
 			<data>
-			YdPE7UJv/J8wLjpIKkLNuFDMwGuKj+sBb6ToCgzalZs=
+			QuZq8ewVQCS1QbrPuOP93M2SHuK/X438QuIpfiKsf3M=
 			</data>
 		</dict>
 		<key>StackProductPresentation.bundle/PrivacyInfo.xcprivacy</key>
@@ -906,11 +533,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+n3U9zNwGM9ypIS5cyE2bMzbw9A=
+			c7Xd76Saoz4UiXNYzkJUS7u3GX4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Nc9nZYIYKuGoeM+yrFZPHJLXCk/PS8GkVGgDDbNRewA=
+			IHA2jntIhAQHP/wdgLCyCqN2gLzotW9j9ZhnNZu5kUI=
 			</data>
 		</dict>
 		<key>StackRendering.bundle/PrivacyInfo.xcprivacy</key>

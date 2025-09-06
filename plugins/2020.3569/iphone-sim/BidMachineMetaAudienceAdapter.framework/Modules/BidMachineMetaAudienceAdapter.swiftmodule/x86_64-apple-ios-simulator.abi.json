@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "BidMachineMetaAudienceAdapter",
+    "printedName": "BidMachineMetaAudienceAdapter",
     "children": [
       {
         "kind": "Import",
@@ -177,34 +177,6 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineMetaAudienceAdapter\/MetaInterstitialAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 64,
-      "length": 23,
-      "value": "\"BidMachineMetaAudienceAdapter.MetaInterstitialAdapter\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineMetaAudienceAdapter\/MetaNativeAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 64,
-      "length": 17,
-      "value": "\"BidMachineMetaAudienceAdapter.MetaNativeAdapter\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineMetaAudienceAdapter\/MetaNativeAdRenderer.swift",
-      "kind": "StringLiteral",
-      "offset": 84,
-      "length": 20,
-      "value": "\"BidMachineMetaAudienceAdapter.MetaNativeAdRenderer\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineMetaAudienceAdapter\/MetaRewardedAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 64,
-      "length": 19,
-      "value": "\"BidMachineMetaAudienceAdapter.MetaRewardedAdapter\""
-    },
-    {
       "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineMetaAudienceAdapter\/MetaNetwork.swift",
       "kind": "StringLiteral",
       "offset": 316,
@@ -252,13 +224,6 @@
       "offset": 683,
       "length": 4,
       "value": "\".0\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/BidMachine-iOS-Adaptors\/BidMachine-iOS-Adaptors\/BidMachineMetaAudienceAdapter\/MetaBannerAdapter.swift",
-      "kind": "StringLiteral",
-      "offset": 64,
-      "length": 17,
-      "value": "\"BidMachineMetaAudienceAdapter.MetaBannerAdapter\""
     }
   ]
 }
