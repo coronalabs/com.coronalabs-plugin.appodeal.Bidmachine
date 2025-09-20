@@ -5,7 +5,7 @@ local metadata =
 		format = 'staticLibrary',
 		staticLibs = { 'APDBidMachineAdapter', "objc" },
 		frameworks = { "BidMachine", "BidMachineAmazonAdapter", "BidMachineMetaAudienceAdapter", "BidMachineMyTargetAdapter", "BidMachinePangleAdapter", "BidMachineVungleAdapter", "OMSDK_Appodeal", "Protobuf", "StackModules", "SwiftProtobuf" },
-		frameworksOptional = {},
+		frameworksOptional = {"Network"},
 		usesSwift = true,
 	},
 }
