@@ -26,11 +26,11 @@
 		</data>
 		<key>Headers/GPBAny.pbobjc.h</key>
 		<data>
-		qNNmhlQ7oyjinnkKfjyojoWdteQ=
+		NqPTM770Tzeu0NAuwkrUD2pf9hU=
 		</data>
 		<key>Headers/GPBApi.pbobjc.h</key>
 		<data>
-		5OYAXWICgUZE+Zlgr0WK894wUi8=
+		R/SuZMm0Sh2qTrlOM9tMn9Z9T5E=
 		</data>
 		<key>Headers/GPBArray.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/GPBArray_PackagePrivate.h</key>
 		<data>
-		lFvySPk+61tD/4AfCGq7dGNWPcM=
+		/89vEsQ+4s7r3IXm0I1pIkwTGAE=
 		</data>
 		<key>Headers/GPBBootstrap.h</key>
 		<data>
@@ -46,19 +46,19 @@
 		</data>
 		<key>Headers/GPBCodedInputStream.h</key>
 		<data>
-		G18eUPJP6RE2DrqO6cst5OoeuPc=
+		J8o/EnBKYCzptbvzqCBk+fQb4m0=
 		</data>
 		<key>Headers/GPBCodedInputStream_PackagePrivate.h</key>
 		<data>
-		VZbDdNftf77SUXfalHm6wwMwofw=
+		fmnBMJo4QVQWKfB/5XwNE0wCWxk=
 		</data>
 		<key>Headers/GPBCodedOutputStream.h</key>
 		<data>
-		6dXILPh4Rp+PVl52GdJcotag8F0=
+		VGJBuHWcLiJHjSYbjjXfS6JQPxI=
 		</data>
 		<key>Headers/GPBCodedOutputStream_PackagePrivate.h</key>
 		<data>
-		J6YCoVkYQ8jofDG0haJq3jeGm4Y=
+		i86cgOzabU6pI2lrPh9cZLqiTtA=
 		</data>
 		<key>Headers/GPBDescriptor.h</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Headers/GPBDescriptor_PackagePrivate.h</key>
 		<data>
-		Ic7rj5Ad/ujLrmdsXZHrKshH7wU=
+		68q77MunYhH0PQN7yqxCKAVonPE=
 		</data>
 		<key>Headers/GPBDictionary.h</key>
 		<data>
@@ -74,11 +74,11 @@
 		</data>
 		<key>Headers/GPBDictionary_PackagePrivate.h</key>
 		<data>
-		SaDZvXSEbCDLjTRfNW62ShP5ZlM=
+		JX5QZfq06ObHSv+QwmguZIPQgmM=
 		</data>
 		<key>Headers/GPBDuration.pbobjc.h</key>
 		<data>
-		ngfdIHIRpa8rEExEbhZEQ3ls6g8=
+		SwBckBRNsvYEXd9h7Nn4/ByT158=
 		</data>
 		<key>Headers/GPBEmpty.pbobjc.h</key>
 		<data>
@@ -86,11 +86,11 @@
 		</data>
 		<key>Headers/GPBExtensionInternals.h</key>
 		<data>
-		UTEvuWav4ErM4eW2WIA53/djtw4=
+		WGFrY7Ka0xrrievQTouNk6mPRmM=
 		</data>
 		<key>Headers/GPBExtensionRegistry.h</key>
 		<data>
-		s03qlcWGjqVI16nhQUTCl88YCRY=
+		QJxfiDGnp1sxMPolBf82fs2VUKI=
 		</data>
 		<key>Headers/GPBFieldMask.pbobjc.h</key>
 		<data>
@@ -98,15 +98,15 @@
 		</data>
 		<key>Headers/GPBMessage.h</key>
 		<data>
-		Sca8TQTKIKSNjMeIvwqKj8mSA+Q=
+		tkFGsJvL6roNKr1WB4aLk6koNeQ=
 		</data>
 		<key>Headers/GPBMessage_PackagePrivate.h</key>
 		<data>
-		iFpvUuXo87t2xAHLzii+Gljk364=
+		sa7uUA4RZMwRlhqMSJ/kbLRLurg=
 		</data>
 		<key>Headers/GPBProtocolBuffers.h</key>
 		<data>
-		V+dndcZlIaIIc90VmgYBIVZZWkc=
+		nOeI0t8z/pwhS3YUl+TmlOUVzNw=
 		</data>
 		<key>Headers/GPBProtocolBuffers_RuntimeSupport.h</key>
 		<data>
@@ -114,15 +114,15 @@
 		</data>
 		<key>Headers/GPBRootObject.h</key>
 		<data>
-		eZwZPBKfml6ygndyEE3rkmJzINc=
+		tyWhWr92OxGqwaueUaaMQXHIzxA=
 		</data>
 		<key>Headers/GPBRootObject_PackagePrivate.h</key>
 		<data>
-		77taKgHL/idj+kT/R7NFQTkIL0w=
+		+nFLl6X6ANnf3Ym7pTfsL0sot3g=
 		</data>
 		<key>Headers/GPBRuntimeTypes.h</key>
 		<data>
-		YWc8EZPwQd9+IvpnJdAvbWV0WeA=
+		Wlrc1ymI9ivd4uKD0iAjIUbiFXQ=
 		</data>
 		<key>Headers/GPBSourceContext.pbobjc.h</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>Headers/GPBTimestamp.pbobjc.h</key>
 		<data>
-		Bm1QgxQ/Tz7zFDjvnBZCohGwazw=
+		sJtBlINk04BAFc5SdnAueg52qpU=
 		</data>
 		<key>Headers/GPBType.pbobjc.h</key>
 		<data>
@@ -142,27 +142,35 @@
 		</data>
 		<key>Headers/GPBUnknownField.h</key>
 		<data>
-		5OC9Z+3EBh2ttnxuOD0b3EUgcOA=
+		tQQCtchyoCsrKTGRrDPuAun6P/Y=
 		</data>
 		<key>Headers/GPBUnknownFieldSet.h</key>
 		<data>
-		26fw2TisQD0NEreryBoQ7tYeZMg=
+		buRBJMYiGYbkbYkuMtT5HDgAavM=
 		</data>
 		<key>Headers/GPBUnknownFieldSet_PackagePrivate.h</key>
 		<data>
-		khVEuwBBw+YwLn8eAr7NEIS9Ycc=
+		b7+8VSi/mORYbFiy/CjbJOdqaR4=
 		</data>
 		<key>Headers/GPBUnknownField_PackagePrivate.h</key>
 		<data>
-		70o9VehSzqCvrkHh29iuETxylSg=
+		HF7hm3w2TXr3DYOKHi0qpdztKmc=
+		</data>
+		<key>Headers/GPBUnknownFields.h</key>
+		<data>
+		LyHIbCNq8Br8BlNIgAQiDrofCQ4=
+		</data>
+		<key>Headers/GPBUnknownFields_PackagePrivate.h</key>
+		<data>
+		GYeNzkN7P5zbVQIwR2jQXm6FCJw=
 		</data>
 		<key>Headers/GPBUtilities.h</key>
 		<data>
-		x7RtNlM4bgW3hqQMddrpblNmZ1s=
+		Gf5RE1sMRknGkzhgoyQ0xJds0RA=
 		</data>
 		<key>Headers/GPBUtilities_PackagePrivate.h</key>
 		<data>
-		S1m0+39NCmtDIled9Sucz3HBG8M=
+		/w5NCZg4LNb4FMMfWLoEJkTLPlw=
 		</data>
 		<key>Headers/GPBWellKnownTypes.h</key>
 		<data>
@@ -176,9 +184,13 @@
 		<data>
 		9S5cL7sMc8Pj3y7nxnePmW3XZgc=
 		</data>
+		<key>Headers/Protobuf-Swift.h</key>
+		<data>
+		hhmej60LTNZ31zd49VosFRSwWdw=
+		</data>
 		<key>Headers/Protobuf-umbrella.h</key>
 		<data>
-		0/O5vzUrPq4y6J1ffLEqgNoGrhA=
+		SbQIQ17OAO6PwygNzQVKjKJJxKM=
 		</data>
 		<key>Headers/SourceContext.pbobjc.h</key>
 		<data>
@@ -202,15 +214,55 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		toNXho2ZyR7J8YoPA8U7zy59iFg=
+		LSh7LjQ35eOIiTsprNJmTWgk+A0=
+		</data>
+		<key>Modules/Protobuf.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		buREWKSanDOK0DvakDRqf/Hdg2M=
+		</data>
+		<key>Modules/Protobuf.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		mXNODQFCb+bEXeMv1VS1ATUiSWE=
+		</data>
+		<key>Modules/Protobuf.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		oxcAYKZa2npDNjUynDDfusOpW+M=
+		</data>
+		<key>Modules/Protobuf.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		mXNODQFCb+bEXeMv1VS1ATUiSWE=
+		</data>
+		<key>Modules/Protobuf.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		A3sduAnYBAVbdOVFNQru3Ak7zCo=
+		</data>
+		<key>Modules/Protobuf.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		buREWKSanDOK0DvakDRqf/Hdg2M=
+		</data>
+		<key>Modules/Protobuf.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		xkPOyQgs1QYw11B8zZZORHG1jWc=
+		</data>
+		<key>Modules/Protobuf.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		Zv3XEiq19YXi2+sDuQsWYP2gaA0=
+		</data>
+		<key>Modules/Protobuf.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		xkPOyQgs1QYw11B8zZZORHG1jWc=
+		</data>
+		<key>Modules/Protobuf.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		OWZlPJNERHlk3jGUp+0m6VFOw4o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		oOJ2+RCCiAVMnRIo8as4UC5+8cI=
+		S6OZ174RdwGzGDKHfsHwJzt7+U0=
 		</data>
 		<key>Protobuf_Privacy.bundle/Info.plist</key>
 		<data>
-		Gf0FYdXjIJAfTorKD8xQMzlajs8=
+		Gv2B+eVl1TBetwnOHyIuHc9A2xg=
 		</data>
 		<key>Protobuf_Privacy.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -278,22 +330,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qNNmhlQ7oyjinnkKfjyojoWdteQ=
+			NqPTM770Tzeu0NAuwkrUD2pf9hU=
 			</data>
 			<key>hash2</key>
 			<data>
-			zki8DaAcwrKs+7neib5FnRNbsfS+KonQzsrPevJiA7s=
+			blzPw6hxcnHsaYd6PwwWGb1zYkZ/DqLsTEu9PwyNT0Q=
 			</data>
 		</dict>
 		<key>Headers/GPBApi.pbobjc.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5OYAXWICgUZE+Zlgr0WK894wUi8=
+			R/SuZMm0Sh2qTrlOM9tMn9Z9T5E=
 			</data>
 			<key>hash2</key>
 			<data>
-			cWL2Xa/ADqy4sIJYAt7DzM7EpGglPslRnp4yhUEUmbM=
+			tCxeYyFG4kexKjNKarEVs41TR5WFPvJKNL1802hB1oE=
 			</data>
 		</dict>
 		<key>Headers/GPBArray.h</key>
@@ -311,11 +363,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lFvySPk+61tD/4AfCGq7dGNWPcM=
+			/89vEsQ+4s7r3IXm0I1pIkwTGAE=
 			</data>
 			<key>hash2</key>
 			<data>
-			832RSHWvg8gff4VWB+DY8AIt4Cz2FRG2R1T/jTPHxJc=
+			DbRhKPWM3MUpQuLrct8pZM3ERziPtbJB7l0T6jRRhmk=
 			</data>
 		</dict>
 		<key>Headers/GPBBootstrap.h</key>
@@ -333,44 +385,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			G18eUPJP6RE2DrqO6cst5OoeuPc=
+			J8o/EnBKYCzptbvzqCBk+fQb4m0=
 			</data>
 			<key>hash2</key>
 			<data>
-			2wnshkZGZiUCGTEYcpLoPJYQy9bXDoSA8b4W/P+yAaU=
+			+mdrP6zxGjwY0bR9B6GVbwohPkeEyRerb6zVk0J1nqU=
 			</data>
 		</dict>
 		<key>Headers/GPBCodedInputStream_PackagePrivate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VZbDdNftf77SUXfalHm6wwMwofw=
+			fmnBMJo4QVQWKfB/5XwNE0wCWxk=
 			</data>
 			<key>hash2</key>
 			<data>
-			MvdSxgOENCZf2svc6H//ewB8VRk2gJocYPTb81HiHrw=
+			MOI8AGavip/ckY+1RbXiSWYJXic7gsbHjqGu7zB6Nu4=
 			</data>
 		</dict>
 		<key>Headers/GPBCodedOutputStream.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6dXILPh4Rp+PVl52GdJcotag8F0=
+			VGJBuHWcLiJHjSYbjjXfS6JQPxI=
 			</data>
 			<key>hash2</key>
 			<data>
-			iEtzbHW0BP8i/CFoS11PSBe0srlJ04QasPEjfhYNOuo=
+			AgCXBkQneGvtvFOMzoYQdkWcbVgbVyy+D1Dv92N0vPI=
 			</data>
 		</dict>
 		<key>Headers/GPBCodedOutputStream_PackagePrivate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			J6YCoVkYQ8jofDG0haJq3jeGm4Y=
+			i86cgOzabU6pI2lrPh9cZLqiTtA=
 			</data>
 			<key>hash2</key>
 			<data>
-			W6OVxvPWUqw1lvHLPh6rIUyM0xYOB7hV+yMskhGl72g=
+			OxsWw/Fus/XWQavoZbfmeyri0y58sJv4KZeQTSTtSVw=
 			</data>
 		</dict>
 		<key>Headers/GPBDescriptor.h</key>
@@ -388,11 +440,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ic7rj5Ad/ujLrmdsXZHrKshH7wU=
+			68q77MunYhH0PQN7yqxCKAVonPE=
 			</data>
 			<key>hash2</key>
 			<data>
-			4bqyiwfTxKv1Nibz2XXUrgIixH9cozLN8oXLUjE4Xjw=
+			DQqHevYmkA+TPqNSh3c6yVSXFShUyq+9vEH/jNQjlB4=
 			</data>
 		</dict>
 		<key>Headers/GPBDictionary.h</key>
@@ -410,22 +462,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SaDZvXSEbCDLjTRfNW62ShP5ZlM=
+			JX5QZfq06ObHSv+QwmguZIPQgmM=
 			</data>
 			<key>hash2</key>
 			<data>
-			2pAcT90LqsL4AxiEYWjE4g2ZMDRyDhcvSPFCgQAiVek=
+			EH7jWNsD1jjmGixAqC73i/vbHjxKlYL3swUw0c9CICs=
 			</data>
 		</dict>
 		<key>Headers/GPBDuration.pbobjc.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ngfdIHIRpa8rEExEbhZEQ3ls6g8=
+			SwBckBRNsvYEXd9h7Nn4/ByT158=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZNOP+w2Xc15MS0UttSgAfSDseeQBy1f7+u4Wh5CjCVY=
+			dYT0tMip2+d0mpli2RcZL2Yw+dwv/lO9iKna7uWHmww=
 			</data>
 		</dict>
 		<key>Headers/GPBEmpty.pbobjc.h</key>
@@ -443,22 +495,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UTEvuWav4ErM4eW2WIA53/djtw4=
+			WGFrY7Ka0xrrievQTouNk6mPRmM=
 			</data>
 			<key>hash2</key>
 			<data>
-			FtpgbzOur5M0227lrru72yf9kdOEEX+SF10LlKXo1/U=
+			WSmm4qczHYURcZs+rQuthY+u5EB3Hxgx6lssMSumLkQ=
 			</data>
 		</dict>
 		<key>Headers/GPBExtensionRegistry.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			s03qlcWGjqVI16nhQUTCl88YCRY=
+			QJxfiDGnp1sxMPolBf82fs2VUKI=
 			</data>
 			<key>hash2</key>
 			<data>
-			zCLzEUsxTqxqBc7NF85nhSDmRowX3ukp7nMMnkiPT5A=
+			0aS9BJEmYJxD+0npWrZxAABN3hNQeBfZjTPzaBTmIno=
 			</data>
 		</dict>
 		<key>Headers/GPBFieldMask.pbobjc.h</key>
@@ -476,33 +528,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Sca8TQTKIKSNjMeIvwqKj8mSA+Q=
+			tkFGsJvL6roNKr1WB4aLk6koNeQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			hZvtjv+AE0MnDp7t7Xs7iSMFK0Evvbv0+wBjihrA1Do=
+			g/2v4rb2/j07HydOd/sZPfohwQb43qpKVJK45ASjug8=
 			</data>
 		</dict>
 		<key>Headers/GPBMessage_PackagePrivate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iFpvUuXo87t2xAHLzii+Gljk364=
+			sa7uUA4RZMwRlhqMSJ/kbLRLurg=
 			</data>
 			<key>hash2</key>
 			<data>
-			KPvNwiag5bOEnSTjHlYIlDWVQznVEQ1zYrEZS9R1jII=
+			4gBKEoQZcIDN3yR0RQ2geMhFvPFbm4QO6TijRG6NPXU=
 			</data>
 		</dict>
 		<key>Headers/GPBProtocolBuffers.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			V+dndcZlIaIIc90VmgYBIVZZWkc=
+			nOeI0t8z/pwhS3YUl+TmlOUVzNw=
 			</data>
 			<key>hash2</key>
 			<data>
-			OdGhUR+Oxp0+aEIeg5WAWlqkeHzdJiIMjd8/h9l4kiA=
+			+7WbhBnqNII4gfC1A6o9R7oxtLuU8Uj8SVDRn3nSPnw=
 			</data>
 		</dict>
 		<key>Headers/GPBProtocolBuffers_RuntimeSupport.h</key>
@@ -520,33 +572,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eZwZPBKfml6ygndyEE3rkmJzINc=
+			tyWhWr92OxGqwaueUaaMQXHIzxA=
 			</data>
 			<key>hash2</key>
 			<data>
-			4aj6/9w86K2AUeJu9UTOagvIN9G+nBlhzY+IorgRNQ8=
+			JFlJ8B1GaEVMFMSSrepL9CWhL70CqMsNkP4/qr1RpzA=
 			</data>
 		</dict>
 		<key>Headers/GPBRootObject_PackagePrivate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			77taKgHL/idj+kT/R7NFQTkIL0w=
+			+nFLl6X6ANnf3Ym7pTfsL0sot3g=
 			</data>
 			<key>hash2</key>
 			<data>
-			g4d62F4NL1o2ee2KVnO/NSLiSs2P18dRYg8TjTAnakE=
+			wkx+Xgms58WyaQDwQ9aNb6ShE9UbG2c5Q606fnrYfb0=
 			</data>
 		</dict>
 		<key>Headers/GPBRuntimeTypes.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YWc8EZPwQd9+IvpnJdAvbWV0WeA=
+			Wlrc1ymI9ivd4uKD0iAjIUbiFXQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			zzSKO2xqaJvEwy8P55QoJATfwg/c0YFmDz0Exg1YGxU=
+			dcC3QP5WYhTXJrSG4lbF+CN+wBEsoql2Ku64OcAG4/E=
 			</data>
 		</dict>
 		<key>Headers/GPBSourceContext.pbobjc.h</key>
@@ -575,11 +627,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Bm1QgxQ/Tz7zFDjvnBZCohGwazw=
+			sJtBlINk04BAFc5SdnAueg52qpU=
 			</data>
 			<key>hash2</key>
 			<data>
-			s71OJFYyR+KG0twGusEGKOJ2P9uT2itwaccBWLtlM0E=
+			LSAuz6nab5tMhTKTqIeXvbZZQP4UoJCwwsf7VnpEotg=
 			</data>
 		</dict>
 		<key>Headers/GPBType.pbobjc.h</key>
@@ -597,66 +649,88 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5OC9Z+3EBh2ttnxuOD0b3EUgcOA=
+			tQQCtchyoCsrKTGRrDPuAun6P/Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			N71jeAFrlaNq9cjWmpzpm5uiWi5VeRz6jQqT8SoZtRU=
+			6jjklCcAO6NJkZVU3kK+hwomhmaq+hkZqKaR0NRlGTs=
 			</data>
 		</dict>
 		<key>Headers/GPBUnknownFieldSet.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			26fw2TisQD0NEreryBoQ7tYeZMg=
+			buRBJMYiGYbkbYkuMtT5HDgAavM=
 			</data>
 			<key>hash2</key>
 			<data>
-			CIV9IkWFozP02DL/gc99EjyQSQayraqpi8ExiHWlVq8=
+			lJJYdOQCyFqDzWRewWnocX6jMfLrbyMs/g3ErLHBKfE=
 			</data>
 		</dict>
 		<key>Headers/GPBUnknownFieldSet_PackagePrivate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			khVEuwBBw+YwLn8eAr7NEIS9Ycc=
+			b7+8VSi/mORYbFiy/CjbJOdqaR4=
 			</data>
 			<key>hash2</key>
 			<data>
-			l2tz9sKMTqSFRZYvfImDJQfiNZgijdDD8pb65z4rixU=
+			V7PVjjlZVaxZWp+nyGZnnAfTq/jrTrSHg8HwkNRyV7A=
 			</data>
 		</dict>
 		<key>Headers/GPBUnknownField_PackagePrivate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			70o9VehSzqCvrkHh29iuETxylSg=
+			HF7hm3w2TXr3DYOKHi0qpdztKmc=
 			</data>
 			<key>hash2</key>
 			<data>
-			EWQdZpwT7KjCDK1M4mO91Ovy0RzT8mSfLaRK7dRXDlI=
+			x9Ba6Rm0ND2GmgJznyUxTbj4HW3iK8Z6OdXdtxG0UYs=
+			</data>
+		</dict>
+		<key>Headers/GPBUnknownFields.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LyHIbCNq8Br8BlNIgAQiDrofCQ4=
+			</data>
+			<key>hash2</key>
+			<data>
+			IxNawu7OjfE+6Y0SQaeltNOElyWjBZ7wJ38qtMkP8G0=
+			</data>
+		</dict>
+		<key>Headers/GPBUnknownFields_PackagePrivate.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GYeNzkN7P5zbVQIwR2jQXm6FCJw=
+			</data>
+			<key>hash2</key>
+			<data>
+			5Q6DmpHcjL1f+D1c6IuMLNvi34OM9TQyl47F8VJIFwE=
 			</data>
 		</dict>
 		<key>Headers/GPBUtilities.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			x7RtNlM4bgW3hqQMddrpblNmZ1s=
+			Gf5RE1sMRknGkzhgoyQ0xJds0RA=
 			</data>
 			<key>hash2</key>
 			<data>
-			DLdfDHKdDMt8nAF3d+wHqC2T2FRjxuO8cRESdelX16o=
+			HqRXBShLsepxfaXea72GfVInORaY9fYn6AxLZyGmeVY=
 			</data>
 		</dict>
 		<key>Headers/GPBUtilities_PackagePrivate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			S1m0+39NCmtDIled9Sucz3HBG8M=
+			/w5NCZg4LNb4FMMfWLoEJkTLPlw=
 			</data>
 			<key>hash2</key>
 			<data>
-			JG9LZRNA2zds/1JRpkL5CKIh/uYdmkxPz85DPmvpu9E=
+			fAZLdxbtMxc3CuLGTlNI4YOwWtqAtt8A4qezY7pfR6w=
 			</data>
 		</dict>
 		<key>Headers/GPBWellKnownTypes.h</key>
@@ -692,15 +766,26 @@
 			e++7o/pXCT/ZipZqR/xRWSLYYNCPatLETmIxtcgsmT8=
 			</data>
 		</dict>
+		<key>Headers/Protobuf-Swift.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hhmej60LTNZ31zd49VosFRSwWdw=
+			</data>
+			<key>hash2</key>
+			<data>
+			bz+2ostoAoeXY6qUEY0kL/qnCEmo9cQlRYGV5QPn1kc=
+			</data>
+		</dict>
 		<key>Headers/Protobuf-umbrella.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0/O5vzUrPq4y6J1ffLEqgNoGrhA=
+			SbQIQ17OAO6PwygNzQVKjKJJxKM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Xjyi3c8qti32XUSTmYTximii36ocjcehIosXOk4ZmOY=
+			PNUfEP4mC7sd/lhrrTZg6HuSLJ6oShCkmErTzkqj25A=
 			</data>
 		</dict>
 		<key>Headers/SourceContext.pbobjc.h</key>
@@ -758,26 +843,136 @@
 			ffdUxUO/r/k3aSthNbK9w6bGnxwilrFqWEFIBuG+968=
 			</data>
 		</dict>
+		<key>Modules/Protobuf.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			buREWKSanDOK0DvakDRqf/Hdg2M=
+			</data>
+			<key>hash2</key>
+			<data>
+			PgW5mDdm1NfA42gQ+0FuVt8wOlP/Fw2QcGIhwhBdCqg=
+			</data>
+		</dict>
+		<key>Modules/Protobuf.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mXNODQFCb+bEXeMv1VS1ATUiSWE=
+			</data>
+			<key>hash2</key>
+			<data>
+			M8SlzcYf1sOyeTrNw1RcctCwjumFR0UApu/PbPnxi50=
+			</data>
+		</dict>
+		<key>Modules/Protobuf.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oxcAYKZa2npDNjUynDDfusOpW+M=
+			</data>
+			<key>hash2</key>
+			<data>
+			wuX/sLj/9b8zXyH/vtOOBHBU4Dx+tcUg5trlPPl3eFc=
+			</data>
+		</dict>
+		<key>Modules/Protobuf.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mXNODQFCb+bEXeMv1VS1ATUiSWE=
+			</data>
+			<key>hash2</key>
+			<data>
+			M8SlzcYf1sOyeTrNw1RcctCwjumFR0UApu/PbPnxi50=
+			</data>
+		</dict>
+		<key>Modules/Protobuf.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			A3sduAnYBAVbdOVFNQru3Ak7zCo=
+			</data>
+			<key>hash2</key>
+			<data>
+			vdu+ptMmleSVwXaszBaFRTDc6TEcl44pw9QtTs/6f5s=
+			</data>
+		</dict>
+		<key>Modules/Protobuf.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			buREWKSanDOK0DvakDRqf/Hdg2M=
+			</data>
+			<key>hash2</key>
+			<data>
+			PgW5mDdm1NfA42gQ+0FuVt8wOlP/Fw2QcGIhwhBdCqg=
+			</data>
+		</dict>
+		<key>Modules/Protobuf.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xkPOyQgs1QYw11B8zZZORHG1jWc=
+			</data>
+			<key>hash2</key>
+			<data>
+			kgNoDPoDfmIyYySksdd9GjmURGhZrsWb2N2+VlzTvbo=
+			</data>
+		</dict>
+		<key>Modules/Protobuf.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Zv3XEiq19YXi2+sDuQsWYP2gaA0=
+			</data>
+			<key>hash2</key>
+			<data>
+			lHVYTGq9T8Lesp+z/zj3s9JuBdCq154vuC3Ig7u0Iz8=
+			</data>
+		</dict>
+		<key>Modules/Protobuf.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xkPOyQgs1QYw11B8zZZORHG1jWc=
+			</data>
+			<key>hash2</key>
+			<data>
+			kgNoDPoDfmIyYySksdd9GjmURGhZrsWb2N2+VlzTvbo=
+			</data>
+		</dict>
+		<key>Modules/Protobuf.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OWZlPJNERHlk3jGUp+0m6VFOw4o=
+			</data>
+			<key>hash2</key>
+			<data>
+			Rzbckd9OLo0bp5aNpbOYImgyolxwrX1yFNCm5zQNNTM=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oOJ2+RCCiAVMnRIo8as4UC5+8cI=
+			S6OZ174RdwGzGDKHfsHwJzt7+U0=
 			</data>
 			<key>hash2</key>
 			<data>
-			PLEmn+pIfv2wmiWgfUNqw4ebOM6/nWSX9YlFSVlmQ7s=
+			o+43mJ39eqSAB4qvVN+rJ/i7WiqiJ4zuNY+7kP0gJIc=
 			</data>
 		</dict>
 		<key>Protobuf_Privacy.bundle/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Gf0FYdXjIJAfTorKD8xQMzlajs8=
+			Gv2B+eVl1TBetwnOHyIuHc9A2xg=
 			</data>
 			<key>hash2</key>
 			<data>
-			yhj78Aeswxa19PU8ZCkJSurWflNDsFvMTpGvTErqgXY=
+			bpEu+QpCLjtYrx/z9B257yJnwlE6GD39SEO6K01lPv8=
 			</data>
 		</dict>
 		<key>Protobuf_Privacy.bundle/PrivacyInfo.xcprivacy</key>
